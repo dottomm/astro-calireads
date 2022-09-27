@@ -118,6 +118,10 @@ h2 {
   font-size: larger;
 }
 
+.section-title h3{
+  font-size: 2.1em;
+}
+
 .section-desc{
   background-color: #ccc;
   margin-top: -20px;
