@@ -131,6 +131,9 @@ h2 {
   flex-direction: column;
   margin-bottom: 2em;
 }
+.section-desc h3{
+  color: var(--color-secondary);
+}
 
 .section-desc a{
   color:var(--color-secondary);
@@ -153,5 +156,8 @@ h2 {
 
 .module-launch{
   margin-bottom: 1em;
-  justify-self: center;
+  width:500px;
+  display: flex;
+  flex-direction: column;
+  justify-items: centers;
 }
