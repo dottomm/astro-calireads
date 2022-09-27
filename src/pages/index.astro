@@ -1,0 +1,32 @@
+---
+
+import Layout from '../layouts/Layout.astro';
+
+import Showcase from '../components/Showcase.astro';
+
+import Features from '../components/Features.astro';
+
+import Tabs from '../components/Tabs.astro';
+
+import Footer from '../components/Footer.astro';
+
+---
+
+
+<Layout >
+<Showcase  showExtra={true} />
+
+<section class="page-content">
+    <div class="container">
+      <h2>E-Learning Modules</h2>
+      <p>
+        CALI Reads is proud to offer seven free Adolescent Literacy E-Learning Modules for professional learning. Each module showcases a research-based literacy practice that has been shown to be effective with adolescent learners across content area instruction. Each module takes approximately 2-3 hours to complete. Use the CALI Reads Training Modules to learn how to implement each evidence-based practice across content area instruction to support adolescent literacy. You can make a difference! Get started today! 
+      </p>
+      
+      <Features />
+      
+       
+    </div>
+  </section>
+
+</Layout>

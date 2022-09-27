@@ -1,0 +1,59 @@
+---
+ import logo from '../images/calireads-small.png';
+
+---
+
+
+
+<header class="header">
+  <div class="container">
+    <div class="logo">
+      <a href="index.html">
+        <img src={logo} alt="CALI Reads" />
+      </a>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="/index.html">Home</a></li>
+        <li><a href="https://calireads.org/wordbuilder/" target="_blank">Wordbuilder Intervention</a></li>
+        <li><a href="/modules">E-Learning Modules</a></li>
+        <li><a href="https://vimeo.com/showcase/calireadswebinars" target="_blank">Webinars</a></li>
+        <li><a href="https://vimeo.com/showcase/calireadsdemonstration" target="_blank">Demonstration Videos</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<style>
+  /* Header */
+
+.header {
+  height: 70px;
+  background: var(--color-primary);
+}
+
+.header .container {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+.header img {
+  height: 35px;
+  vertical-align: middle;
+}
+
+.header nav ul {
+  display: flex;
+}
+
+.header nav ul li {
+  padding: 0 10px;
+}
+
+.header nav ul li a {
+  color: #084E75;
+}
+</style>

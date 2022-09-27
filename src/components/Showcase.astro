@@ -1,0 +1,93 @@
+---
+import hero from '../images/front-page.png';
+import heroSmall from '../images/front-pageSmall.png';
+
+export interface Props {
+heading?: string;
+text?: string;
+tagline?: string;
+showExtra?: boolean;
+}
+
+const {heading = "CALI Reads", 
+
+text="CALIReads is a 5-year project to improve literacy outcomes for adolescent students, especially students with disabilities. It serves nine districts and district consortia across California who in collaboration with three school site administrators applied to participate. CALI Reads offers participating districts and their selected middle schools funding, support, and training through CALI Reads literacy coaching, professional development (PD) and systems support for teachers and administrators.",
+//tagline = "California Adolescent Literacy Initiative", 
+showExtra = true } = Astro.props as Props;
+---
+
+
+<section class="showcase">
+    <div class="showcase-text">
+              <h1>{heading}</h1>
+              <!--<p class='tagline'>{tagline}</p> -->
+    </div>
+
+    {showExtra && <> 
+    
+    <div class="showcase-img">
+      <img class="logos" src={hero} alt="Helping Middle School Improve Student Outcomes" />
+    <img class="logos-small" src={heroSmall} alt="Helping Middle School Improve Student Outcomes" />
+    </div>
+
+    <p class="showcase-demo">
+      <small>{text}</small>
+    </p>
+    
+    </> }
+
+
+   
+  </section>
+
+
+  <style>/* Showcase */
+    .showcase {
+      height: auto;
+      background-color: var(--color-secondary);
+      background-image: linear-gradient(to bottom, var(--color-primary), rgb(15 23 42 / 0));
+      padding: 30px;
+    }
+    
+    .showcase-blog {
+      min-height: 300px;
+    }
+    
+    .showcase-text {
+      max-width: 500px;
+      color: #000;
+      text-align: center;
+      margin: 50px auto;
+    }
+    
+    .showcase h1 {
+      font-size: 50px;
+      color: #fff;
+      margin-bottom: 20px;
+    }
+    
+    .showcase p {
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+
+    .showcase .tagline{
+      color:#fff;
+      font-size: 1rem;
+    }
+    
+    .showcase-img {
+      text-align: center;
+    }
+    
+    .showcase-img img {
+      border-radius: 10px;
+      margin: auto;
+    }
+    
+    .showcase-demo {
+      color: #fff;
+      text-align: center;
+      font-weight: 300;
+    }
+    </style>

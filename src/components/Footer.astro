@@ -1,0 +1,75 @@
+---
+import napaImg from '../images/NCOE_green-borderBlue.png';
+import osepImg from '../images/OSEP_green-border.png';
+import cdeImg from '../images/CDE_green-border.png';
+
+---
+
+
+
+<footer class="footer">
+    <div class="container">
+      <div>
+        <h3>CALI Reads</h3>
+        <p>
+            The contents of this website were developed under a State Personnel Development Grant (SPDG) from the US Department of Education (CALI/Award #H323A170011), Project Officer, david.guardino@ed.gov. However, the contents of this site not necessarily represent the policy of the US Department of Education and no assumption of endorsement by the Federal government should be made.
+        </p>
+        
+      </div>
+      <div>&nbsp;</div>
+      <!--
+        <div>
+        <h3>Links</h3>
+        <ul>
+          <li><a href="#"><img src={napaImg}></a></li>
+          <li><a href="#"><img src={osepImg}></a></li>
+          <li><a href="#"><img src={napaImg}></a></li>
+
+        </ul>
+      </div>
+       -->
+    </div>
+  </footer>
+
+  <style>
+      .footer {
+    background: var(--color-secondary);
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    margin-top: 60px;
+  }
+
+  .footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: right;
+  }
+
+
+  .footer a {
+    color: #a741ff;
+  }
+
+  .footer a:hover {
+    text-decoration: underline;
+  }
+
+  .footer h3 {
+    margin-bottom: 10px;
+  }
+
+  .footer div:nth-child(1) {
+    text-align: left;
+  }
+
+
+
+  @media (max-width: 500px) {
+
+    .footer div:nth-child(2) {
+      display: none;
+    }
+  }
+
+  </style>
