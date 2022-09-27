@@ -150,3 +150,8 @@ h2 {
   flex-direction: column;
  align-items: center;
 }
+
+.module-launch{
+  margin-bottom: 1em;
+  justify-self: center;
+}
