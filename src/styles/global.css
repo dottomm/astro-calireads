@@ -107,3 +107,42 @@ h1,
 h2 {
   text-align: center;
 }
+
+
+/*Custom Global Styles*/
+.section-title{
+  border-radius: 15px 15px 0px 0px; 
+  background-color: #AED235;
+  color: #084E75;
+  padding: 2em;
+  font-size: larger;
+}
+
+.section-desc{
+  background-color: #ccc;
+  margin-top: -20px;
+  padding: 1rem;
+  color:#000;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2em;
+}
+
+.section-desc a{
+  color:var(--color-secondary);
+}
+.section-desc a:hover{
+  color: var(--color-primary);
+}
+
+.handout{
+  display: flex;
+  flex-direction: column;
+ align-items: center;
+}
+
+.webinar{
+  display: flex;
+  flex-direction: column;
+ align-items: center;
+}
