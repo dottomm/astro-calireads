@@ -99,7 +99,13 @@
   }
   
   @media (max-width: 500px) {
-   
+    .logos-small {
+      display: block;
+      margin: auto;
+    }
+    .logos {
+      display: none;
+    }
 }
 
 
