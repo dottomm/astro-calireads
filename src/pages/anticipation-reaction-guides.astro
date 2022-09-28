@@ -4,6 +4,7 @@ import Layout from '../layouts/Layout.astro';
 import Showcase from '../components/Showcase.astro';
 
 import ARGuideTemplate from '../images/AR_Guide_Template-980x729.png';
+import ARGuidePDF from '../pdfs/AR-Guide-Template.pdf';
 import digiCoachWalkthrough from '../images/digi-Walkthrough.png';
 ---
 <Layout title="Anticipation Reaction Guide">
@@ -54,7 +55,7 @@ import digiCoachWalkthrough from '../images/digi-Walkthrough.png';
                 <h3>Anticipation Reaction Template</h3>
             </div>
             <div class='section-desc'>
-               <div class='handout'> <a href='https://www.calireads.org/wp-content/uploads/2021/05/AR-Guide-Template.pdf'><img src={ARGuideTemplate} class='handout' alt='ARG Template' title='ARG Template'></a></div>
+               <div class='handout'> <a href={ARGuidePDF}><img src={ARGuideTemplate} class='handout' alt='ARG Template' title='ARG Template'></a></div>
             </div>
 
             <div class='section-title'>
