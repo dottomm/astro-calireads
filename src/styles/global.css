@@ -162,9 +162,8 @@ h2 {
 .webinar{
   display: flex;
   flex-direction: column;
- align-items: center;
-
- position: relative;
+  align-items: center;
+  position: relative;
   padding-bottom: 56.25%; /* 16:9 */
   height: 0;    
 }
@@ -178,8 +177,16 @@ height: 100%;
 
 .module-launch{
   margin-bottom: 1em;
-  width:500px;
+  width:100%;
   display: flex;
   flex-direction: column;
   justify-items: centers;
+}
+
+.module-launch .btn{
+  background-color: var(--color-secondary);
+}
+.module-launch .btn:hover{
+  background-color: #AED235;
+  color:#333;
 }
