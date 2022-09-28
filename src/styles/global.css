@@ -154,6 +154,11 @@ h2 {
  align-items: center;
 }
 
+.handout img{
+  width: 500px;
+  object-fit: fill;
+}
+
 .webinar{
   display: flex;
   flex-direction: column;
