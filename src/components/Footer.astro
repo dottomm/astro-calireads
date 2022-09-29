@@ -9,25 +9,29 @@ import cdeImg from '../images/CDE_green-border.png';
 
 <footer class="footer">
     <div class="container">
-      <div>
+      
+      <div class='footer-images'>
+        <div class="item"><img src={napaImg} alt='Napa County Office of Education'></div>
+        <div class="item"><img src={osepImg} alt='U.S. Office of Special Education Programs'></div>
+        <div class="item"><img src={cdeImg} alt='California Department of Education'></div>
+
+      </div>
+      <!--
+        <div >
         <h3>CALI Reads</h3>
         <p>
             The contents of this website were developed under a State Personnel Development Grant (SPDG) from the US Department of Education (CALI/Award #H323A170011), Project Officer, david.guardino@ed.gov. However, the contents of this site not necessarily represent the policy of the US Department of Education and no assumption of endorsement by the Federal government should be made.
         </p>
         
       </div>
-      <div>&nbsp;</div>
-      <!--
-        <div>
-        <h3>Links</h3>
-        <ul>
-          <li><a href="#"><img src={napaImg}></a></li>
-          <li><a href="#"><img src={osepImg}></a></li>
-          <li><a href="#"><img src={napaImg}></a></li>
-
-        </ul>
-      </div>
        -->
+     
+    </div>
+    <div >
+      <p>
+          The contents of this website were developed under a State Personnel Development Grant (SPDG) from the US Department of Education (CALI/Award #H323A170011), Project Officer, david.guardino@ed.gov. However, the contents of this site not necessarily represent the policy of the US Department of Education and no assumption of endorsement by the Federal government should be made.
+      </p>
+      
     </div>
   </footer>
 
@@ -42,7 +46,7 @@ import cdeImg from '../images/CDE_green-border.png';
 
   .footer .container {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: right;
   }
 
@@ -63,7 +67,15 @@ import cdeImg from '../images/CDE_green-border.png';
     text-align: left;
   }
 
-
+  .footer-images{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5px;
+     justify-content: center;
+  }
+  .item {
+     margin: 8px;
+}
 
   @media (max-width: 500px) {
 
