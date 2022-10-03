@@ -13,6 +13,7 @@
   "dependencies": {
     "@astrojs/react": "^1.1.4",
     "astro": "^1.2.8",
+    "astro-icon": "^0.7.3",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   }

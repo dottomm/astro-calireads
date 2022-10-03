@@ -180,10 +180,13 @@ height: 100%;
   width:100%;
   display: flex;
   flex-direction: column;
-  justify-items: centers;
 }
 
 .module-launch .btn{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100px;
   background-color: var(--color-secondary);
 }
 .module-launch .btn:hover{
