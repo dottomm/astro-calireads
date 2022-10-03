@@ -190,3 +190,28 @@ height: 100%;
   background-color: #AED235;
   color:#333;
 }
+
+
+/*details tag style */
+details summary { 
+  cursor: pointer;
+  }
+
+  details summary > * {
+  display: inline;
+  }
+  
+  details{
+  background-color: var(--color-secondary);
+  margin-bottom:.5rem;
+  padding:2rem;
+  }
+  
+  summary{
+  padding:1rem;
+  color:#fff;
+  }
+  
+  details p{
+  color:#fff;
+  }
