@@ -1,11 +1,12 @@
 ---
 import SGQWalkthrough from '/sgqresources/Self-Generated-Questions-digiCOACH-Edition.pdf';
-import ARGImg from '../images/gettyImages/GettyImages-1215184800.jpg';
-import GTGIMg from '../images/gettyImages/GettyImages-658835396.jpg';
-import MorphImg from '../images/gettyImages/GettyImages-941765872.jpg';
+import ARGImg from '../images/gettyImages/GettyImages-121518480075.jpg';
+import GTGIMg from '../images/gettyImages/GTG.jpg';
+import MorphImg from '../images/gettyImages/GettyImages-94176587275.jpg';
 import RecipTechImg from '../images/gettyImages/reciprocalTeaching.jpg';
 import vocabImg from '../images/gettyImages/GettyImages-666835804SGQ.jpg';
-import WBImg from '../images/gettyImages/wordBuilder.jpg';
+import WBImg from '../images/gettyImages/wordBuilder75.jpg';
+import sgqImg from '../images/gettyImages/sgq-overview.jpg';
 export interface Props {
 
 title: string;
@@ -247,7 +248,7 @@ const { title, body, url} = Astro.props as Props;
     <div class="container">
         <h2>Self-Generated Questions Modules</h2>
 
-      
+      <div class='imgHolder'><img src={sgqImg} alt=""></div>
       {sgqData.map(SGQ => (
         <a href={SGQ.url}><h3>{SGQ.title}</h3></a>
        <p>{SGQ.body} </p>
