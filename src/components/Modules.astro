@@ -148,7 +148,7 @@ const { title, body, url} = Astro.props as Props;
   
     <div class="container">
         <h2>Anticipation Reaction Guides Modules</h2>
-     <div class='imgHolder'> <img src={ARGImg} >  </div>
+     <div class='imgHolder'> <img src={ARGImg} alt="">  </div>
       {ARGData.map(ARG => (
         <a href={ARG.url}><h3>{ARG.title}</h3></a>
        <p>{ARG.body} </p>
@@ -173,7 +173,7 @@ const { title, body, url} = Astro.props as Props;
   
     <div class="container">
         <h2>Get The Gist Modules</h2>
-        <div class='imgHolder'> <img src={GTGIMg} >  </div>
+        <div class='imgHolder'> <img src={GTGIMg} alt="">  </div>
       {GTGData.map(GTG => (
         <a href={GTG.url}><h3>{GTG.title}</h3></a>
        <p>{GTG.body} </p>
@@ -196,7 +196,7 @@ const { title, body, url} = Astro.props as Props;
   
     <div class="container">
         <h2>Morphology Modules</h2>
-      <div class='imgHolder'><img src={MorphImg}></div>
+      <div class='imgHolder'><img src={MorphImg} alt=""></div>
       {MorphData.map(morph => (
         <a href={morph.url}><h3>{morph.title}</h3></a>
        <p>{morph.body} </p>
@@ -223,7 +223,7 @@ const { title, body, url} = Astro.props as Props;
   
     <div class="container">
         <h2>Reciprocal Teaching Modules</h2>
-        <div class='imgHolder'> <img src={RecipTechImg}></div>
+        <div class='imgHolder'> <img src={RecipTechImg} alt=""></div>
       {RTData.map(rt => (
         <a href={rt.url}><h3>{rt.title}</h3></a>
        <p>{rt.body} </p>
@@ -270,7 +270,7 @@ const { title, body, url} = Astro.props as Props;
   <section class="vocabModules" id="vocabModules">
     <div class="container">
         <h2>Vocabulary Maps Modules</h2>
-      <div class='imgHolder'><img src={vocabImg}></div>
+      <div class='imgHolder'><img src={vocabImg} alt=""></div>
       {vocabData.map(vocab => (
        <div class='module'> <a href={vocab.url}><h3>{vocab.title}</h3></a>
        <p>{vocab.body} </p></div>
@@ -293,7 +293,7 @@ const { title, body, url} = Astro.props as Props;
   
     <div class="container">
         <h2>Wordbuilder Modules</h2>
-        <div class="imgHolder"><img src={WBImg}></div>
+        <div class="imgHolder"><img src={WBImg} alt=""></div>
       {wbData.map(wordbuilder => (
         <a href={wordbuilder.url}><h3>{wordbuilder.title}</h3></a>
        <p>{wordbuilder.body} </p>
@@ -318,35 +318,7 @@ const { title, body, url} = Astro.props as Props;
 
 
 
-  <style>
-    
-    .container { color: var(--color-secondary);
- }
-
-    .container h3{opacity: 50;}
-
-    .container a {color: var(--color-secondary);
-        text-decoration: underline;
-
-    }
-    
-    .container a:hover{
-        color: #0C7D9E;
-    }
-
-    .resources{
-      border: 1px solid var(--color-secondary);
-    
-      padding: 1em;
-    }
-
-    .column-list a{
-    }
-
-    .column-list {
-  columns: 400px;
-}
-  </style>
+ 
       
       
   
