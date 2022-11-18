@@ -196,7 +196,7 @@ const { title, body, url} = Astro.props as Props;
   
     <div class="container">
         <h2>Morphology Modules</h2>
-      <div class='imgHolder'><img src={MorphImg} alt=""></div>
+      <div class='imgHolder'><img src={MorphImg}></div>
       {MorphData.map(morph => (
         <a href={morph.url}><h3>{morph.title}</h3></a>
        <p>{morph.body} </p>
@@ -223,7 +223,7 @@ const { title, body, url} = Astro.props as Props;
   
     <div class="container">
         <h2>Reciprocal Teaching Modules</h2>
-        <div class='imgHolder'> <img src={RecipTechImg} alt=""></div>
+        <div class='imgHolder'> <img src={RecipTechImg}></div>
       {RTData.map(rt => (
         <a href={rt.url}><h3>{rt.title}</h3></a>
        <p>{rt.body} </p>
@@ -318,7 +318,35 @@ const { title, body, url} = Astro.props as Props;
 
 
 
- 
+  <style>
+    
+    .container { color: var(--color-secondary);
+ }
+
+    .container h3{opacity: 50;}
+
+    .container a {color: var(--color-secondary);
+        text-decoration: underline;
+
+    }
+    
+    .container a:hover{
+        color: #0C7D9E;
+    }
+
+    .resources{
+      border: 1px solid var(--color-secondary);
+    
+      padding: 1em;
+    }
+
+    .column-list a{
+    }
+
+    .column-list {
+  columns: 400px;
+}
+  </style>
       
       
   
