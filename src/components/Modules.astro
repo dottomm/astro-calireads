@@ -175,14 +175,8 @@ const { title, body, url} = Astro.props as Props;
   
     <div class="container">
         <h2>Get The Gist Modules</h2>
-
-        <div class='imgHolder'> 
-          <picture>
-            
-            <img src={GTGIMg} alt="">  
-          </picture>
-          
-        </div>
+        <div class='imgHolder'>  <img src={GTGIMg} alt="">  </div>
+        
       {GTGData.map(GTG => (
         <a href={GTG.url}><h3>{GTG.title}</h3></a>
        <p>{GTG.body} </p>
