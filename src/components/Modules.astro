@@ -1,5 +1,11 @@
 ---
 import SGQWalkthrough from '/sgqresources/Self-Generated-Questions-digiCOACH-Edition.pdf';
+import ARGImg from '../images/gettyImages/GettyImages-1215184800.jpg';
+import GTGIMg from '../images/gettyImages/GettyImages-658835396.jpg';
+import MorphImg from '../images/gettyImages/GettyImages-941765872.jpg';
+import RecipTechImg from '../images/gettyImages/reciprocalTeaching.jpg';
+import vocabImg from '../images/gettyImages/GettyImages-666835804SGQ.jpg';
+import WBImg from '../images/gettyImages/wordBuilder.jpg';
 export interface Props {
 
 title: string;
@@ -8,7 +14,7 @@ url: URL;
 }
 
 const ARGData =[
-    {title: 'AR Guides Overview', body: 'This course provides you with an overview of Anticipation-Reaction Guides (AR Guides), a tool designed to support students’ reading comprehension through a set of anticipatory statements used Before, During, and After reading.', url: 'https://calireads.org/modules/ARGuides/overview-of-anticipation-reaction-guides/content/'},
+    {title: 'AR Guides Overview', body: 'This course provides you with an overview of Anticipation-Reaction Guides (AR Guides), a tool designed to support students’ reading comprehension through a set of anticipatory statements used Before, During, and After reading.',  url: 'https://calireads.org/modules/ARGuides/overview-of-anticipation-reaction-guides/content/'},
     {title: 'Instructional Steps for AR Guides', body: 'This course demonstrates the Instructional Steps for teaching students to use Anticipation-Reaction Guides Before, During, and After reading.', url: 'https://calireads.org/modules/ARGuides/instructional-steps-for-anticipation-reaction-guides/content/'},
     {title: 'Remote Learning with AR Guides', body: 'This course provides technological supports for using AR Guides during remote instruction. Synchonous and asynchronous options are included.', url: 'https://www.calireads.org/anticipation-reaction-support-guides/'}
 ]
@@ -137,16 +143,18 @@ const wbResources =[
 const { title, body, url} = Astro.props as Props;
 
 ---
+
 <section class="ARGuides" id="ARGuides">
   
     <div class="container">
         <h2>Anticipation Reaction Guides Modules</h2>
-      
+     <div class='imgHolder'> <img src={ARGImg} >  </div>
       {ARGData.map(ARG => (
         <a href={ARG.url}><h3>{ARG.title}</h3></a>
        <p>{ARG.body} </p>
        
       ))}
+    
       <div class='resources'>
         <h3 >Additional Anticipation Reaction Guides Resources</h3>
         <ul class=""> 
@@ -165,7 +173,7 @@ const { title, body, url} = Astro.props as Props;
   
     <div class="container">
         <h2>Get The Gist Modules</h2>
-      
+        <div class='imgHolder'> <img src={GTGIMg} >  </div>
       {GTGData.map(GTG => (
         <a href={GTG.url}><h3>{GTG.title}</h3></a>
        <p>{GTG.body} </p>
@@ -188,7 +196,7 @@ const { title, body, url} = Astro.props as Props;
   
     <div class="container">
         <h2>Morphology Modules</h2>
-      
+      <div class='imgHolder'><img src={MorphImg}></div>
       {MorphData.map(morph => (
         <a href={morph.url}><h3>{morph.title}</h3></a>
        <p>{morph.body} </p>
@@ -215,7 +223,7 @@ const { title, body, url} = Astro.props as Props;
   
     <div class="container">
         <h2>Reciprocal Teaching Modules</h2>
-      
+        <div class='imgHolder'> <img src={RecipTechImg}></div>
       {RTData.map(rt => (
         <a href={rt.url}><h3>{rt.title}</h3></a>
        <p>{rt.body} </p>
@@ -262,7 +270,7 @@ const { title, body, url} = Astro.props as Props;
   <section class="vocabModules" id="vocabModules">
     <div class="container">
         <h2>Vocabulary Maps Modules</h2>
-      
+      <div class='imgHolder'><img src={vocabImg}></div>
       {vocabData.map(vocab => (
        <div class='module'> <a href={vocab.url}><h3>{vocab.title}</h3></a>
        <p>{vocab.body} </p></div>
@@ -285,7 +293,7 @@ const { title, body, url} = Astro.props as Props;
   
     <div class="container">
         <h2>Wordbuilder Modules</h2>
-      
+        <div class="imgHolder"><img src={WBImg}></div>
       {wbData.map(wordbuilder => (
         <a href={wordbuilder.url}><h3>{wordbuilder.title}</h3></a>
        <p>{wordbuilder.body} </p>
