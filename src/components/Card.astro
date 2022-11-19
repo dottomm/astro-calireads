@@ -18,7 +18,7 @@ const { title, body, url, dark = false } = Astro.props as Props
 <style>
 
 .card {
-  background: #fff;
+  background: var(--color-primary);
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -26,16 +26,18 @@ const { title, body, url, dark = false } = Astro.props as Props
 }
 
 .card a {
-  color:#fff;
+  color:var(--color-primary);
   text-decoration: underline;
 }
 
 .card a:hover{
-  color:#AED135;
+  color: var(--color-accent);
 }
 
 .dark{
     background: var(--color-secondary);
-    color:#fff;
+    color: var(--color-primary);
 }
+
+
 </style>

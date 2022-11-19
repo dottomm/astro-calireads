@@ -1,0 +1,26 @@
+---
+export interface Props {
+
+id: string
+title: string;
+src: string
+url: string;
+open?: boolean;
+dark?: boolean;
+}
+
+const { id, open, title, src, url, dark = false } = Astro.props as Props
+---
+
+<details  {open}>
+    <summary >
+        <h3>{title}</h3>
+    </summary>
+    <div class='webinar'>
+    <p><iframe id={id} 
+        title={title} 
+        src={src} 
+        width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></p>
+        <p><a href={url}>{title}</a> from <a href={url}>CALI Reads</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+    </div>
+  </details>

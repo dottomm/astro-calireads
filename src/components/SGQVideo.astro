@@ -1,0 +1,21 @@
+---
+
+import Detail from './Detail.astro';
+
+const SGQVideo = [
+    { id: 'sgqVid1', open: true, title: 'Purpose of Level One Questions', src:'https://player.vimeo.com/video/312770749?h=4c2a96ad12?enablejsapi=1', url: 'https://vimeo.com/312770749'},
+    { id: 'sgqVid2', open: false, title: 'Level Two Questions Small Group', src: 'https://player.vimeo.com/video/312784541?h=d592bbc651', url: 'https://vimeo.com/312784541'},
+    { id: 'sgqVid3', open: false, title: 'Introducing Level Three Questions', src: 'https://player.vimeo.com/video/312785865?h=4ac48b5bcd', url: 'https://vimeo.com/312785865'},
+    { id: 'sgqVid4', open: false, title: 'Level Three Modeling', src: 'https://player.vimeo.com/video/312791822?h=afebd3670a', url:'https://vimeo.com/312791822'},
+    { id: 'sgqVid5', open: false, title: 'Cloze Reading & Building Academic Vocabulary', src: 'https://player.vimeo.com/video/312793797?h=aab2ee965a', url: 'https://vimeo.com/312791822'},
+   
+];
+---
+
+
+      {SGQVideo.map(video => (
+       <Detail open={video.open} dark={true} id={video.id} title={video.title}  url={video.url} src={video.src}  client:visible  />
+      ))}
+
+
+  
