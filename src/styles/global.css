@@ -187,11 +187,10 @@ section{
 }
 
 .handout{
-  
   display: flex;
   flex-direction: column;
- align-items: center;
- width: 100%;
+  align-items: center;
+  width: 100%;
 }
 
 .handout img{
@@ -208,10 +207,10 @@ section{
 }
 .webinar iframe{
   position: absolute;
-top: 0;
-left: 0;
-width: 100%;
-height: 100%;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 .module-launch{
@@ -229,11 +228,11 @@ height: 100%;
   background-color: var(--color-secondary);
 }
 .module-launch .btn:hover{
-  background-color: #AED235;
+  background-color: var(--color-accent);
   color:#333;
 }
 .resources{
-  background-color: #fff;
+  background-color: var(--color-primary);
   padding: 2ch;
 
 }
@@ -283,9 +282,9 @@ details summary {
   
   summary{
   padding:1rem;
-  color:#fff;
+  color: var(--color-primary);
   }
   
   details p{
-  color:#fff;
+    color: var(--color-primary);
   }
