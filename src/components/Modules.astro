@@ -1,9 +1,11 @@
 ---
 import SGQWalkthrough from '/sgqresources/Self-Generated-Questions-digiCOACH-Edition.pdf';
 import ARGImg from '../images/gettyImages/GettyImages-121518480075.jpg';
+import ARGSmall from '../images/gettyImages/ARGSmall.jpg';
 import GTGIMg from '../images/gettyImages/GTG75.jpg';
 import GTGsm from '../images/gettyImages/GTGsm.jpg';
 import MorphImg from '../images/gettyImages/GettyImages-94176587275.jpg';
+import MorphSmall from '../images/gettyImages/MorphSmall.jpg';
 import RecipTechImg from '../images/gettyImages/reciprocalTeaching.jpg';
 import vocabImg from '../images/gettyImages/GettyImages-666835804SGQ.jpg';
 import WBImg from '../images/gettyImages/wordBuilder75.jpg';
@@ -393,7 +395,10 @@ const { title, body, url} = Astro.props as Props;
   
     <div class="container">
         <h2>Anticipation Reaction Guides Modules</h2>
-     <div class='imgHolder'> <img src={ARGImg} alt="">  </div>
+     <div class='imgHolder'> 
+      <img class='logos' src={ARGImg} alt="">
+      <img class='logos-small' src={ARGSmall} alt="">
+    </div>
       {ARGData.map(ARG => (
         <a href={ARG.url}><h3>{ARG.title}</h3></a>
        <p>{ARG.body} </p>
@@ -445,7 +450,10 @@ const { title, body, url} = Astro.props as Props;
   
     <div class="container">
         <h2>Morphology Modules</h2>
-      <div class='imgHolder'><img src={MorphImg} alt=""></div>
+      <div class='imgHolder'>
+        <img class='logos' src={MorphImg} alt="">
+        <img class='logos-small' src={MorphSmall} alt="">
+      </div>
       {MorphData.map(morph => (
         <a href={morph.url}><h3>{morph.title}</h3></a>
        <p>{morph.body} </p>

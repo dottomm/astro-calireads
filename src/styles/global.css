@@ -132,7 +132,7 @@
       display: none;
     }
     section{
-      min-width: 100%;
+      min-width: 600px;
     }
    /*
     :root {
@@ -142,7 +142,7 @@
     */
     .imgHolder{
       width:100%;
-      display: grid;
+      display: inline-block;
       overflow:visible;
     }
   }
