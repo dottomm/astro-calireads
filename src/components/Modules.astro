@@ -7,9 +7,13 @@ import GTGsm from '../images/gettyImages/GTGsm.jpg';
 import MorphImg from '../images/gettyImages/GettyImages-94176587275.jpg';
 import MorphSmall from '../images/gettyImages/MorphSmall.jpg';
 import RecipTechImg from '../images/gettyImages/reciprocalTeaching.jpg';
-import vocabImg from '../images/gettyImages/GettyImages-666835804SGQ.jpg';
-import WBImg from '../images/gettyImages/wordBuilder75.jpg';
+import RTSmall from '../images/gettyImages/reciprocalTeachingSmall.jpg';
 import sgqImg from '../images/gettyImages/sgq-overview.jpg';
+import SGQSmall from '../images/gettyImages/sgq-overview-small.jpg';
+import vocabImg from '../images/gettyImages/GettyImages-666835804SGQ.jpg';
+import vocabSmall from '../images/gettyImages/vocabImgSmall.jpg';
+import WBImg from '../images/gettyImages/wordBuilder75.jpg';
+import WBSmall from '../images/gettyImages/wordBuilder-small.jpg';
 export interface Props {
 
 title: string;
@@ -480,7 +484,10 @@ const { title, body, url} = Astro.props as Props;
   
     <div class="container">
         <h2>Reciprocal Teaching Modules</h2>
-        <div class='imgHolder'> <img src={RecipTechImg} alt=""></div>
+        <div class='imgHolder'> 
+          <img class='logos' src={RecipTechImg} alt="">
+          <img class='logos-small' src={RTSmall} alt="">
+        </div>
       {RTData.map(rt => (
         <a href={rt.url}><h3>{rt.title}</h3></a>
        <p>{rt.body} </p>
@@ -506,7 +513,7 @@ const { title, body, url} = Astro.props as Props;
 
       <div class='imgHolder'>
         <img class='logos' src={sgqImg}  alt="">
-        <img class='logos-small' src={sgqImg}  alt="">
+        <img class='logos-small' src={SGQSmall}  alt="">
       </div>
       {sgqData.map(SGQ => (
         <a href={SGQ.url}><h3>{SGQ.title}</h3></a>
@@ -530,7 +537,10 @@ const { title, body, url} = Astro.props as Props;
   <section class="vocabModules" id="vocabModules">
     <div class="container">
         <h2>Vocabulary Maps Modules</h2>
-      <div class='imgHolder'><img src={vocabImg} alt=""></div>
+      <div class='imgHolder'>
+        <img class='logos' src={vocabImg} alt="">
+        <img class='logos-small' src={vocabSmall} alt="">
+      </div>
       {vocabData.map(vocab => (
        <div class='module'> <a href={vocab.url}><h3>{vocab.title}</h3></a>
        <p>{vocab.body} </p></div>
@@ -553,7 +563,10 @@ const { title, body, url} = Astro.props as Props;
   
     <div class="container">
         <h2>Wordbuilder Modules</h2>
-        <div class="imgHolder"><img src={WBImg} alt=""></div>
+        <div class="imgHolder">
+          <img class='logos' src={WBImg} alt="">
+          <img class='logos-small' src={WBSmall} alt="">
+        </div>
       {wbData.map(wordbuilder => (
         <a href={wordbuilder.url}><h3>{wordbuilder.title}</h3></a>
        <p>{wordbuilder.body} </p>
