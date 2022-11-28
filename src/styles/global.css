@@ -131,9 +131,11 @@
     .logos {
       display: none;
     }
+    /*
     section{
       min-width: 600px;
     }
+    */
 
     .footer img{
       display: flex;
