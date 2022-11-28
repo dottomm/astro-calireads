@@ -131,8 +131,13 @@
     .logos {
       display: none;
     }
+    :root {
+      --color-accent: #fff;
+      --color-accent-secondary:#fff;
+    }
   }
   
+/*
   @media (max-width: 500px) {
     .logos-small {
       display: block;
@@ -142,6 +147,7 @@
       display: none;
     }
 }
+*/
 
 
 h1,

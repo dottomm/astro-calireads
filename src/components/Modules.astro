@@ -497,8 +497,8 @@ const { title, body, url} = Astro.props as Props;
         <h2>Self-Generated Questions Modules</h2>
 
       <div class='imgHolder'>
-        <img src={sgqImg} alt="">
-        <img src={sgqImg} class='logos-small' alt="">
+        <img class='logos' src={sgqImg}  alt="">
+        <img class='logos-small' src={sgqImg}  alt="">
       </div>
       {sgqData.map(SGQ => (
         <a href={SGQ.url}><h3>{SGQ.title}</h3></a>
