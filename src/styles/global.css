@@ -131,9 +131,19 @@
     .logos {
       display: none;
     }
+    section{
+      min-width: 400px;
+    }
+   /*
     :root {
       --color-accent: #fff;
       --color-accent-secondary:#fff;
+    }
+    */
+    .imgHolder{
+      width:100%;
+      display: grid;
+      overflow:visible;
     }
   }
   
