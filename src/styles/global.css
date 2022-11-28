@@ -134,6 +134,10 @@
     section{
       min-width: 600px;
     }
+
+    .footer img{
+      display: flex;
+    }
    /*
     :root {
       --color-accent: #fff;
