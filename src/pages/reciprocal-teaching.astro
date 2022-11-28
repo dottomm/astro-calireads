@@ -1,0 +1,22 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+
+import Showcase from '../components/Showcase.astro';
+import ARGuideTemplate from '../images/AR_Guide_Template-980x729.png';
+import ARGuidePDF from '/public/pdfs/AR-Guide-Template.pdf';
+import digiCoachWalkthrough from '../images/digi-Walkthrough.png';
+import { Icon } from 'astro-icon';
+import RTResources from '../components/RTResources.astro';
+import RTVideo from '../components/RTVideo.astro';
+
+---
+<Layout title="Reciprocal Teaching">
+    <Showcase showExtra={false} />
+    <section class="page-content">
+        <div class="container">
+          
+                <h2 >Anticipation Reaction Guides</h2>
+                <RTResources />
+
+                <RTVideo />

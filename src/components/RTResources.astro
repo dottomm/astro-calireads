@@ -1,0 +1,16 @@
+---
+import Detail from './Resource.astro';
+import Resource from '../components/Resource.astro';
+import rtResource from '../data/rtResources.json';
+
+---
+<div class='section-title'>
+    <h2>Self-Generated Questions Module Resources</h2>
+</div>
+<div class='section-desc'>
+<ul class='resource-stack'>
+{rtResource.map(resource => (
+    <Resource title={resource.title}  url={resource.url}  />
+   ))}
+</ul>
+</div>

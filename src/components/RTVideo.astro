@@ -1,0 +1,11 @@
+---
+import Detail from './Detail.astro';
+
+import rtVideo from '../data/rtVideo.json';
+
+---
+
+
+{rtVideo.map(video => (
+    <Detail open={video.open} dark={true} id={video.id} title={video.title}  url={video.url} src={video.src}  client:visible  />
+   ))}

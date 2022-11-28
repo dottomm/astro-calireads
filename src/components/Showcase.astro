@@ -1,6 +1,7 @@
 ---
 import hero from '../images/front-page.png';
 import heroSmall from '../images/front-pageSmaller.png';
+import heroSmallest from '../images/front-pageSmallest.jpg';
 
 export interface Props {
 heading?: string;
@@ -26,8 +27,9 @@ showExtra = true } = Astro.props as Props;
     {showExtra && <> 
     
     <div class="showcase-img">
-      <img class="logos" src={hero} width="1100px" height="478px" alt="Helping Middle School Improve Student Outcomes" />
-    <img class="logos-small" src={heroSmall} width="500px" height="217px" alt="Helping Middle School Improve Student Outcomes" />
+      <img class="logos" src={hero} alt="Helping Middle School Improve Student Outcomes" />
+      <img class="logos-small" src={heroSmallest}  alt="Helping Middle School Improve Student Outcomes" />
+      
     </div>
 
     <p class="showcase-demo">
