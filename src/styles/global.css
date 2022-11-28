@@ -132,7 +132,7 @@
       display: none;
     }
     section{
-      min-width: 400px;
+      min-width: 100%;
     }
    /*
     :root {
