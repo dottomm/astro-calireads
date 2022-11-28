@@ -173,7 +173,10 @@ h2 {
 /*Custom Global Styles*/
 section{
   width: 100%;
-  padding: 6ch;
+  padding-top: 6ch;
+  padding-bottom: 6ch;
+  padding-left: 3ch;
+  padding-right: 3ch;
 }
 .section-title{
   border-radius: 15px 15px 0px 0px; 
