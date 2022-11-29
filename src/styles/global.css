@@ -105,11 +105,11 @@
   }
 
 
-  /* Page Content */
+  /* Page Content 
 .page-content {
- /* margin: 20px 0;*/
+ /* margin: 20px 0;
 }
-
+*/
 .page-content h2,
 .page-content h3 {
   margin: 20px 0;
@@ -125,7 +125,7 @@
 
   @media (max-width: 1100px) {
     .logos-small {
-      width: 100vh;
+      
       display: block;
       margin: auto;
     }
