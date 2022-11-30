@@ -315,3 +315,9 @@ details summary {
   details p{
     color: var(--color-primary);
   }
+
+
+    .heading{
+      padding-right: 1em;
+    font-size:1.4em;
+  }

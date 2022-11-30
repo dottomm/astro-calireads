@@ -1,27 +1,154 @@
 [
    
     {
-        "title":"Download all Summarizing Resources", 
+        "resourceType": "heading",
+        "category": "General",
+        "title":"Download all General Resources", 
         "url":"https://www.calireads.org/bridge-content/reciprocalteaching/reciprocalTeaching-summarizing-Zip.php"
     },
+  
     {
+        "resourceType": "resourceItem",
         "title":"Teacher Tips for Summarizing",
         "url": "https://calireads.org/bridge-content/reciprocalteaching/summarizing/Teacher_Tips_for_Summarizing.pdf"
     },
     {
+        "resourceType": "resourceItem",
         "title": "Summarizing Classroom Instruction PPT",
         "url": "https://calireads.org/bridge-content/reciprocalteaching/summarizing/Summarizing_Classroom_Instruction.pptx"
     },
     {
+        "resourceType": "resourceItem",
         "title": "Warm-Up Summarizing Week 1",
         "url": "https://calireads.org/bridge-content/reciprocalteaching/summarizing/Warm_up_Summarizing_Week_1.pdf"
     },
     {
+        
+        "resourceType": "resourceItem",
         "title": "Four Square Week 1 PDF",
         "url": "https://calireads.org/bridge-content/reciprocalteaching/summarizing/Four_Square_Week_1.pdf"
     },
     {
+        "resourceType": "resourceItem",
         "title": "Four Square Week 1 Docx",
         "url": "https://calireads.org/bridge-content/reciprocalteaching/summarizing/Four_Square_Week_1.docx"
+    },
+    {
+        "resourceType":"heading",
+        "category": "Summarizing",
+        "title": "Download all Summarizing Resources",
+        "url": "https://www.calireads.org/bridge-content/reciprocalteaching/reciprocalTeaching-summarizing-Zip.php"
+    },
+    {   
+        "resourceType": "resourceItem",
+        "title": "Teacher Tips for Summarizing",
+        "url": "https://calireads.org/bridge-content/reciprocalteaching/summarizing/Teacher_Tips_for_Summarizing.pdf"
+    },
+    {
+        "resourceType": "resourceItem",
+        "title": "Summarizing Classroom Instruction PPT",
+        "url": "https://calireads.org/bridge-content/reciprocalteaching/summarizing/Summarizing_Classroom_Instruction.pptx"
+        
+    },
+    {
+        "resourceType": "resourceItem",
+        "title": "Warm-Up Summarizing Week 1",
+        "url": "https://calireads.org/bridge-content/reciprocalteaching/summarizing/Warm_up_Summarizing_Week_1.pdf"
+    },
+    {
+        "resourceType": "resourceItem",
+        "title": "Four Square Week 1 PDF",
+        "url": "Four Square Week 1 Docx"
+    },
+    {
+        "resourceType":"heading",
+        "category": "Questioning",
+        "title": "Download all Questioning Resources",
+        "url": "https://www.calireads.org/bridge-content/reciprocalteaching/reciprocalTeaching-questioning-Zip.php"
+    },
+    {
+        "resourceType": "resourceItem",
+        "title": "Teacher Tips for Questioning",
+        "url": "https://calireads.org/bridge-content/reciprocalteaching/questioning/Questioning_Classroom_Instruction.pptx"
+    },
+    {
+        "resourceType": "resourceItem",
+        "title": "Warm-Up Questioning Week 2",
+        "url": "https://calireads.org/bridge-content/reciprocalteaching/questioning/Warm_up_Questioning_Week_2.pdf"
+    },
+    {
+        "resourceType": "resourceItem",
+        "title": "Four Square Week 2 PDF",
+        "url": "https://calireads.org/bridge-content/reciprocalteaching/questioning/Four_Square_Week_2.pdf"
+    },
+    {
+        "resourceType": "resourceItem",
+        "title": "Four Square Week 2 DOCX",
+        "url": "https://calireads.org/bridge-content/reciprocalteaching/questioning/Four_Square_Week_2.docx"
+
+    },
+    {
+        "resourceType":"heading",
+        "category":"Predicting",
+        "title": "Download all Predicting Resources",
+        "url": "https://www.calireads.org/bridge-content/reciprocalteaching/reciprocalTeaching-predicting-Zip.php"
+    },
+    {
+        "resourceType":"resourceItem",
+        "title":"Teacher Tips for Predicting",
+        "url": "https://calireads.org/bridge-content/reciprocalteaching/predicting/Teacher_Tips_for_Predicting.pdf"
+    },
+    {
+        "resourceType" :"resourceItem",
+        "title": "Predicting Classroom Instruction PPT",
+        "url": "https://calireads.org/bridge-content/reciprocalteaching/predicting/Predicting_Classroom_Instruction.pptx"
+
+    },
+    {
+        "resourceType":"resourceItem",
+        "title":"Warm-Up Predicting Week 3",
+        "url": "https://calireads.org/bridge-content/reciprocalteaching/predicting/Warm_up_Predicting_Week_3.pdf"
+    },
+    {
+        "resourceType":"resourceItem",
+        "title": "Four Square Week 3 PDF",
+        "url" : "https://calireads.org/bridge-content/reciprocalteaching/predicting/Four_Square_Week_3.pdf"
+    },
+    {
+        "resourceType":"resourceItem",
+        "title": "Four Square Week 3 DOCX",
+        "url": "https://calireads.org/bridge-content/reciprocalteaching/predicting/Four_Square_Week_3.docx"
+    },
+    {
+        "resourceType":"resourceItem",
+        "title": "Thinking About How We Think",
+        "url" : "https://calireads.org/bridge-content/reciprocalteaching/predicting/Thinking_About_How_We_Think.pdf"
+    },
+    {
+        "category":"Clarifying",
+        "resourceType":"heading",
+        "title" : "Download all Clarifying Resources",
+        "url" : "https://www.calireads.org/bridge-content/reciprocalteaching/reciprocalTeaching-clarifying-Zip.php"
+    },
+    {
+        "resourceType":"resourceItem",
+        "title": "Teacher Tips for Clarifying",
+        "url" : "https://calireads.org/bridge-content/reciprocalteaching/predicting/Thinking_About_How_We_Think.pdf"
+    },
+    {
+        "resourceType":"resourceItem",
+        "title": "Clarifying Classroom Instruction PPT",
+        "url": "https://calireads.org/bridge-content/reciprocalteaching/clarifying/Clarifying_Classroom_Instruction.pptx"
+    },
+    {
+        "resourceType":"resourceItem",
+        "title": "Warm-Up Clarifying Week 4",
+        "url": "https://calireads.org/bridge-content/reciprocalteaching/clarifying/Warm_up_Clarifying_Week_4.pdf"
+    },
+    {
+        "resourceType" :"resourceItem",
+        "title" : "Warm-Up Putting it all Together Week 5",
+        "url" : "https://calireads.org/bridge-content/reciprocalteaching/clarifying/Warm_up_PuttingItAllTogether_Week_5.pdf"
+
     }
 ]

@@ -4,13 +4,14 @@ import Resource from '../components/Resource.astro';
 import rtResource from '../data/rtResources.json';
 
 ---
+
 <div class='section-title'>
-    <h2>Self-Generated Questions Module Resources</h2>
+    <h2>Reciprocal Teaching Module Resources</h2>
 </div>
 <div class='section-desc'>
 <ul class='resource-stack'>
 {rtResource.map(resource => (
-    <Resource title={resource.title}  url={resource.url}  />
+    <Resource resourceType={resource.resourceType} category={resource.category} title={resource.title}  url={resource.url}  />
    ))}
 </ul>
 </div>

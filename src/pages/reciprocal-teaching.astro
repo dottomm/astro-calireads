@@ -3,9 +3,7 @@ import Layout from '../layouts/Layout.astro';
 
 
 import Showcase from '../components/Showcase.astro';
-import ARGuideTemplate from '../images/AR_Guide_Template-980x729.png';
-import ARGuidePDF from '/public/pdfs/AR-Guide-Template.pdf';
-import digiCoachWalkthrough from '../images/digi-Walkthrough.png';
+import digiCoach from '/pdfs/CALIReads-ReciprocalTeaching.pdf';
 import { Icon } from 'astro-icon';
 import RTResources from '../components/RTResources.astro';
 import RTVideo from '../components/RTVideo.astro';
@@ -16,7 +14,39 @@ import RTVideo from '../components/RTVideo.astro';
     <section class="page-content">
         <div class="container">
           
-                <h2 >Anticipation Reaction Guides</h2>
-                <RTResources />
-
-                <RTVideo />
+                <h2 >Reciprocal Teaching</h2>
+                    <p>Reciprocal Teaching (RT) is a cooperative learning routine that incorporates four high leverage reading comprehension strategies: Predicting, Questioning, Clarifying, and Summarizing (Palinscar & Brown, 1984). When using RT, students participate in teacher scaffolded, student-led discussion groups around a grade level text. The Reciprocal Teaching routine equips students with a procedure for reading complex text that deepens their understanding and learning. RT also fosters active engagement and independent reading. It is a widely researched reading comprehension routine that has demonstrated strong efficacy for elementary and adolescent students, across subject area texts, and with various student populations such as general education, at risk, special education and English language learners.</p>
+                    <div class='module-launch'>
+                        <a href='/modules#ReciprocalTeaching' class='btn'>
+                            <h2>Go To Reciprocal Teaching Literacy Modules</h2> &nbsp;<Icon name="jam:arrow-circle-right" width='40'/></a>
+                    </div>
+                    <div class='section-title'>
+                        <h2>Reciprocal Training Webinar</h2>
+                    </div>
+                    
+                    <div class='section-desc'>
+                        <div class='webinar'>
+                            <iframe src="https://player.vimeo.com/video/689764777?h=c9a575f49c"  frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+                           
+                        </div>
+                    </div>
+                   
+                    
+                    
+                <div class='section-title'>
+                    <h2>Preview Reciprocal Teaching Demonstration Videos</h2>
+                </div>
+                    <div class='section-description'>
+                        <RTVideo />
+                    </div>
+                    <div class='section-title'>
+                        <h2>digiCoach Walkthrough</h2>
+                    </div>
+                    <div class='section-desc'>
+                        <a href='https://www.calireads.org/pdfs/CALIReads-ReciprocalTeaching.pdf' target="_blank" aria-label=' Walkthrough Tool'>
+                         <img class='handout' src={digiCoach} alt=""></a>
+                    </div>
+                    <RTResources />
+                </div>
+                </section>
+                </Layout>

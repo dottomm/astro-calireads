@@ -1,14 +1,19 @@
 ---
 export interface Props {
 
-
+category:string;
+resourceType:string;
 title: string;
 url: string;
 
 }
 
-const {title, url} = Astro.props as Props
+const {resourceType, category,title, url} = Astro.props as Props
 ---
-    
-        <li><a href={url} title={title} target='_blank'>{title}</a>
+     <span class={resourceType}>  {category}</span>
+        <li class={resourceType}><a href={url} title={title} target='_blank'>{title}</a>
         </li>
+
+
+
+     
