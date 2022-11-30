@@ -1,0 +1,74 @@
+---
+import Layout from '../layouts/Layout.astro';
+import walkthrough from '/pdfs/CALIReads_GettheGist.pdf';
+import Showcase from '../components/Showcase.astro';
+
+import { Icon } from 'astro-icon';
+
+---
+
+<Layout title="Get The Gist">
+    <Showcase showExtra={false} />
+    <section class="page-content">
+        <div class="container">
+          
+            <h2 >Get The Gist Strategy</h2>
+            <p><strong>What:</strong> Get the Gist is a part of the multi-component intervention Collaborative Strategic Reading (CSR), developed by Klingner and colleagues (1998). The CALI Reads training module focuses on the Get the Gist strategy within CSR. The Get the Gist Strategy teaches students a systematic process for creating a Gist statement for a text (or sections of a text) using the following 3 steps:</p>
+                <ol>
+                    <li>Name the who or the what</li>
+                    <li>Tell the most important thing about the who or what</li>
+                    <li>Say it in about 10 words</li>
+                </ol>
+            <p><strong>Why: </strong>The Get the Gist strategy teaches students to monitor their comprehension during reading by thinking about the text’s main focus and supporting details, which supports students’ overall reading comprehension and content area learning. The research base of CSR demonstrates strong reading comprehension effects across different adolescent populations: students with learning disabilities, limited English proficient students, average and high achieving students (Klingner & Vaughn, 1999).</p>
+
+             <div class='module-launch'>
+                <a href='/modules#ARGuides' class='btn'>
+                    <h2>Go To Get The Gist Modules</h2> &nbsp;<Icon name="jam:arrow-circle-right" width='40'/></a>
+            </div>
+
+            <div class='section-title'>
+                <h2>Get The Gist Training Webinar</h2>
+            </div>
+            <div class='section-desc'>
+                <p>Dr. Deborah Reed demonstrates how to support middle school reading comprehension by teaching students to Get the Gist during reading. Students use the Get the Gist strategy across a text (or sections of the text) to:</p>
+
+                <h3>Participant Outcomes</h3>
+                <ul>
+                    <li>Name the who or the what.</li>
+                    <li>Tell the most important thing about the who or what.</li>
+                    <li>Say it in about 10 words.</li>
+                </ul>
+                    <div class='webinar'>
+                        <iframe src="https://player.vimeo.com/video/503144719?h=5d0c500d59" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+
+                <div class='section-title'>
+                    <h2>Get the Gist Walkthrough Tool</h2>
+                </div>
+                <div class='section-desc'>
+                    <img class='handout' src={walkthrough} alt="">
+                </div>
+                <div class='section-title'>
+                    <h2>Get The Gist References</h2>
+                </div>
+                <div class='section-desc'>
+                    <p>Boardman, A. G., Klingner, J. K., Buckley, P., Annamma, S., &amp; Lasser, C. J. (2015). The efficacy of Collaborative Strategic Reading in middle school science and social studies classes. Reading and Writing, 28(9), 1257-1283.</p>
+                    <p>The IRIS Center. (2008). CSR: A reading comprehension strategy. Retrieved from <a href="https://iris.peabody.vanderbilt.edu/module/csr/">https://iris.peabody.vanderbilt.edu/module/csr/</a>
+                    </p>
+                    <p>Klinger, J., Vaughn, S., Boardman, A., Swanson, E. (2012). Now we get it! Jossey-Bass. </p>
+                    <p>Klingner, J. K., &amp; Vaughn, S. (1998). Using collaborative strategic reading. Teaching exceptional children, 30(6), 32-37. </p>
+                    <p>Klingner J. &amp; Vaughn S. (1999). Promoting reading comprehension, content learning, and English acquisition through collaborative strategic reading (CSR). The Reading Teacher, 52. No. 7</p>
+                    <p>Klingner, J. K., Vaughn, S., &amp; Boardman, A. G. (2015). Teaching reading comprehension to students with learning difficulties, 2/E. Guilford Publications.</p>
+                    <p>Vaughn, S., &amp; Kettman Klingner, J. (1999). Teaching reading comprehension through collaborative strategic reading. Intervention in school and clinic, 34(5), 284-292. </p>
+                </div>
+            </div>
+        </section>
+
+</Layout>
+
+<style>
+    ol{
+        margin-left: 3em;
+    }
+</style>
