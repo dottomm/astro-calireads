@@ -4,6 +4,7 @@ import Layout from '../layouts/Layout.astro';
 
 import Showcase from '../components/Showcase.astro';
 import digiCoach from '/pdfs/CALIReads-ReciprocalTeaching.pdf';
+import digiCoachImg from '../images/CALIReads-ReciprocalTeaching.jpg';
 import { Icon } from 'astro-icon';
 import RTResources from '../components/RTResources.astro';
 import RTVideo from '../components/RTVideo.astro';
@@ -43,8 +44,8 @@ import RTVideo from '../components/RTVideo.astro';
                         <h2>digiCoach Walkthrough</h2>
                     </div>
                     <div class='section-desc'>
-                        <a href='https://www.calireads.org/pdfs/CALIReads-ReciprocalTeaching.pdf' target="_blank" aria-label=' Walkthrough Tool'>
-                         <img class='handout' src={digiCoach} alt=""></a>
+                        <a href={digiCoach} target="_blank" aria-label=' Walkthrough Tool'>
+                         <img class='handout' src={digiCoachImg} alt=""></a>
                     </div>
                     <RTResources />
                 </div>

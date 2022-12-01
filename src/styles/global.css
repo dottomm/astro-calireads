@@ -17,8 +17,14 @@
     font-size: 100%;
     font: inherit;
     vertical-align: baseline;
+    display: flex;
+    flex-direction: column;
   
     
+}
+
+.skipLink{
+ color: var(--color-primary);
 }
 
   *,
@@ -105,11 +111,14 @@
   }
 
 
-  /* Page Content 
+  /* Page Content */
 .page-content {
- /* margin: 20px 0;
+margin: 40px auto;
+max-width: 1220px;
+line-height: 1.7;
+padding:0 10px;
 }
-*/
+
 .page-content h2,
 .page-content h3 {
   margin: 20px 0;
@@ -149,8 +158,9 @@
     */
     .imgHolder{
       width:100%;
+      height: auto;
       display: inline-block;
-      overflow:visible;
+      overflow:hidden;
     }
   }
   
