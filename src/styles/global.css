@@ -147,6 +147,19 @@ padding:0 10px;
     }
     */
 
+    .page-content h2,
+.page-content h3 {
+  margin: 15px 0;
+}
+
+.page-content h2 {
+  font-size: 30px;
+}
+
+.page-content h3 {
+  font-size: 20px;
+}
+
     .footer img{
       display: flex;
     }
