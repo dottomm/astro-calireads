@@ -1,0 +1,152 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Showcase from '../components/Showcase.astro';
+import WBVideo from '../components/WBVideo.astro';
+import wbBanner from '../images/wordbuilderApp1.png';
+import ppt from '../images/PPT.png';
+
+import Walkthrough from '../pdfs/CALI-Reads-WordBuilder.pdf';
+import Walkthroughimg from '../images/CALI-Reads-WB_Walkthrough.jpg';
+
+import { Icon } from 'astro-icon';
+
+---
+<Layout title='Wordbuilder'>
+    <Showcase  showExtra={false} />
+    
+    <section class="page-content">
+        <div class="container">
+          <h2>Wordbuilder</h2>
+
+          <div class='wbBanner'>
+            <div>
+                <h3>WordBuilder Intervention is now available FREE in the <a href='https://apple.com/' target="_blank">Apple App Store</a>, the <a href='https://play.google.com/store/apps/details?id=org.napacoe.wordbuilder' target="_blank">Google Play Store</a> & <a href='http://bit.ly/wordbuilder_int' target="_blank">The Amazon Store!</a></h3>
+              </div>
+    
+                <div>
+                    <img src={wbBanner} alt="Wordbuilder App" width='80%' >
+                </div>
+          </div>
+          <div class='section-title'>
+            <h2>The WordBuilder Intervention app</h2>
+          </div>
+          <div class='section-desc'>
+            <p>This three minute video overviews the WordBuilder Intervention app.</p>
+            <p>The WordBuilder Intervention app a free application, is a research-based instructional tool to help adolescent struggling readers break down, build, and spell multisyllabic words. The app is designed for teacher-led, direct instruction delivered in small groups or one-on-one with struggling readers. </p>
+            <div class='webinar'>
+                <iframe src="https://player.vimeo.com/video/355137327?h=28d75e3576" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+            </div>
+                <p><center>Designed by the <a href="https://www.lainterventionproject.com/">LA Intervention Project</a> at California State University, Northridge and development supported through CALI Reads SPDG funds. Free instructional program with videos and “how to” tips available at <a href="http://www.wordbuilderapp.com/">www.wordbuilderapp.com</a></center></p>
+          </div>
+
+          <div class='module-launch'>
+            <a href='/modules#wordbuilder' class='btn'>
+                <h2>Go To WOrdbuilder Modules </h2>&nbsp; 
+                <Icon name="jam:arrow-circle-right" width='40'/>
+            </a>
+        </div>
+        <div class='section-title'>
+            <h2>Remote Learning with WordBuilder</h2>
+        </div>
+        <div class='section-desc'>
+            <p>Reading Coach Lindsay Young demonstrates how to use the app WordBuilder Intervention in a remote learning environment by leveraging various technologies and engagement features of Zoom, Google Platforms, and Quizlet.</p>
+
+            <div class='webinar'>
+                <iframe src="https://player.vimeo.com/video/434855893?h=a08d3b3cd1" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+
+            </div>
+            <h3><a href='https://www.calireads.org/assets/Remote-WordBuilder.pptx'>Remote Learning with WordBuilder Microsoft PowerPoint <img src={ppt} alt=''>Doc 3.8mb
+                Quizlet Word Part Flashcards</a></h3>
+        </div>
+        <div class='section-title'>
+            <h2>Training Webinar</h2>
+        </div>
+        <div class='section-desc'>
+            <p>Reading Coach Lindsay Young demonstrates how to use the app WordBuilder Intervention in a remote learning environment by leveraging various technologies and engagement features of Zoom, Google Platforms, and Quizlet.</p>    
+            <p>Participant Outcomes:</p>
+            <ul>
+                <li>Learn how WordBuilder Intervention can support multisyllabic word reading.</li>
+                <li>Learn how to use WordBuilder Intervention in small group instruction.</li>
+                <li>Learn various technological tips and tools to support Remote Instruction.</li>
+            </ul>
+            <div class='webinar'>
+                <iframe src="https://player.vimeo.com/video/489906201?h=c96e032c4d" width="640" height="400" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+
+            </div>
+        </div>
+
+        <div class='section-title'>
+            <h2>Preview WordBuilder Demonstration Videos</h2>
+        </div>
+        <WBVideo />
+
+        <div class='section-title'>
+            <h2>Rational for using WordBuilder</h2>
+        </div>
+        <div class='section-desc'>
+            <p>By the time students reach middle and high school, they are expected to independently read grade-level, subject-specific textbooks to learn new information. For struggling, adolescent readers, efforts to apply basic phonics to multisyllabic words – the sounds represented by consonants, digraphs, blends and long and short vowels – are often unproductive. This not only causes extreme frustration but can lead students to avoid reading altogether, especially texts containing long, multisyllabic words. Explicit, systematic reading instruction can help students overcome those decoding challenges. WordBuilder Intervention uses sequenced Units to teach students the essential word recognition strategies to tackle multisyllabic word reading and better access the grade level texts they are expected to read.</p>
+        </div>
+
+        <div class='section-title'>
+            <h2>WordBuilder Intervention Tool</h2>
+        </div>
+        <div class='section-desc'>
+            <a href={Walkthrough}><img class='handout' src={Walkthroughimg} alt=""></a>
+        </div>
+
+        <div class='section-title'>
+            <h2>WordBuilder Word Part Cards</h2>
+        </div>
+        <div class='section-desc'>
+            <p>These printable word part cards contain the prefixes, suffixes, and vowel patterns that align with the WordBuilder Scope and Sequence. For each unit, the target prefixes and suffixes are included in the cards. For the vowels and vowel combinations they are sometimes listed in isolation, but more often rime patterns are used, roots that contain the target vowel sound(s), and high frequency non-word syllables that contain the target patterns.</p>
+
+           <div class='wbcards'>
+             <p><a title="Unit 1 Printable Word Part Card" href="https://www.calireads.org/bridge-content/wordbuilder/Unit-1-Short-Vowel-Sounds.pdf">Unit 1</a> | <a title="Unit 2 Printable Word Part Card" href="https://www.calireads.org/bridge-content/wordbuilder/Unit-2-R-Controlled-Vowels.pdf">Unit 2</a> | <a title="Unit 3 Printable Word Part Card" href="https://www.calireads.org/bridge-content/wordbuilder/Unit-3-Long-Vowels-with-Silent-e.pdf">Unit 3</a> | <a title="Unit 4 Printable Word Part Card" href="https://www.calireads.org/bridge-content/wordbuilder/Unit-4-Vowel-Combinations-ai,ay.pdf">Unit 4</a> | <a title="Unit 5 Printable Word Part Card" href="https://www.calireads.org/bridge-content/wordbuilder/Unit-5-Vowel-Combinations-ea,ee.pdf">Unit 5</a> | <a title="Unit 6 Printable Word Part Card" href="https://www.calireads.org/bridge-content/wordbuilder/Unit-6-Vowel-Combinations-ie,igh.pdf">Unit 6</a> | <a title="Unit 7 Printable Word Part Card" href="https://www.calireads.org/bridge-content/wordbuilder/Unit-7-Vowel-Combinations-oa,oe,ow.pdf">Unit 7</a> | <a title="Unit 8 Printable Word Part Card" href="https://www.calireads.org/bridge-content/wordbuilder/Unit-8-Review.pdf">Unit 8</a> | <a title="Unit 9 Printable Word Part Card" href="https://www.calireads.org/bridge-content/wordbuilder/Unit-9-Vowel-Combinations-oi,oy.pdf">Unit 9</a> |<br /><a title="Unit 10 Printable Word Part Card" href="https://www.calireads.org/bridge-content/wordbuilder/Unit-10-Vowel-Combinations-ou,ow.pdf">Unit 10</a> | <a title="Unit 11 Printable Word Part Card" href="https://www.calireads.org/bridge-content/wordbuilder/Unit-11-Vowel-Combinations-au,aw.pdf">Unit 11</a> | <a title="Unit 12 Printable Word Part Card" href="https://www.calireads.org/bridge-content/wordbuilder/Unit-12-Vowel-Combinations-ew,ue.pdf">Unit 12</a> | <a title="Unit 13 Printable Word Part Card" href="https://www.calireads.org/bridge-content/wordbuilder/Unit-13-Vowel-Combination-oo.pdf">Unit 13</a> | <a title="Unit 14 Printable Word Part Card" href="https://www.calireads.org/bridge-content/wordbuilder/Unit-14-Vowel-Review.pdf">Unit 14</a> | <a title="Unit 15 Printable Word Part Card" href="https://www.calireads.org/bridge-content/wordbuilder/Unit-15-Vowel-Review.pdf">Unit 15</a> | <a title="Unit 16 Printable Word Part Card" href="https://www.calireads.org/bridge-content/wordbuilder/Unit-16-Vowel-Review.pdf">Unit 16</a> | <a title="Unit 17 Printable Word Part Card" href="https://www.calireads.org/bridge-content/wordbuilder/Unit-17-Prefix-Review.pdf">Unit 17</a> | <a title="Unit 18 Printable Word Part Card" href="https://www.calireads.org/bridge-content/wordbuilder/Unit-18-Suffix-Review.pdf">Unit 18</a></p>
+           </div>
+
+        </div>
+
+        <div class='section-title'>
+            <h2>Wordbuilder References</h2>
+        </div>
+        <div class='section-desc'>
+            <p class="citation">Archer, A., Gleason, M., &amp; Vachon, V. (Spring, 2003). Decoding and fluency: Foundation skills for struggling older readers. Learning Disability Quarterly, 26, 89-101.</p>
+            <p class="citation">Boardman, A. G., Roberts, G., Vaughn, S., Wexler, J., Murray, C. S., &amp; Kosanovich, M. (2008). Effective instruction for adolescent struggling readers: A practice brief. Portsmouth, NH: RMC Research Corporation, Center on Instruction.</p>
+            <p class="citation">Compton, D. J., Miller, A. C., Elleman, A. M., &amp; Steacy, L. M. (2014). Have we forsaken reading theory in the name of “quick fix” interventions for children with reading disability? Scientific Studies of Reading, 18, 55-73.</p>
+            <p class="citation">Nation K., &amp; Snowling, M. J. (1998). Individual differences in contextual facilitation: Evidence from dyslexia and poor reading comprehension. Child Development, 69(4), 996-1011.</p>
+            <p class="citation">Rupley, W. H., Blair, T. R., &amp; Nichols, W. D. (2009). Effective reading instruction for struggling readers: The role of direct/explicit teaching. Reading &amp; Writing Quarterly, 25, 125-138.</p>
+
+	 </div>
+
+     <div class='section-title'>
+        <h2>Relevant Common Core Anchor Standard</h2>
+     </div>
+     <div class='section-desc'>
+        <ul >
+            <li>Know and apply grade-level phonics and word analysis skills in decoding words.</li>
+            <li>Use combined knowledge of all letter-sound correspondences, syllabication patterns, and morphology (e.g., roots and affixes) to read accurately unfamiliar multisyllabic words in context and out of context.</li>
+            <li>Read and comprehend complex literacy and informational texts independently and proficiently.  </li>
+            
+        </ul>
+     </div>
+          </div>
+          </section>
+          </Layout>
+
+         <style>
+             .wbBanner{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+          }
+
+          .wbcards{
+            display: flex;
+            justify-content: center;
+          }
+
+          ul,li{
+            margin-left: 1em;
+            list-style-type: disc;
+          }
+         </style>

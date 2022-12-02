@@ -1,0 +1,7 @@
+---
+import Detail from './Detail.astro';
+import wbVideo from '../data/wbVideo.json';
+---
+{wbVideo.map(video => (
+    <Detail open={video.open} dark={true} id={video.id} title={video.title}  url={video.url} src={video.src}  client:visible  />
+   ))}

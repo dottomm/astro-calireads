@@ -1,0 +1,80 @@
+[
+    { 
+        "id": "wb001", 
+        "open": false, 
+        "title": "CALI Reads Interview", 
+        "src":"https://player.vimeo.com/video/344150614?h=6ed4bc3f38", 
+        "url": "https://vimeo.com/344150614"
+    },
+    {
+        "id": "wb002",
+        "open":false,
+        "title":"CALI Reads Lesson 1",
+        "src": "https://player.vimeo.com/video/344150633?h=d205959e82",
+        "url" : "https://vimeo.com/344150633"
+    },
+    {
+        "id" :"wb003",
+        "open": false, 
+        "title" :"CALI Reads Lesson 2",
+        "src": "https://player.vimeo.com/video/344150690?h=b94ee62ace",
+        "url": "https://vimeo.com/344150690"
+    },
+    {
+        "id":"wb004",
+        "open": false, 
+        "title": "CALI Reads Lesson 3",
+        "src": "https://player.vimeo.com/video/344150745?h=d5b75c0567",
+        "url": "https://vimeo.com/344150745"
+    },
+    {
+        "id":"wb005",
+        "open": false, 
+        "title": "CALI Reads Lesson 4",
+        "src":"https://player.vimeo.com/video/344150778?h=2f154ecd7f",
+        "url": "https://vimeo.com/344150778"
+    },
+    {
+        "id":"wb006",
+        "open": false, 
+        "title":"CALI Reads Lesson 4B",
+        "src":"https://player.vimeo.com/video/344150820?h=e29f7ed286",
+        "url":"https://vimeo.com/344150820"
+    },
+    {
+        "id":"wb007",
+        "open": false, 
+        "title":"CALI Reads Lesson 4C",
+        "src":"https://player.vimeo.com/video/344150851?h=357c20dce1",
+        "url":"https://vimeo.com/344150851"
+    },
+    {
+        "id":"wb008",
+        "open": false, 
+        "title": "CALI Reads Lesson 5",
+        "src": "https://player.vimeo.com/video/344150938?h=ca1ff73ab7",
+        "url": "https://vimeo.com/344150938"
+    },
+    {
+        "id":"wb009",
+        "open": false, 
+        "title":"CALI Reads Lesson 6.1",
+        "src": "https://player.vimeo.com/video/344150994?h=82a346d4ae",
+        "url": "https://vimeo.com/344150994"
+    },
+    {
+        "id":"wb010",
+        "open": false, 
+        "title":"CALI Reads Lesson 6.2",
+        "src": "https://player.vimeo.com/video/344151156?h=dc8f5b8f70",
+        "url": "https://vimeo.com/344151156"
+    },
+    {
+        "id":"wb011",
+        "open": false, 
+        "title": "CALI Reads Day Two Lesson Games",
+        "src": "https://player.vimeo.com/video/344151361?h=756c47e02a",
+        "url": "https://vimeo.com/344151361"
+    }
+
+]
