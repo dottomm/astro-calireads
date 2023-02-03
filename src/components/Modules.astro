@@ -15,6 +15,8 @@ import vocabImg from '../images/gettyImages/GettyImages-666835804SGQ.jpg';
 import vocabSmall from '../images/gettyImages/vocabImgSmall.jpg';
 import WBImg from '../images/gettyImages/wordBuilder75.jpg';
 import WBSmall from '../images/gettyImages/wordBuilder-small.jpg';
+
+import Card from '../components/Card.astro';
 export interface Props {
 
 title: string;
@@ -611,7 +613,7 @@ const { title, body, url} = Astro.props as Props;
         <h3>Additonal Wordbuilder Resources</h3>
         <ul class="column-list">
          {wbResources.map(wbResource =>(
-           <li><a href={wbResource.url}>{wbResource.title}</a></li>
+           <Card dark={true} url={wbResource.url} title={wbResource.title} />
  
          ))}
         </ul>
@@ -622,8 +624,16 @@ const { title, body, url} = Astro.props as Props;
        <p>{wordbuilder.body} </p>
        
       ))}</article>
-      
-      
+     
+     <footer class='footer'>
+      <h3>Additonal Wordbuilder Resources</h3>
+      <ul class="column-list">
+       {wbResources.map(wbResource =>(
+         <li><a href={wbResource.url}>{wbResource.title}</a></li>
+
+       ))}
+      </ul>
+    </footer>
       
     </div>
 
