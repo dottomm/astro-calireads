@@ -16,6 +16,8 @@ import vocabSmall from '../images/gettyImages/vocabImgSmall.jpg';
 import WBImg from '../images/gettyImages/wordBuilder75.jpg';
 import WBSmall from '../images/gettyImages/wordBuilder-small.jpg';
 
+import wbVideo from '../data/wbVideo.json';
+
 import Card from '../components/Card.astro';
 export interface Props {
 
@@ -409,16 +411,14 @@ const { title, body, url} = Astro.props as Props;
             <a href={ARG.url}><h3>{ARG.title}</h3></a>
             <p>{ARG.body} </p>
         </div>
-      ))}</article>
+      ))}
+    </article>
     <aside class="aside aside-1"> 
       <div class='imgHolder'> 
         <img class='logos' src={ARGImg} alt="">
         <img class='logos-small' src={ARGSmall} alt="">
     </div>
   </aside>
-    <!--
-      <aside class="aside aside-2">Aside 2</aside>
-     -->
     <footer class="footer">
       <h3 >Additional Anticipation Reaction Guides Resources</h3>
           <ul class=""> 
@@ -429,7 +429,6 @@ const { title, body, url} = Astro.props as Props;
           </ul>
     </footer>
   </div>
-    
   </section>
 
   <section class="GTG" id="GTG">
@@ -443,7 +442,8 @@ const { title, body, url} = Astro.props as Props;
         <a href={GTG.url}><h3>{GTG.title}</h3></a>
        <p>{GTG.body} </p>
       
-      ))} </article>
+      ))} 
+      </article>
       <aside class="main"> 
         <div class='imgHolder'>
           <img class='logos' src={GTGIMg} alt="">
@@ -451,97 +451,81 @@ const { title, body, url} = Astro.props as Props;
         </div>
      
     </aside>
-      <!--
-        <aside class="aside aside-2">Aside 2</aside>
-       -->
-      <footer class="footer">
+
+    <footer class="footer">
         <h3 >Additional Get The Gist Resources</h3>
             <ul class=""> 
               {GTGResousrces.map(GTGResource => (
-              
                 <li><a href={GTGResource.url}>{GTGResource.title}</a></li>
               ))}
             </ul>
       </footer>
-
     </div>
   </section>
 
-
   <section class="morphology" id="morphology">
-  
     <div class="module-wrapper">
       <header class='mod-header'>
         <h2>Morphology Modules</h2>
       </header>
       <article class="main">
-       
-      {MorphData.map(morph => (
+        {MorphData.map(morph => (
         <a href={morph.url}><h3>{morph.title}</h3></a>
-       <p>{morph.body} </p>
-       
-      ))}</article>
+        <p>{morph.body} </p>
+        ))}
+      </article>
       <aside class="aside aside 1">
         <div class='imgHolder'>
           <img class='logos' src={MorphImg} alt="">
           <img class='logos-small' src={MorphSmall} alt="">
         </div>
       </aside>
-      
-   
-      <footer class='footer'>
+    <footer class='footer'>
         <h3>Additional Morphology Resources</h3>
-  
         <ul class="column-list">
           {MorphResources.map(MorphResource =>(
             <li><a href={MorphResource.url}>{MorphResource.title}</a></li>
           ))}
-  
-        </ul>
+         </ul>
       </footer>
     </div>
-    
   </section>
-
-
-  <section class="ReciprocalTeaching" id="ReciprocalTeaching">
   
+  <section class="ReciprocalTeaching" id="ReciprocalTeaching">
     <div class="module-wrapper">
       <header class='mod-header'>
         <h2>Reciprocal Teaching Modules</h2>
       </header>
       <aside class='aside aside-1'>
-
-        <div class='imgHolder'> 
+       <div class='imgHolder'> 
           <img class='logos' src={RecipTechImg} alt="">
           <img class='logos-small' src={RTSmall} alt="">
         </div>
         </aside>
         <article class="main">
-      {RTData.map(rt => (
-        <a href={rt.url}><h3>{rt.title}</h3></a>
-       <p>{rt.body} </p>
-       
-      ))}</article>
-      
+          {RTData.map(rt => (
+            <a href={rt.url}><h3>{rt.title}</h3></a>
+          <p>{rt.body} </p>
+          
+          ))}
+        </article>
       <footer class='footer'>
         <h3>Additional Reciprocal Teaching Resources</h3>
-        <ul class="column-list">
-        {RTResosurces.map(rtResoource =>(
-          <li><a href={rtResoource.url}>{rtResoource.title}</a></li>
-        ))}
+          <ul class="column-list">
+             {RTResosurces.map(rtResoource =>(
+              <li><a href={rtResoource.url}>{rtResoource.title}</a></li>
+            ))}
         </ul>
       </footer>
       </div>
   </section>
 
-
-
 <section class="SGQmodules" id="SGQmodules">
     <div class="module-wrapper">
+      <header class='mod-header'>
         <h2>Self-Generated Questions Modules</h2>
+      </header>
 <aside class='aside aside-1'>
-
   <div class='imgHolder'> 
     <img class='logos' src={sgqImg} alt="">
     <img class='logos-small' src={SGQSmall} alt="">
@@ -551,23 +535,19 @@ const { title, body, url} = Astro.props as Props;
       {sgqData.map(SGQ => (
         <a href={SGQ.url}><h3>{SGQ.title}</h3></a>
        <p>{SGQ.body} </p>
-       
-      ))}</article>
-            
-     <footer class='footer'>
+      ))}
+      </article>
+      <footer class='footer'>
       <h3>Self-Generated Questions Module Resources</h3>
-      <ul class="column-list">
-        {sgqResources.map(sgqResource=>(
-          <li><a href={sgqResource.url}>{sgqResource.title}</a></li>
-
-        ))}
-
-      </ul>
+        <ul class="column-list">
+          {sgqResources.map(sgqResource=>(
+            <li><a href={sgqResource.url}>{sgqResource.title}</a></li>
+          ))}
+        </ul>
       </footer>
      </div>
-    
   </section>
-
+  
   <section class="vocabModules" id="vocabModules">
     <div class="module-wrapper">
       <header class='mod-header'>        
@@ -582,9 +562,10 @@ const { title, body, url} = Astro.props as Props;
     <article class='main'>
       {vocabData.map(vocab => (
        <div class='module'> <a href={vocab.url}><h3>{vocab.title}</h3></a>
-       <p>{vocab.body} </p></div>
-       
-      ))}</article>
+        <p>{vocab.body} </p>
+       </div>
+      ))}
+      </article>
       
       <footer  class='footer'>
         <h3 >Additional Vocabulary Maps Resources</h3>
@@ -610,33 +591,29 @@ const { title, body, url} = Astro.props as Props;
         </div>
       </aside>
       <aside  class='aside aside-2'>
-        <h3>Additonal Wordbuilder Resources</h3>
+        <h3>Wordbuilder Classroom Demonstration Videos</h3>
         <ul class="column-list">
-         {wbResources.map(wbResource =>(
+         {wbVideo.slice(3, 6).map(wbResource =>(          
            <Card dark={true} url={wbResource.url} title={wbResource.title} />
- 
          ))}
+        
         </ul>
       </aside>
       <article class='main'>
-      {wbData.map(wordbuilder => (
-        <a href={wordbuilder.url}><h3>{wordbuilder.title}</h3></a>
-       <p>{wordbuilder.body} </p>
-       
-      ))}</article>
-     
+        {wbData.map(wordbuilder => (
+          <a href={wordbuilder.url}><h3>{wordbuilder.title}</h3></a>
+          <p>{wordbuilder.body} </p>
+        ))}
+      </article>
      <footer class='footer'>
-      <h3>Additonal Wordbuilder Resources</h3>
+      <h3>Additional Wordbuilder Resources</h3>
       <ul class="column-list">
-       {wbResources.map(wbResource =>(
-         <li><a href={wbResource.url}>{wbResource.title}</a></li>
-
-       ))}
+          {wbResources.map(wbResource =>(
+            <li><a href={wbResource.url}>{wbResource.title}</a></li>
+          ))}
       </ul>
     </footer>
-      
     </div>
-
   </section>
   <style>
    
@@ -686,7 +663,6 @@ const { title, body, url} = Astro.props as Props;
 }
 
 .aside-2 {
-  background: var(--color-accent-secondary);
   text-align: left;
 }
 
