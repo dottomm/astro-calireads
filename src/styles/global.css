@@ -80,18 +80,15 @@
     line-height: 1.2;
   }
   
-  .container {
-    width: 100%;
-   /*max-width: 1200px; */
-    margin: 0 auto;
-    padding: 0 30px;
-  }
+ 
+
+    
 
   .imgHolder{
-    width: 100%;
-    height: auto;
+    width: 500px;
+    max-height: 500px;
     overflow: hidden;
-    object-fit: cover;
+    margin-bottom: 1em;
   }
   
   .btn {
@@ -113,10 +110,10 @@
 
   /* Page Content */
 .page-content {
-margin: 35px auto;
-max-width: 1220px;
+  display: flex;
+  flex-wrap: wrap;
 line-height: 1.7;
-padding:0 10px;
+
 }
 
 .page-content h2,
@@ -199,10 +196,8 @@ h2 {
 /*Custom Global Styles*/
 section{
   width: 100%;
-  padding-top: 6ch;
-  padding-bottom: 6ch;
-  padding-left: 3ch;
-  padding-right: 3ch;
+padding: 2em;
+  
 }
 .section-title{
   border-radius: 15px 15px 0px 0px; 

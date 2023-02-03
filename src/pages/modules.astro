@@ -1,17 +1,19 @@
 ---
-import Layout from '../layouts/Layout.astro';
- 
+
+import ModuleLayout from '../layouts/ModuleLayout.astro';
+
 import Modules from '../components/Modules.astro';
 import Showcase from '../components/Showcase.astro';
 import ModuleNav from '../components/ModuleNav.astro';
 
 ---
 
-<Layout title="Literacy Modules">
+<ModuleLayout title="Literacy Modules">
     <Showcase showExtra={false} />
-    <section class="page-content">
-            <ModuleNav />
+    <ModuleNav />
+
+    <section class="page-content" id="page-content">
             <Modules />
 
 </section>
-</Layout>
+</ModuleLayout>
