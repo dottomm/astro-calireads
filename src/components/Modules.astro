@@ -1,13 +1,14 @@
 ---
 import SGQWalkthrough from '/sgqresources/Self-Generated-Questions-digiCOACH-Edition.pdf';
 
-import ARGImg from '../images/gettyImages/GettyImages-121518480075.jpg';
+//import ARGImg from '../images/gettyImages/GettyImages-121518480075.jpg';
+import ARGImg from '../images/ARG-module_500.jpg';
 import ARGSmall from '../images/gettyImages/ARGSmall.jpg';
-import GTGIMg from '../images/gettyImages/GTG75.jpg';
+import GTGIMg from '../images/GTG_500.png';
 import GTGsm from '../images/gettyImages/GTGsm.jpg';
-import MorphImg from '../images/gettyImages/GettyImages-94176587275.jpg';
+import MorphImg from '../images/MorphImg_500.png';
 import MorphSmall from '../images/gettyImages/MorphSmall.jpg';
-import RecipTechImg from '../images/gettyImages/reciprocalTeaching.jpg';
+import RecipTechImg from '../images/reciprocalTeaching.png';
 import RTSmall from '../images/gettyImages/reciprocalTeachingSmall.jpg';
 import sgqImg from '../images/gettyImages/sgq-overview.jpg';
 import SGQSmall from '../images/gettyImages/sgq-overview-small.jpg';
@@ -25,38 +26,11 @@ title: string;
 body: string;
 url: string;
 }
+const { title, body, url} = Astro.props as Props;
 
-const ARGData =[
-    {
-      title: 'AR Guides Overview', 
-      body: 'This course provides you with an overview of Anticipation-Reaction Guides (AR Guides), a tool designed to support students’ reading comprehension through a set of anticipatory statements used Before, During, and After reading.',  
-      url: 'https://calireads.org/modules/ARGuides/overview-of-anticipation-reaction-guides/content/'
-    },
-    {
-      title: 'Instructional Steps for AR Guides', 
-      body: 'This course demonstrates the Instructional Steps for teaching students to use Anticipation-Reaction Guides Before, During, and After reading.', 
-      url: 'https://calireads.org/modules/ARGuides/instructional-steps-for-anticipation-reaction-guides/content/'
-    },
-    {
-      title: 'Remote Learning with AR Guides', 
-      body: 'This course provides technological supports for using AR Guides during remote instruction. Synchonous and asynchronous options are included.', 
-      url: 'https://www.calireads.org/anticipation-reaction-support-guides/'
-    }
-]
-
-const ARGResources = [
-  {
-    title: 'AR Guide Module Resources', 
-    url: 'https://calireads.org/bridge-content/ARGuides/zipIt_AR_Guides_Course_Resources.php'},
-  {
-    title: 'Remote Learning Supports', 
-    url: 'https://www.calireads.org/anticipation-reaction-support-guides/'
-  },
-  {
-    title: 'Support', 
-    url: 'https://vimoe.com'
-  }
-]
+//ARG Modules Data
+import ARGData from '../data/ARGModuleData.json';
+import ARGResources from '../data/ARGResourceData.json';
 
 const GTGData = [
     {
@@ -396,7 +370,6 @@ const wbResources =[
   }
 ]
 
-const { title, body, url} = Astro.props as Props;
 
 ---
 
@@ -594,7 +567,7 @@ const { title, body, url} = Astro.props as Props;
         <h3>Wordbuilder Classroom Demonstration Videos</h3>
         <ul class="column-list">
          {wbVideo.slice(3, 6).map(wbResource =>(          
-           <Card dark={true} url={wbResource.url} title={wbResource.title} />
+           <Card dark={true} url={wbResource.url} title={wbResource.title} body={}/>
          ))}
         
         </ul>
@@ -679,9 +652,7 @@ const { title, body, url} = Astro.props as Props;
   .footer  { order: 4; }
 }
 
-body {
-  padding: 2em; 
-}
+
 
 
   </style>
