@@ -12,9 +12,9 @@ import RecipTechImg from '../images/reciprocalTeaching.png';
 import RTSmall from '../images/gettyImages/reciprocalTeachingSmall.jpg';
 import sgqImg from '../images/gettyImages/sgq-overview.jpg';
 import SGQSmall from '../images/gettyImages/sgq-overview-small.jpg';
-import vocabImg from '../images/gettyImages/GettyImages-666835804SGQ.jpg';
+import vocabImg from '../images/vocabMaps_500.png';
 import vocabSmall from '../images/gettyImages/vocabImgSmall.jpg';
-import WBImg from '../images/gettyImages/wordBuilder75.jpg';
+import WBImg from '../images/wordBuilder_500.png';
 import WBSmall from '../images/gettyImages/wordBuilder-small.jpg';
 
 import wbVideo from '../data/wbVideo.json';
@@ -31,345 +31,29 @@ const { title, body, url} = Astro.props as Props;
 //ARG Modules Data
 import ARGData from '../data/ARGModuleData.json';
 import ARGResources from '../data/ARGResourceData.json';
-
-const GTGData = [
-    {
-      title: 'Get The Gist Overview', 
-      body: 'This course overviews Get The Gist strategy.', 
-      url: 'https://calireads.org/modules/GetTheGist/GTG-Overview/'
-    },
-    {
-      title: 'Get The Gist Implementation', 
-      body: 'This course demonstrates how to implement Get The Gist.', url: 'https://calireads.org/modules/GetTheGist/GTG-Implementation/'
-    }
-]
-
-const GTGResousrces = [
-  {
-    title: 'Get the Gist Graphic Organizer', 
-    url: 'https://calireads.org/bridge-content/GettheGist/Resources/Get_the_Gist_Graphic_Organizer.pdf'
-  },
-  {
-    title: 'Get the Gist Graphic Organizer MS Word', 
-    url: 'https://calireads.org/bridge-content/GettheGist/Resources/Get_the_Gist_Graphic_Organizer.docx'
-  },
-  {
-    title: 'Teacher Planning Template Example', 
-    url: 'https://calireads.org/bridge-content/GettheGist/Resources/Teacher_Planning_Template_Example.pdf'
-  },
-  {
-    title: 'Teacher Planning Template Example MS Word', 
-    url: 'https://calireads.org/bridge-content/GettheGist/Resources/Teacher_Planning_Template_Example.docx'
-  },
-  {
-    title: 'Teacher Planning Template', 
-    url: 'https://calireads.org/bridge-content/GettheGist/Resources/Teacher_Planning_Template.pdf'
-  },
-  {
-    title: 'Teacher Planning Template MS Word', 
-    url: 'https://calireads.org/bridge-content/GettheGist/Resources/Teacher_Planning_Template.docx'
-  }
-]
-
-const MorphData = [
-    {
-      title: 'Morphology Overview', 
-      body: 'This course overviews the Morphology strategy.', 
-      url: 'https://calireads.org/modules/Morphology/overview-of-morphology/'
-    },
-    {
-      title: 'Activities for Morphology Instruction', 
-      body: 'This course demonstrates morphology instruction activities', url: 'https://calireads.org/modules/Morphology/activities-for-morphology-instruction/'
-    },
-    {
-      title: 'Morphology Terminology & Concepts', 
-      body: 'This course demonstrates basic morphology terminolgy and concepts.', 
-      url: 'https://calireads.org/modules/Morphology/basic-morphology-terminology-and-concepts/'
-    },
-    {
-      title: 'Effective Morphology Instruction', 
-      body: 'This course demonstrates effective morphology instruction', url: 'https://calireads.org/modules/Morphology/effective-morphology-instruction'
-    }
-]
-
-const MorphResources = [
-  {
-    title: 'Introduction to Morphology', 
-    url: 'https://calireads.org/bridge-content/Morphology/Terminology/Introduction_to_Morphology.pptx'
-  },
-  {
-    title: 'Study of Word Meaning Notes', 
-    url: 'https://calireads.org/bridge-content/Morphology/Terminology/Study_of_Word_Meaning_Notes.pdf'
-  },
-  {
-    title: 'Personal Dictionary', 
-    url: 'https://calireads.org/bridge-content/Morphology/Instruction_materials/Personal_Dictionary.docx'
-  },
-  {
-    title: 'Keywords for Roots Handout', 
-    url: 'https://calireads.org/bridge-content/Morphology/Instruction_materials/Keywords_for_Roots_Handout.pdf'
-  },
-  {
-    title: 'Prefix Reference List', 
-    url: 'https://calireads.org/bridge-content/Morphology/Instruction_materials/Prefix_Reference_List.pdf'
-  },
-  {
-    title: 'Robust Vocabulary Scrib and Script', 
-    url: 'https://calireads.org/bridge-content/Morphology/Instruction_materials/Robust_Vocabulay_Scrib_and_Scipt.pptx'
-  },
-  {
-    title: 'Generative Morphology Scrib Script', 
-    url: 'https://calireads.org/bridge-content/Morphology/Activities/Morphological_Problem_Solving_Script.pdf'
-  },
-  {
-    title: 'Morphology Problem Solving Script', 
-    url: 'https://calireads.org/bridge-content/Morphology/Activities/Morphological_Problem_Solving_Script.pdf'
-  },
-  {
-    title: 'Jeopardy PowerPoint', 
-    url: 'https://calireads.org/bridge-content/Morphology/Activities/Morphology_Jeopardy.pptx'
-  },
-  {
-    title: 'What’s my Word?', 
-    url: 'https://calireads.org/bridge-content/Morphology/Activities/Whats_My_Word.pdf'
-  },
-  {
-    title: 'Mini Matrix Maker', 
-    url: 'http://www.neilramsden.co.uk/spelling/matrix/'
-  },
-  {
-    title: 'Cloze Activity for the Root', 
-    url: 'https://calireads.org/bridge-content/Morphology/Activities/Cloze_Activity.pdf'
-  },
-  {
-    title: 'Identifying the Meaning of Word Roots', 
-    url: 'https://calireads.org/bridge-content/Morphology/Activities/Identify_the_Meanings_of_Word_Roots.pptx'
-  },
-  {
-    title: 'Word Sort: Changes in Sound and/or Spelling of the Root', 
-    url: 'https://calireads.org/bridge-content/Morphology/Activities/Word_Sort.pdf'
-  },
-  {
-    title: 'Highlighter Races', 
-    url: 'https://docs.google.com/document/u/1/d/1gUWImWWN7_rW5_L86BUuUjkjaC3FLCdPGQrnkgEc8ig/copy?usp=sharing'
-  },
-  {
-    title: 'Morphological Problem Solving', 
-    url: 'https://calireads.org/bridge-content/Morphology/Activities/Morphological_Problem_Solving_Script.pdf'
-  },
-  {
-    title: 'Illustrated Word Stories', 
-    url: 'https://calireads.org/bridge-content/Morphology/Activities/Illustrated_Word_Stories.pptx'
-  },
-  {
-    title: 'Etymonline', 
-    url: 'https://www.etymonline.com/'
-  },
-  {
-    title: 'Vocabulary VIP', 
-    url: 'https://calireads.org/bridge-content/Morphology/Activities/Vocabulary_VIP.pdf'
-  }
-]
-
-
-const RTData =[
-    {
-      title: 'Reciprocal Teaching: Overview', 
-      body: 'This course provides an introduction and overview of Reciprocal Teaching and a brief review of research supporting it.', url: 'https://calireads.org/modules/ReciprocalTeaching/Reciprocal-Teaching-Overview/content/'
-    },
-    {
-      title: 'Reciprocal Teaching: Summarizing', 
-      body: 'This course is the beginning of comprehension strategy instruction and includes materials and directions for teaching students to summarize.', 
-      url: 'https://calireads.org/modules/ReciprocalTeaching/Reciprocal-Teaching-Summarizing/content/'
-    },
-    {
-      title: 'Reciprocal Teaching: Questioning', 
-      body: 'This course includes materials and directions for teaching students to generate questions.', 
-      url: 'https://calireads.org/modules/ReciprocalTeaching/Reciprocal-Teaching-Questioning/content/'
-    },
-    {
-      title: 'Reciprocal Teaching: Predicting', 
-      body: 'This course includes materials and directions for teaching students to make predictions.', 
-      url: 'https://calireads.org/modules/ReciprocalTeaching/Reciprocal-Teaching-Predicting/content/'
-    },
-    {
-      title: 'Reciprocal Teaching: Clarifying and Putting it All Together', 
-      body: 'This course includes materials and directions for teaching students to determine what needs to be clarified, how to ask for clarification, and how to combine all of the Reciprocal Teaching strategies.', 
-      url: 'https://calireads.org/modules/ReciprocalTeaching/Reciprocal-Teaching-Clarifying-and-Putting-it-All-Together/content/'
-    },
-    {
-      title: 'Reciprocal Teaching: Making It Work for You', 
-      body: 'This course includes tips for common challenges, prompting strategies, and how to fit Reciprocal Teaching into your instructional sequence.', 
-      url: 'Reciprocal Teaching: Making It Work for You'
-    }
-]
-
-const RTResosurces = [
-  {
-    title: 'General Resources', 
-    url: 'https://calireads.org/bridge-content/reciprocalteaching/reciprocalTeaching-overview-Zip.php'
-  },
-  {
-    title: 'Summarizing Resources', 
-    url: 'https://www.calireads.org/bridge-content/reciprocalteaching/reciprocalTeaching-summarizing-Zip.php'
-  },
-  {
-    title: 'Questioning Resources', 
-    url: 'https://www.calireads.org/bridge-content/reciprocalteaching/reciprocalTeaching-questioning-Zip.php'
-  },
-  {
-    title: 'Predicting Resources', 
-    url: 'https://www.calireads.org/bridge-content/reciprocalteaching/reciprocalTeaching-predicting-Zip.php'
-  },
-  {
-    title: 'Clarifying Resources', 
-    url: 'https://www.calireads.org/bridge-content/reciprocalteaching/reciprocalTeaching-clarifying-Zip.php'
-  }
-
-]
-
-const sgqData = [
-    {
-      title: 'Self-Generated Questions Overview', 
-      body: 'This course overviews to the Self-Generated Questions strategy', 
-      url: 'https://calireads.org/modules/SGQs/sgq-overview-raw/content/'
-    },
-    {
-      title: 'Self-Generated Questions Level 1', 
-      body: 'This course demonstrates how to teach students to self-generate Level 1 or Right There questions.', 
-      url: 'https://calireads.org/modules/SGQs/sgq-level1-raw/content/'
-    },
-    {
-      title: 'Self-Generated Questions Level 2', 
-      body: 'This course demonstrates how to teach students to self-generate Level 2 or Putting It Together questions.', 
-      url: 'https://calireads.org/modules/SGQs/sgq-level2-raw/content/'
-    },
-    {
-      title: 'Self-Generated Questions Level 3', 
-      body: 'This course demonstrates how to teach students to self-generate Level 3 or Making Connections questions.', 
-      url: 'https://calireads.org/modules/SGQs/sgq-level3-raw/content/'
-    },
-    {
-      title: 'Self-Generated Questions Level 1 through Level 3 & Differentiation', 
-      body: 'This course reviews the Self-Generated Questions (SGQs) strategy and introduces tips for differentiation.', 
-      url: 'https://calireads.org/modules/SGQs/sgq-levels1-3andDifferation-raw/content/'
-    }
-]
-
-const sgqResources =[
-  {
-    title: 'digiCOACH SGQ walkthrough tool', 
-    url: 'https://www.calireads.org/pdfs/Self-Generated-Questions-digiCOACH-Edition.pdf'
-  },
-  {
-    title: 'Teacher Planning Sheet', 
-    url: 'https://www.calireads.org/bridge-content/SGQ-Planning-Sheet.pdf'
-  },
-  {
-    title: 'Student Cue Cards', 
-    url: 'https://www.calireads.org/bridge-content/SGQ_Cue_Cards.pdf'
-  },
-  {
-    title: 'Student Question Log', 
-    url: 'https://www.calireads.org/bridge-content/Student-Log-for-SGQ.pdf'
-  }
-]
-
-const vocabData =[
-    {
-      title: 'Vocabulary Maps Overview', 
-      body: 'In this course, you will learn the importance of explicit vocabulary instruction and how to prepare for Vocabulary Map instruction.', 
-      url: 'https://calireads.org/modules/vocabularyMaps/vocabMaps-overview/'
-    },
-    {
-      title: 'Vocabulary Maps Instruction', 
-      body: 'In this course, you will learn key instructional steps for explicit instruction using VocabularyMaps through a classroom scenario.', 
-      url: 'https://calireads.org/modules/vocabularyMaps/vocabMaps-instruction/'
-    },
-    {
-      title: 'Vocabulary Maps Completion', 
-      body: 'In this course, you will learn more about the features of the Vocabulary Map and their importance through a peer teacher scenario.', 
-      url: 'https://calireads.org/modules/vocabularyMaps/vocabMaps-completion/'
-    }
-
-]
-
-const vocabResources =[
-  {
-    title: 'Vocabulary Map Template', 
-    url: 'https://www.calireads.org/bridge-content/Voc-Map-portrait.pdf'
-  },
-  {
-    title: 'Steps for Instruction', 
-    url: 'https://calireads.org/bridge-content/Handout-Steps_for_Vocabulary_Map_Instruction.pdf'
-  },
-  {
-    title: 'Isabel Beck Activitiess', 
-    url: 'https://calireads.org/bridge-content/Handout_IsabelBeckActivities.pdf'
-  }
-
-]
-
-const wbData = [
-    {
-      title: 'Overview', 
-      body: 'This course is an overview of WordBuilder, a free application that helps older struggling readers break down multisyllabic words.', url: 'https://calireads.org/modules/wordbuilder/overview/'
-    },
-    {
-      title: 'Decoding Strategy', 
-      body: 'This course describes a flexible approach used to break down multisyllabic words, how to teach it to your students, and how it is used in WordBuilder.', 
-      url: 'https://calireads.org/modules/wordbuilder/decoding-strategy/'
-    },
-    {
-      title: 'Building and Spelling Multisyllabic Words', 
-      body: 'This course demonstrates how teachers can effectively support students as they move from breaking down a multisyllabic word to building, spelling, and mastering the word in WordBuilder.', 
-      url: 'https://calireads.org/modules/wordbuilder/building-and-spelling-multisyllabic-words/'
-    },
-    {
-      title: 'Boosting WordBuilder Effects', 
-      body: 'This course demonstrates how to get the most out of WordBuilder through word-part manipulation and game-based review.', url: 'https://calireads.org/modules/wordbuilder/boosting-word-builder-effects/'
-    }
-]
-
-const wbResources =[
-  {
-    title: 'WordBuilder Scope and Sequence', 
-    url: 'https://www.calireads.org/bridge-content/wordbuilder/Overview_WordBuilder/WordBuilder-Scope-and-Sequence.pdf'
-  },
-  {
-    title: 'Decoding Strategy', 
-    url: 'https://www.calireads.org/bridge-content/Decoding_Strategy_Poster.pdf'
-  },
-  {
-    title: 'Guidelines for Teaching Word Parts', 
-    url: 'https://www.calireads.org/bridge-content/wordbuilder/Teaching-Word-Parts-Guidelines.pdf'
-  },
-  {
-    title: 'Lesson Plan: Teaching the Decoding Strategy', 
-    url: 'https://www.calireads.org/bridge-content/Lesson_Plan_for_Teaching_the_Decoding_Strategy.pdf'
-  },
-  {
-    title: 'Lesson Plan: Teaching Prefixes and Suffixes', 
-    url: 'https://www.calireads.org/bridge-content/wordbuilder/Scripted-Lesson%20Plan-for-Teaching-Prefixes-and-Suffixes.pdf'
-  },
-  {
-    title: 'Lesson Plan: Teaching Vowel Patterns', 
-    url: 'https://www.calireads.org/bridge-content/wordbuilder/Scripted-Lesson-Plan-for-Teaching-Vowel-Patterns.pdf'
-  },
-  {
-    title: 'Possible Errors and Prompts', 
-    url: 'https://www.calireads.org/bridge-content/wordbuilder/Table-of-Prompts.pdf'
-  },
-  {
-    title: 'Word Part Manipulation', 
-    url: 'https://www.calireads.org/bridge-content/wordbuilder/word-part-manipulation.pdf'
-  },
-  {
-    title: 'Game Based Review Activities', 
-    url: 'https://www.calireads.org/bridge-content/Game-Based-Review-Activities.pdf'
-  }
-]
-
+//Get The Gist Data
+import GTGData from '../data/GTGModuleData.json';
+import GTGResources from '../data/GTGResourceData.json';
+//Morphology
+import MorphData from '../data/MorphologyModuleData.json';
+import MorphResources from '../data/MorphologyResourceData.json';
+//Reciprocal Teaching
+import RTData from '../data/ReciprocalTeachingModuleData.json';
+import RTResources from '../data/ReciprocalTeachingResourceData.json';
+import RTOverview from '../data/ReciprocalTeachingOverviewData.json';
+import RTSummary from '../data/ReciprocalTeachingSummarizingData.json';
+import RTQuestioning from '../data/ReciprocalTeachingQuestioningData.json';
+import RTPredicting from '../data/ReciprocalTeachingPredictingData.json';
+import RTClarifying from '../data/ReciprocalTeachingClarifyingData.json';
+//Self-Generated Questions
+import sgqData from '../data/SGQModuleData.json';
+import sgqResources from '../data/SGQResourceData.json';
+//Vocabulary Maps
+import vocabData from '../data/VocabMapsModuleData.json';
+import vocabResources from '../data/VocabMapsResourceData.json';
+//WordBuilder
+import wbData from '../data/WordBuilderModuleData.json';
+import wbResources from '../data/WordBuilderResourceData.json';
 
 ---
 
@@ -428,7 +112,7 @@ const wbResources =[
     <footer class="footer">
         <h3 >Additional Get The Gist Resources</h3>
             <ul class=""> 
-              {GTGResousrces.map(GTGResource => (
+              {GTGResources.map(GTGResource => (
                 <li><a href={GTGResource.url}>{GTGResource.title}</a></li>
               ))}
             </ul>
@@ -484,11 +168,74 @@ const wbResources =[
         </article>
       <footer class='footer'>
         <h3>Additional Reciprocal Teaching Resources</h3>
-          <ul class="column-list">
-             {RTResosurces.map(rtResoource =>(
-              <li><a href={rtResoource.url}>{rtResoource.title}</a></li>
-            ))}
-        </ul>
+        <div class="tabs">
+    
+          <div class="tab">
+              <input type="radio" id="tab-1" name="tab-group-1" checked>
+              <label for="tab-1">General Resources</label>
+              
+              <div class="content">
+                <ul class="column-list">
+                  {RTOverview.map(RTOverview =>(
+                    <li><a href={RTOverview.url}>{RTOverview.title}</a></li>
+                  ))}
+                 </ul>
+              </div> 
+          </div>
+           
+          <div class="tab">
+              <input type="radio" id="tab-2" name="tab-group-1">
+              <label for="tab-2">Summarizing</label>
+              
+              <div class="content">
+                <ul class="column-list">
+                  {RTSummary.map(RTSummary =>(
+                    <li><a href={RTSummary.url}>{RTSummary.title}</a></li>
+                  ))}
+                 </ul>
+              </div> 
+          </div>
+           
+           <div class="tab">
+              <input type="radio" id="tab-3" name="tab-group-1">
+              <label for="tab-3">Questioning</label>
+            
+              <div class="content">
+                <ul class="column-list">
+                  {RTQuestioning.map(RTQuestioning =>(
+                    <li><a href={RTQuestioning.url}>{RTQuestioning.title}</a></li>
+                  ))}
+                 </ul>
+              </div> 
+          </div>
+       
+       
+          <div class="tab">
+              <input type="radio" id="tab-4" name="tab-group-1">
+              <label for="tab-4">Predicting</label>
+            
+              <div class="content">
+                <ul class="column-list">
+                  {RTPredicting.map(RTPredicting =>(
+                    <li><a href={RTPredicting.url}>{RTPredicting.title}</a></li>
+                  ))}
+                 </ul>
+              </div> 
+          </div>
+       
+            <div class="tab">
+              <input type="radio" id="tab-5" name="tab-group-1">
+              <label for="tab-5">Clarifying</label>
+            
+              <div class="content">
+                <ul class="column-list">
+                  {RTClarifying.map(RTClarifying =>(
+                    <li><a href={RTClarifying.url}>{RTClarifying.title}</a></li>
+                  ))}
+                 </ul>              
+                </div> 
+          </div>
+       </div> 
       </footer>
       </div>
   </section>
@@ -542,7 +289,7 @@ const wbResources =[
       
       <footer  class='footer'>
         <h3 >Additional Vocabulary Maps Resources</h3>
-        <ul >
+        <ul class="column-list">
           {vocabResources.map(vocabResource=>(
             <li><a href={vocabResource.url}>{vocabResource.title}</a></li>
           ))}
@@ -565,12 +312,12 @@ const wbResources =[
       </aside>
       <aside  class='aside aside-2'>
         <h3>Wordbuilder Classroom Demonstration Videos</h3>
-        <ul class="column-list">
-         {wbVideo.slice(3, 6).map(wbResource =>(          
-           <Card dark={true} url={wbResource.url} title={wbResource.title} body={}/>
-         ))}
-        
-        </ul>
+          <ul class="column-list">
+          {wbVideo.slice(3, 6).map(wbResource =>(          
+            <Card dark={true} url={wbResource.url} title={wbResource.title} body={}/>
+          ))}
+          
+          </ul>
       </aside>
       <article class='main'>
         {wbData.map(wordbuilder => (
@@ -580,11 +327,11 @@ const wbResources =[
       </article>
      <footer class='footer'>
       <h3>Additional Wordbuilder Resources</h3>
-      <ul class="column-list">
-          {wbResources.map(wbResource =>(
-            <li><a href={wbResource.url}>{wbResource.title}</a></li>
-          ))}
-      </ul>
+        <ul class="column-list">
+            {wbResources.map(wbResource =>(
+              <li><a href={wbResource.url}>{wbResource.title}</a></li>
+            ))}
+        </ul>
     </footer>
     </div>
   </section>
@@ -639,6 +386,45 @@ const wbResources =[
   text-align: left;
 }
 
+.tabs {
+  position: relative;   
+  min-height: 200px; /* This part sucks */
+  clear: both;
+  margin: 25px 0;
+}
+.tab {
+  float: left;
+}
+.tab label {
+  background: #eee; 
+  padding: 10px; 
+  border: 1px solid #ccc; 
+  margin-left: -1px; 
+  position: relative;
+  left: 1px; 
+}
+.tab [type=radio] {
+  display: none;   
+}
+.content {
+  position: absolute;
+  top: 28px;
+  left: 0;
+  background: white;
+  right: 0;
+  bottom: 0;
+  padding: 20px;
+  border: 1px solid #ccc; 
+}
+[type=radio]:checked ~ label {
+  background: white;
+  border-bottom: 1px solid white;
+  z-index: 2;
+}
+[type=radio]:checked ~ label ~ .content {
+  z-index: 1;
+}
+
 
 @media all and (min-width: 600px) {
   .aside { flex: 1 0 0; }
@@ -650,8 +436,15 @@ const wbResources =[
   .main    { order: 2; }
   .aside-2 { order: 3; }
   .footer  { order: 4; }
+  
 }
 
+@media (max-width: 1100px) {
+.tabs{
+  max-width: 600px;
+  overflow: hidden;
+}
+}
 
 
 
