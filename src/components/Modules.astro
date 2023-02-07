@@ -78,7 +78,7 @@ import wbResources from '../data/WordBuilderResourceData.json';
   </aside>
     <footer class="footer">
       <h3 >Additional Anticipation Reaction Guides Resources</h3>
-          <ul class=""> 
+          <ul class="column-list"> 
             {ARGResources.map(ARGResource => (
             
               <li><a href={ARGResource.url}>{ARGResource.title}</a></li>
@@ -111,7 +111,7 @@ import wbResources from '../data/WordBuilderResourceData.json';
 
     <footer class="footer">
         <h3 >Additional Get The Gist Resources</h3>
-            <ul class=""> 
+            <ul class="column-list"> 
               {GTGResources.map(GTGResource => (
                 <li><a href={GTGResource.url}>{GTGResource.title}</a></li>
               ))}
