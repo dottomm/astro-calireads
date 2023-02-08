@@ -311,12 +311,16 @@ import wbResources from '../data/WordBuilderResourceData.json';
         </div>
       </aside>
       <aside  class='aside aside-2'>
-        <h3>Wordbuilder Classroom Demonstration Videos</h3>
           <ul class="column-list">
-          {wbVideo.slice(3, 6).map(wbResource =>(          
+          
+          <!--
+            {wbVideo.slice(3, 6).map(wbResource =>(          
             <Card dark={true} url={wbResource.url} title={wbResource.title} body={}/>
           ))}
-          
+           -->
+          <Card dark={true} url={'https://vimeo.com/showcase/calireadsdemonstration'} title="WordBuilder Demonstration Videos" body={} />
+          <Card dark={true} url={'https://vimeo.com/showcase/calireadswebinars'} title="WordBuilder Training Webinars" body={} />
+
           </ul>
       </aside>
       <article class='main'>
@@ -337,20 +341,23 @@ import wbResources from '../data/WordBuilderResourceData.json';
   </section>
   <style>
    
-    .column-list a{
-    }
+  
 
     .column-list {
-  columns: 400px;
+  columns: 310px;
+  text-align: left;
 }
 .column-list li a:link{
   width:100%;
   justify-content: baseline;
-  font-size: smaller;
   text-decoration: underline;
+
+
 }
 
-
+.column-list li a:hover{
+color:var(--color-accent);
+}
 
 .module-wrapper {
   
@@ -373,6 +380,8 @@ import wbResources from '../data/WordBuilderResourceData.json';
 
 .footer {
   background: #fff;
+
+
 }
 
 .main {
@@ -388,7 +397,7 @@ import wbResources from '../data/WordBuilderResourceData.json';
 
 .tabs {
   position: relative;   
-  min-height: 200px; /* This part sucks */
+  min-height: 300px; /* This part sucks */
   clear: both;
   margin: 25px 0;
 }
