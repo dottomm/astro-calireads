@@ -212,32 +212,7 @@ padding: 4em;
 }
 
 
-.ARGuides{
-  background-color: var(--color-accent);
-}
 
-.GTG{
-  background-color: var(--color-accent-secondary);
-}
-
-.morphology{
-  background-color: var(--color-accent);
-}
-
-.ReciprocalTeaching{
-  background-color: var(--color-accent-secondary);
-}
-.SGQmodules{
-  background-color: var(--color-accent);
-}
-
-.vocabModules{
-  background-color: var(--color-accent-secondary);
-}
-
-.wordbuilder{
-  background-color: var(--color-accent);
-}
 
 /*details tag style */
 details summary { 
