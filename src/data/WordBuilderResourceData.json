@@ -1,42 +1,62 @@
 [
     {
       "title": "WordBuilder Scope and Sequence", 
-      "url": "https://www.calireads.org/bridge-content/wordbuilder/Overview_WordBuilder/WordBuilder-Scope-and-Sequence.pdf"
+      "url": "https://www.calireads.org/bridge-content/wordbuilder/Overview_WordBuilder/WordBuilder-Scope-and-Sequence.pdf",
+      "name": "carbon:document-pdf",
+      "altText": "Adobe PDF"
     },
     {
       "title": "Decoding Strategy", 
-      "url": "https://www.calireads.org/bridge-content/Decoding_Strategy_Poster.pdf"
+      "url": "https://www.calireads.org/bridge-content/Decoding_Strategy_Poster.pdf",
+      "name": "carbon:document-pdf",
+      "altText": "Adobe PDF"
     },
     {
       "title": "Guidelines for Teaching Word Parts", 
-      "url": "https://www.calireads.org/bridge-content/wordbuilder/Teaching-Word-Parts-Guidelines.pdf"
+      "url": "https://www.calireads.org/bridge-content/wordbuilder/Teaching-Word-Parts-Guidelines.pdf",
+      "name": "carbon:document-pdf",
+      "altText": "Adobe PDF"
     },
     {
       "title": "Lesson Plan: Teaching the Decoding Strategy", 
-      "url": "https://www.calireads.org/bridge-content/Lesson_Plan_for_Teaching_the_Decoding_Strategy.pdf"
+      "url": "https://www.calireads.org/bridge-content/Lesson_Plan_for_Teaching_the_Decoding_Strategy.pdf",
+      "name": "carbon:document-pdf",
+      "altText": "Adobe PDF"
     },
     {
       "title": "Lesson Plan: Teaching Prefixes and Suffixes", 
-      "url": "https://www.calireads.org/bridge-content/wordbuilder/Scripted-Lesson%20Plan-for-Teaching-Prefixes-and-Suffixes.pdf"
+      "url": "https://www.calireads.org/bridge-content/wordbuilder/Scripted-Lesson%20Plan-for-Teaching-Prefixes-and-Suffixes.pdf",
+      "name": "carbon:document-pdf",
+      "altText": "Adobe PDF"
     },
     {
       "title": "Lesson Plan: Teaching Vowel Patterns", 
-      "url": "https://www.calireads.org/bridge-content/wordbuilder/Scripted-Lesson-Plan-for-Teaching-Vowel-Patterns.pdf"
+      "url": "https://www.calireads.org/bridge-content/wordbuilder/Scripted-Lesson-Plan-for-Teaching-Vowel-Patterns.pdf",
+      "name": "carbon:document-pdf",
+      "altText": "Adobe PDF"
     },
     {
       "title": "Possible Errors and Prompts", 
-      "url": "https://www.calireads.org/bridge-content/wordbuilder/Table-of-Prompts.pdf"
+      "url": "https://www.calireads.org/bridge-content/wordbuilder/Table-of-Prompts.pdf",
+      "name": "carbon:document-pdf",
+      "altText": "Adobe PDF"
     },
     {
       "title": "Word Part Manipulation", 
-      "url": "https://www.calireads.org/bridge-content/wordbuilder/word-part-manipulation.pdf"
+      "url": "https://www.calireads.org/bridge-content/wordbuilder/word-part-manipulation.pdf",
+      "name": "carbon:document-pdf",
+      "altText": "Adobe PDF"
     },
     {
       "title": "Game Based Review Activities", 
-      "url": "https://www.calireads.org/bridge-content/Game-Based-Review-Activities.pdf"
+      "url": "https://www.calireads.org/bridge-content/Game-Based-Review-Activities.pdf",
+      "name": "carbon:document-pdf",
+      "altText": "Adobe PDF"
     },
     {
       "title": "Quizlet Word Part Flashcards",
-      "url": "https://www.calireads.org/assets/Remote-WordBuilder.pptx"
+      "url": "https://www.calireads.org/assets/Remote-WordBuilder.pptx",
+      "name": "carbon:ppt",
+      "altText": "PowerPoint"
     }
   ]

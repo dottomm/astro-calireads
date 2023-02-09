@@ -25,6 +25,8 @@ export interface Props {
 title: string;
 body: string;
 url: string;
+name?:string;
+altText?:string;
 }
 const { title, body, url} = Astro.props as Props;
 
@@ -55,6 +57,7 @@ import vocabResources from '../data/VocabMapsResourceData.json';
 import wbData from '../data/WordBuilderModuleData.json';
 import wbResources from '../data/WordBuilderResourceData.json';
 
+import { Icon } from 'astro-icon'
 ---
 
 <section class="ARGuides" id="ARGuides">
@@ -63,9 +66,9 @@ import wbResources from '../data/WordBuilderResourceData.json';
       <h2>Anticipation Reaction Guides Modules</h2>
     </header>
     <article class="main">
-      {ARGData.map(ARG => (
+           {ARGData.map(ARG => (
         <div>
-            <a href={ARG.url}><h3>{ARG.title}</h3></a>
+            <a href={ARG.url}><h3>{ARG.title} </h3></a>
             <p>{ARG.body} </p>
         </div>
       ))}
@@ -81,7 +84,8 @@ import wbResources from '../data/WordBuilderResourceData.json';
           <ul class="column-list"> 
             {ARGResources.map(ARGResource => (
             
-              <li><a href={ARGResource.url}>{ARGResource.title}</a></li>
+              <li><a href={ARGResource.url}>{ARGResource.title}</a> 
+                <Icon name={ARGResource.name} alt={ARGResource.altText} title={ARGResource.altText} /></li>
             ))}
           </ul>
     </footer>
@@ -112,8 +116,9 @@ import wbResources from '../data/WordBuilderResourceData.json';
     <footer class="footer">
         <h3 >Get The Gist Module Resources</h3>
             <ul class="column-list"> 
-              {GTGResources.map(GTGResource => (
-                <li><a href={GTGResource.url}>{GTGResource.title}</a></li>
+              {GTGResources.map(GTGResources => (
+                <li><a href={GTGResources.url}>{GTGResources.title}</a> 
+                <Icon name={GTGResources.name} alt={GTGResources.altText} title={GTGResources.altText} /></li>
               ))}
             </ul>
       </footer>
@@ -141,7 +146,8 @@ import wbResources from '../data/WordBuilderResourceData.json';
         <h3> Morphology Module Resources</h3>
         <ul class="column-list">
           {MorphResources.map(MorphResource =>(
-            <li><a href={MorphResource.url}>{MorphResource.title}</a></li>
+            <li><a href={MorphResource.url}>{MorphResource.title}</a>
+              <Icon name={MorphResource.name} alt={MorphResource.altText} title={MorphResource.altText} /> </li>
           ))}
          </ul>
       </footer>
@@ -177,7 +183,8 @@ import wbResources from '../data/WordBuilderResourceData.json';
               <div class="content">
                 <ul class="column-list">
                   {RTOverview.map(RTOverview =>(
-                    <li><a href={RTOverview.url}>{RTOverview.title}</a></li>
+                    <li><a href={RTOverview.url}>{RTOverview.title}</a>
+                      <Icon name={RTOverview.name}  alt={RTOverview.altText} title={RTOverview.altText} /></li>
                   ))}
                  </ul>
               </div> 
@@ -190,7 +197,8 @@ import wbResources from '../data/WordBuilderResourceData.json';
               <div class="content">
                 <ul class="column-list">
                   {RTSummary.map(RTSummary =>(
-                    <li><a href={RTSummary.url}>{RTSummary.title}</a></li>
+                    <li><a href={RTSummary.url}>{RTSummary.title}</a>
+                      <Icon name={RTSummary.name}  alt={RTSummary.altText} title={RTSummary.altText} /></li>
                   ))}
                  </ul>
               </div> 
@@ -203,7 +211,8 @@ import wbResources from '../data/WordBuilderResourceData.json';
               <div class="content">
                 <ul class="column-list">
                   {RTQuestioning.map(RTQuestioning =>(
-                    <li><a href={RTQuestioning.url}>{RTQuestioning.title}</a></li>
+                    <li><a href={RTQuestioning.url}>{RTQuestioning.title}</a>
+                      <Icon name={RTQuestioning.name} alt={RTQuestioning.altText} title={RTQuestioning.altText} /></li>
                   ))}
                  </ul>
               </div> 
@@ -217,7 +226,8 @@ import wbResources from '../data/WordBuilderResourceData.json';
               <div class="content">
                 <ul class="column-list">
                   {RTPredicting.map(RTPredicting =>(
-                    <li><a href={RTPredicting.url}>{RTPredicting.title}</a></li>
+                    <li><a href={RTPredicting.url}>{RTPredicting.title}</a>
+                      <Icon name={RTPredicting.name} alt={RTPredicting.altText} title={RTPredicting.altText} /></li>
                   ))}
                  </ul>
               </div> 
@@ -230,7 +240,8 @@ import wbResources from '../data/WordBuilderResourceData.json';
               <div class="content">
                 <ul class="column-list">
                   {RTClarifying.map(RTClarifying =>(
-                    <li><a href={RTClarifying.url}>{RTClarifying.title}</a></li>
+                    <li><a href={RTClarifying.url}>{RTClarifying.title}</a>
+                      <Icon name={RTClarifying.name} alt={RTClarifying.altText} title={RTClarifying.altText} /></li>
                   ))}
                  </ul>              
                 </div> 
@@ -261,7 +272,8 @@ import wbResources from '../data/WordBuilderResourceData.json';
       <h3>Self-Generated Questions Module Resources</h3>
         <ul class="column-list">
           {sgqResources.map(sgqResource=>(
-            <li><a href={sgqResource.url}>{sgqResource.title}</a></li>
+            <li><a href={sgqResource.url}>{sgqResource.title}</a>
+              <Icon name={sgqResource.name} alt={sgqResource.altText} title={sgqResource.altText} /></li>
           ))}
         </ul>
       </footer>
@@ -291,7 +303,8 @@ import wbResources from '../data/WordBuilderResourceData.json';
         <h3 >Vocabulary Maps Module Resources</h3>
         <ul class="column-list">
           {vocabResources.map(vocabResource=>(
-            <li><a href={vocabResource.url}>{vocabResource.title}</a></li>
+            <li><a href={vocabResource.url}>{vocabResource.title}</a>
+              <Icon name={vocabResource.name} alt={vocabResource.altText} title={vocabResource.altText} /></li>
           ))}
         </ul>
         </footer>
@@ -318,7 +331,7 @@ import wbResources from '../data/WordBuilderResourceData.json';
             <Card dark={true} url={wbResource.url} title={wbResource.title} body={}/>
           ))}
            -->
-          <Card dark={true} url={'https://vimeo.com/showcase/calireadsdemonstration'} title="WordBuilder Demonstration Videos" body={} />
+          <Card dark={true} url={'https://vimeo.com/showcase/calireadsdemonstration'} title="WordBuilder Demonstration Videos" body={}  />
           <Card dark={true} url={'https://vimeo.com/showcase/calireadswebinars'} title="WordBuilder Training Webinars" body={} />
 
           </ul>
@@ -333,7 +346,8 @@ import wbResources from '../data/WordBuilderResourceData.json';
       <h3>Wordbuilder Module Resources</h3>
         <ul class="column-list">
             {wbResources.map(wbResource =>(
-              <li><a href={wbResource.url}>{wbResource.title}</a></li>
+              <li><a href={wbResource.url}>{wbResource.title}</a>
+                <Icon name={wbResource.name} alt={wbResource.altText} title={wbResource.altText} /></li>
             ))}
         </ul>
     </footer>
@@ -434,6 +448,12 @@ color:var(--color-accent);
   z-index: 1;
 }
 
+[astro-icon] {
+        color: #666;
+        /* OR */
+        width:22px;
+        padding-top: 12px;
+    }
 
 @media all and (min-width: 600px) {
   .aside { flex: 1 0 0; }

@@ -1,15 +1,33 @@
 [
     {
       "title": "Vocabulary Map Template", 
-      "url": "https://www.calireads.org/bridge-content/Voc-Map-portrait.pdf"
+      "url": "https://www.calireads.org/bridge-content/VocabularyMaps/Voc-Map-portrait.pdf",
+      "name": "carbon:document-pdf",
+      "altText": "Adobe PDF"
     },
     {
       "title": "Steps for Instruction", 
-      "url": "https://calireads.org/bridge-content/Handout-Steps_for_Vocabulary_Map_Instruction.pdf"
+      "url": "https://calireads.org/bridge-content/VocabularyMaps/Handout-Steps_for_Vocabulary_Map_Instruction.pdf",
+      "name": "carbon:document-pdf",
+      "altText": "Adobe PDF"
     },
     {
       "title": "Isabel Beck Activities", 
-      "url": "https://calireads.org/bridge-content/Handout_IsabelBeckActivities.pdf"
+      "url": "https://calireads.org/bridge-content/VocabularyMaps/Handout_IsabelBeckActivities.pdf",
+      "name": "carbon:document-pdf",
+      "altText": "Adobe PDF"
+    },
+    {
+      "title": "Vocabulary Maps - Boycott",
+      "url": "https://calireads.org/bridge-content/VocabularyMaps/Vocabulary_Map_boycott.pdf",
+      "name": "carbon:document-pdf",
+      "altText": "Adobe PDF"
+    },
+    {
+      "title": "Vocabulary Maps - Segregation",
+      "url": "https://calireads.org/bridge-content/VocabularyMaps/Vocabulary_Map_segregation.pdf",
+      "name": "carbon:document-pdf",
+      "altText": "Adobe PDF"
     }
   
   ]

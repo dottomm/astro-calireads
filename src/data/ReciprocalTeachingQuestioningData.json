@@ -1,35 +1,51 @@
 [
     {
         "title": "Four Square Week 2 Word Doc",
-        "url": "https://calireads.org/bridge-content/reciprocalteaching/questioning/Four_Square_Week_2.docx"
+        "url": "https://calireads.org/bridge-content/reciprocalteaching/questioning/Four_Square_Week_2.docx",
+        "name": "carbon:document-word-processor",
+        "altText": "Word Doc"
     },
 
     {
         "title": "Four Square Week 2 PDF",
-        "url": "https://calireads.org/bridge-content/reciprocalteaching/questioning/Four_Square_Week_2.pdf"
+        "url": "https://calireads.org/bridge-content/reciprocalteaching/questioning/Four_Square_Week_2.pdf",
+        "name": "carbon:document-pdf",
+        "altText": "Adobe PDF"
     },
     {
         "title": "Questioning Classroom Instruction PowerPoint",
-        "url": "https://calireads.org/bridge-content/reciprocalteaching/questioning/Questioning_Classroom_Instruction.pptx"
+        "url": "https://calireads.org/bridge-content/reciprocalteaching/questioning/Questioning_Classroom_Instruction.pptx",
+        "name": "carbon:ppt",
+        "altText": "PowerPoint"
     },
     {
         "title": "RT Group Leader Checklist Teacher",
-        "url": "https://calireads.org/bridge-content/reciprocalteaching/questioning/RT_Group_Leader_Checklist_Teacher.pdf"
+        "url": "https://calireads.org/bridge-content/reciprocalteaching/questioning/RT_Group_Leader_Checklist_Teacher.pdf",
+        "name": "carbon:document-pdf",
+        "altText": "Adobe PDF"
     },
     {
         "title": "RT Group Leader Checklist",
-        "url": "https://calireads.org/bridge-content/reciprocalteaching/questioning/RT_Group_Leader_Checklist.pdf"
+        "url": "https://calireads.org/bridge-content/reciprocalteaching/questioning/RT_Group_Leader_Checklist.pdf",
+        "name": "carbon:document-pdf",
+        "altText": "Adobe PDF"
     },
     {
         "title": "Sample Class Schedule",
-        "url": "https://calireads.org/bridge-content/reciprocalteaching/questioning/Sample_Class_Schedule.pdf"
+        "url": "https://calireads.org/bridge-content/reciprocalteaching/questioning/Sample_Class_Schedule.pdf",
+        "name": "carbon:document-pdf",
+        "altText": "Adobe PDF"
     },
     {
         "title": "Teacher Tips for Questioning",
-        "url": "https://calireads.org/bridge-content/reciprocalteaching/questioning/Teacher_Tips_for_Questioning.pdf"
+        "url": "https://calireads.org/bridge-content/reciprocalteaching/questioning/Teacher_Tips_for_Questioning.pdf",
+        "name": "carbon:document-pdf",
+        "altText": "Adobe PDF"
     },
     {
         "title": "Warm Up Questioning Week 2",
-        "url": "https://calireads.org/bridge-content/reciprocalteaching/questioning/Warm_up_Questioning_Week_2.pdf"
+        "url": "https://calireads.org/bridge-content/reciprocalteaching/questioning/Warm_up_Questioning_Week_2.pdf",
+        "name": "carbon:document-pdf",
+        "altText": "Adobe PDF"
     }
 ]
