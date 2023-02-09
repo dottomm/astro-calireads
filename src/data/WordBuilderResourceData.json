@@ -1,5 +1,11 @@
 [
     {
+      "title": "CALI Reads WordBuilder",
+      "url": "https://calireads.org/bridge-content/wordbuilder/CALI-Reads-WordBuilder.pdf",
+      "name": "carbon:document-pdf",
+      "altText": "Adobe PDF"
+    },
+    {
       "title": "WordBuilder Scope and Sequence", 
       "url": "https://www.calireads.org/bridge-content/wordbuilder/Overview_WordBuilder/WordBuilder-Scope-and-Sequence.pdf",
       "name": "carbon:document-pdf",

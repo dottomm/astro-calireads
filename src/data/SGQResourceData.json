@@ -1,25 +1,50 @@
 [
+  {
+    "title": "Self-Generated Questions Rubric",
+    "url": "https://calireads.org/bridge-content/SGQ/Self_Generated_Questions_Rubric.pdf",
+    "name": "carbon:document-pdf",
+    "altText": "Adobe PDF"
+  },
+  {
+      "title": "Self-Generated Questions Rubric Level 1",
+      "url": "https://calireads.org/bridge-content/SGQ/Self_Generated_Questions_Rubric_Level_1.pdf",
+      "name": "carbon:document-pdf",
+      "altText": "Adobe PDF"
+    },
+    {
+      "title": "Self-Generated Questions Rubric Level 2",
+      "url": "https://calireads.org/bridge-content/SGQ/Self_Generated_Questions_Rubric_Level_2.pdf",
+      "name": "carbon:document-pdf",
+      "altText": "Adobe PDF"
+    },
+    {
+      "title": "Self-Generated Questions Rubric Level 3",
+      "url": "https://calireads.org/bridge-content/SGQ/Self_Generated_Questions_Rubric_Level_3.pdf",
+      "name": "carbon:document-pdf",
+      "altText": "Adobe PDF"
+    },
+    
     {
       "title": "digiCOACH SGQ walkthrough tool", 
-      "url": "https://www.calireads.org/pdfs/Self-Generated-Questions-digiCOACH-Edition.pdf",
+      "url": "https://www.calireads.org/bridge-content/SGQ/Self-Generated-Questions-digiCOACH-Edition.pdf",
       "name": "carbon:document-pdf",
       "altText": "Adobe PDF"
     },
     {
       "title": "Teacher Planning Sheet", 
-      "url": "https://www.calireads.org/bridge-content/SGQ-Planning-Sheet.pdf",
+      "url": "https://www.calireads.org/bridge-content/SGQ/SGQ-Planning-Sheet.pdf",
       "name": "carbon:document-pdf",
       "altText": "Adobe PDF"
     },
     {
       "title": "Student Cue Cards", 
-      "url": "https://www.calireads.org/bridge-content/SGQ_Cue_Cards.pdf",
+      "url": "https://www.calireads.org/bridge-content/SGQ/SGQ_Cue_Cards.pdf",
       "name": "carbon:document-pdf",
       "altText": "Adobe PDF"
     },
     {
       "title": "Student Question Log", 
-      "url": "https://www.calireads.org/bridge-content/Student-Log-for-SGQ.pdf",
+      "url": "https://www.calireads.org/bridge-content/SGQ/Student-Log-for-SGQ.pdf",
       "name": "carbon:document-pdf",
       "altText": "Adobe PDF"
     }

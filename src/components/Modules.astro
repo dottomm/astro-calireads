@@ -19,6 +19,7 @@ import WBSmall from '../images/gettyImages/wordBuilder-small.jpg';
 
 import wbVideo from '../data/wbVideo.json';
 
+import WordParts from './WordParts.astro';
 import Card from '../components/Card.astro';
 export interface Props {
 
@@ -331,7 +332,7 @@ import { Icon } from 'astro-icon'
             <Card dark={true} url={wbResource.url} title={wbResource.title} body={}/>
           ))}
            -->
-          <Card dark={true} url={'https://vimeo.com/showcase/calireadsdemonstration'} title="WordBuilder Demonstration Videos" body={}  />
+          <Card dark={true} url={'https://vimeo.com/showcase/9843748' } title="WordBuilder Demonstration Videos" body={}  />
           <Card dark={true} url={'https://vimeo.com/showcase/calireadswebinars'} title="WordBuilder Training Webinars" body={} />
 
           </ul>
@@ -343,6 +344,7 @@ import { Icon } from 'astro-icon'
         ))}
       </article>
      <footer class='footer'>
+      <WordParts />
       <h3>Wordbuilder Module Resources</h3>
         <ul class="column-list">
             {wbResources.map(wbResource =>(
@@ -362,7 +364,6 @@ import { Icon } from 'astro-icon'
   text-align: left;
 }
 .column-list li a:link{
-  width:100%;
   justify-content: baseline;
   text-decoration: underline;
 
@@ -436,7 +437,7 @@ color:var(--color-accent);
   background: white;
   right: 0;
   bottom: 0;
-  padding: 20px;
+  padding: 10px;
   border: 1px solid #ccc; 
 }
 [type=radio]:checked ~ label {

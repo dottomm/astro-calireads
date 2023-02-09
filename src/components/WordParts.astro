@@ -1,0 +1,34 @@
+---
+import Card from './Card.astro';
+import WordPartsdata from '../data/WordPartsData.json';
+
+---
+
+
+<section class="wordparts" id="wordparts" >
+  <h3>WordBuilder Word Part Cards</h3>
+
+    <div class="container">
+      {WordPartsdata.map(feature => (
+       <Card dark={true} title={feature.title} body={} url={feature.url}   />
+      ))}
+    </div>
+  </section>
+
+  <style>
+    .wordparts .container {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-gap: 6px;
+  padding: 0 10px;
+  margin: 6px auto;
+}
+
+@media (max-width: 800px) {
+  .wordparts .container {
+    grid-template-columns: 1fr;
+  }
+
+ 
+}
+  </style>
