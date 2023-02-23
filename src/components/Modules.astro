@@ -20,7 +20,9 @@ import WBSmall from '../images/gettyImages/wordBuilder-small.jpg';
 import wbVideo from '../data/wbVideo.json';
 
 import WordParts from './WordParts.astro';
-import Card from '../components/Card.astro';
+import Button from './Button.astro';
+import MediaButton from './MediaButton.astro';
+
 export interface Props {
 
 title: string;
@@ -68,12 +70,23 @@ import { Icon } from 'astro-icon'
     </header>
     <article class="main">
            {ARGData.map(ARG => (
+            <h3>{ARG.title}  </h3>
         <div>
-            <a href={ARG.url}><h3>{ARG.title} </h3></a>
             <p>{ARG.body} </p>
         </div>
       ))}
     </article>
+    <aside class='aside aside-2'>
+      {ARGData.map(ARG => (
+          
+            <a href={ARG.url}>
+             <Button addText={"Launch: "} buttonText={ARG.title}/>
+          
+          </a>
+   
+  ))}
+      
+  </aside>
     <aside class="aside aside-1"> 
       <div class='imgHolder'> 
         <img class='logos' src={ARGImg} alt="">
@@ -113,6 +126,15 @@ import { Icon } from 'astro-icon'
         </div>
      
     </aside>
+    <aside class='aside aside-2'>
+          
+      {GTGData.map(GTG => (
+        <a href={GTG.url}>
+          <Button addText={"Launch: "}buttonText={GTG.title} />
+          </a>
+      
+          ))} 
+    </aside>
 
     <footer class="footer">
         <h3 >Get The Gist Module Resources</h3>
@@ -142,6 +164,14 @@ import { Icon } from 'astro-icon'
           <img class='logos' src={MorphImg} alt="">
           <img class='logos-small' src={MorphSmall} alt="">
         </div>
+      </aside>
+      <aside class='aside aside-2'>
+        {MorphData.map(morph => (
+          <a href={morph.url}>
+            <Button addText={"Launch: "} buttonText={morph.title} />
+          </a>
+          
+          ))}
       </aside>
     <footer class='footer'>
         <h3> Morphology Module Resources</h3>
@@ -173,6 +203,15 @@ import { Icon } from 'astro-icon'
           
           ))}
         </article>
+        <aside class='aside aside-2'>
+          {RTData.map(rt => (
+            <a href={rt.url}>
+              <Button addText={"Launch: "} buttonText={rt.title} />
+                </a>
+          
+          
+          ))}
+        </aside>
       <footer class='footer'>
         <h3>Reciprocal Teaching Module Resources</h3>
         <div class="tabs">
@@ -269,6 +308,13 @@ import { Icon } from 'astro-icon'
        <p>{SGQ.body} </p>
       ))}
       </article>
+      <aside class='aside aside-2'>
+        {sgqData.map(SGQ => (
+          <a href={SGQ.url}>
+            <Button addText={"Launch: "} buttonText={SGQ.title} />
+            </a>
+        ))}
+      </aside>
       <footer class='footer'>
       <h3>Self-Generated Questions Module Resources</h3>
         <ul class="column-list">
@@ -299,6 +345,14 @@ import { Icon } from 'astro-icon'
        </div>
       ))}
       </article>
+      <aside class='aside aside-2'>
+        {vocabData.map(vocab => (
+         <a href={vocab.url}>
+          <Button addText={"Launch: "} buttonText={vocab.title} />
+          </a>
+          
+         ))}
+      </aside>
       
       <footer  class='footer'>
         <h3 >Vocabulary Maps Module Resources</h3>
@@ -325,17 +379,18 @@ import { Icon } from 'astro-icon'
         </div>
       </aside>
       <aside  class='aside aside-2'>
-          <ul class="column-list">
+         
+         
+        {wbData.map(wordbuilder => (
+          <a href={wordbuilder.url}>
+            <Button addText={"Launch: "} buttonText={wordbuilder.title} />
+            </a>
+        
+        ))}
+          <Button url={"https://vimeo.com/showcase/9843748" } title="WordBuilder Demonstration Videos" buttonText={"Watch: WordBuilder Demonstration Videos"} body={}  />
           
-          <!--
-            {wbVideo.slice(3, 6).map(wbResource =>(          
-            <Card dark={true} url={wbResource.url} title={wbResource.title} body={}/>
-          ))}
-           -->
-          <Card dark={true} url={'https://vimeo.com/showcase/9843748' } title="WordBuilder Demonstration Videos" body={}  />
-          <Card dark={true} url={'https://vimeo.com/showcase/calireadswebinars'} title="WordBuilder Training Webinars" body={} />
+          <Button url={'https://vimeo.com/showcase/calireadswebinars'} title="WordBuilder Training Webinars" buttonText={"Watch: WordBuilder Training Webinars"} body={} />
 
-          </ul>
       </aside>
       <article class='main'>
         {wbData.map(wordbuilder => (
@@ -357,6 +412,18 @@ import { Icon } from 'astro-icon'
   </section>
   <style>
    
+  
+.moduleButton {
+  
+  color: #fff;
+  
+  
+}
+
+.moduleButton a:hover{
+background-color: #666;
+}
+
   
 
     .column-list {
@@ -401,6 +468,7 @@ color:var(--color-accent);
 
 .main {
   text-align: left;
+  max-width: 650px;
 }
 
 .aside-1 {

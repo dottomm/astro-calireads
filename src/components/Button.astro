@@ -1,0 +1,66 @@
+---
+export interface Props {
+title: string;
+body: string;
+url: string;
+dark?: boolean;
+buttonText: string;
+addText: string;
+}
+
+const { title, body, url,  dark = false, buttonText, addText } = Astro.props as Props
+---
+
+   
+      <button class="btn" title={title} body={body} url={url} >
+        
+        <span>{addText} {buttonText}</span>
+      </button>
+
+
+
+
+  <style>
+
+
+
+.btn {
+  width: 100%;
+  height: auto;
+  cursor: pointer;
+  background: #4ba3f5;
+  border: 1px solid #91C9FF;
+
+  outline: none;
+  transition: 1s ease-in-out;
+  margin-bottom:3em;
+}
+
+svg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  fill: none;
+  stroke: #fff;
+  stroke-dasharray: 150 480;
+  stroke-dashoffset: 150;
+  transition: .6s ease-in-out;
+}
+
+.btn:hover {
+  transition: .6s ease-in-out;
+  background: #9bc7f3;
+}
+
+.btn:hover svg {
+  stroke-dashoffset: -480;
+}
+
+.btn span {
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+
+  </style>
