@@ -21,6 +21,7 @@ import wbVideo from '../data/wbVideo.json';
 
 import WordParts from './WordParts.astro';
 import Button from './Button.astro';
+import Card from './Card.astro';
 import MediaButton from './MediaButton.astro';
 
 export interface Props {
@@ -387,9 +388,9 @@ import { Icon } from 'astro-icon'
             </a>
         
         ))}
-          <Button url={"https://vimeo.com/showcase/9843748" } title="WordBuilder Demonstration Videos" buttonText={"Watch: WordBuilder Demonstration Videos"} body={}  />
+          <MediaButton url="https://vimeo.com/showcase/9843748"  title="Watch: WordBuilder Demonstration Videos"   />
           
-          <Button url={'https://vimeo.com/showcase/calireadswebinars'} title="WordBuilder Training Webinars" buttonText={"Watch: WordBuilder Training Webinars"} body={} />
+          <MediaButton url='https://vimeo.com/showcase/calireadswebinars' title="Watch: WordBuilder Training Webinars"  />
 
       </aside>
       <article class='main'>

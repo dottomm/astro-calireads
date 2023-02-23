@@ -8,13 +8,13 @@ buttonText: string;
 addText: string;
 }
 
-const { title, body, url,  dark = false, buttonText, addText } = Astro.props as Props
+const { title,  url,  buttonText, addText } = Astro.props as Props
 ---
 
    
-      <button class="btn" title={title} body={body} url={url} >
+      <button class="btn" title={title} {url} >
         
-        <span>{addText} {buttonText}</span>
+        <span>{addText}  {buttonText}</span>
       </button>
 
 

@@ -5,68 +5,36 @@ title: string;
 body: string;
 url: string;
 dark?: boolean;
-buttonText: string;
-addText: string;
 
 }
-const MediaPlay =  ('images/media-play.jpeg');
 
-const { title, body, url,  dark = false, buttonText, addText } = Astro.props as Props
+const { title, body, url,  dark = false } = Astro.props as Props
 ---
 
-   
-<button class="btn" title={title} body={body} url={url} >
-        
-  <span>{addText} {buttonText}</span>
-</button>
+<div class='mediaBtn'>
+<h3><a href={url} >{title}</a></h3>
+<p>{body}</p>
 
-
-
-  <style>
-
-
+</div>
+<style>
 
 .mediaBtn {
-  width: 100%;
-  height: auto;
-  cursor: pointer;
-  background: #dee3e7;
-  border: 1px solid #91C9FF;
-  outline: none;
-  transition: 1s ease-in-out;
-  margin-bottom:3em;
-  color:#000;
+  background-color: #ccc;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
 }
 
-.media{
-    background-image:url('images/media-play.jpeg') ;
+.mediaBtn a {
+  color:var(--color-secondary);
 }
 
-svg {
-  position: absolute;
-  left: 0;
-  top: 0;
-  fill: none;
-  stroke: #fff;
-  stroke-dasharray: 150 480;
-  stroke-dashoffset: 150;
-  transition: .6s ease-in-out;
-}
-
-.btn:hover {
-  transition: .6s ease-in-out;
-  background: #9bc7f3;
-}
-
-.btn:hover svg {
-  stroke-dashoffset: -480;
-}
-
-.btn span {
-  color: white;
-  font-size: 18px;
-  font-weight: 600;
+.mediaBtn a:hover{
+  color: var(--color-primary);
 }
 
 
-  </style>
+
+
+</style>
