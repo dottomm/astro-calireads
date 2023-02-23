@@ -19,7 +19,10 @@ const { title, body, url,  dark = false } = Astro.props as Props
 <style>
 
 .mediaBtn {
-  background-color: #ccc;
+  background-color: #fff;
+ background-image:url('../images/sm-media-play.jpg') ;
+ background-repeat: no-repeat;
+ background-position: center;
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -31,7 +34,7 @@ const { title, body, url,  dark = false } = Astro.props as Props
 }
 
 .mediaBtn a:hover{
-  color: var(--color-primary);
+  color: var(--color-accent);
 }
 
 
