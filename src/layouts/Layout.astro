@@ -2,14 +2,12 @@
 
 import BaseHead from '../components/BaseHead.astro';
 import Header from '../components/Header.astro';
-
 import Footer from '../components/Footer.astro';
-
 import '../styles/global.css';
 
 ---
-<body>
     <BaseHead />
+    <body>
     <a href='#page-content' class='skipLink'>skip to content</a>
     <Header />
     <slot />

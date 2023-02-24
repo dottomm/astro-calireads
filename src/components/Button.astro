@@ -1,28 +1,16 @@
 ---
-export interface Props {
-title: string;
-body: string;
-url: string;
-dark?: boolean;
-buttonText: string;
-addText: string;
-}
 
-const { title,  url,  buttonText, addText } = Astro.props as Props
+
+const { title,  url,  buttonText, addText } = Astro.props 
 ---
 
-   
       <button class="btn" title={title} {url} >
         
         <span>{addText}  {buttonText}</span>
+      
       </button>
 
-
-
-
   <style>
-
-
 
 .btn {
   width: 100%;
@@ -30,7 +18,6 @@ const { title,  url,  buttonText, addText } = Astro.props as Props
   cursor: pointer;
   background: #4ba3f5;
   border: 1px solid #91C9FF;
-
   outline: none;
   transition: 1s ease-in-out;
   margin-bottom:3em;
@@ -61,6 +48,5 @@ svg {
   font-size: 18px;
   font-weight: 600;
 }
-
 
   </style>

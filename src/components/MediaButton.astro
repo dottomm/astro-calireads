@@ -2,19 +2,15 @@
 export interface Props {
 
 title: string;
-body: string;
 url: string;
-bgImg: string;
-dark?: boolean;
 
 }
 
-const { title, body, url,  dark = false } = Astro.props as Props
+const { title,  url} = Astro.props as Props
 ---
 
 <div class='mediaBtn'>
 <h3><a href={url} >{title}</a></h3>
-<p>{body}</p>
 
 </div>
 <style>

@@ -16,12 +16,8 @@ import vocabImg from '../images/VocabMaps_500.png';
 import vocabSmall from '../images/gettyImages/vocabImgSmall.jpg';
 import WBImg from '../images/wordBuilder_500.png';
 import WBSmall from '../images/gettyImages/wordBuilder-small.jpg';
-
-import wbVideo from '../data/wbVideo.json';
-
 import WordParts from './WordParts.astro';
 import Button from './Button.astro';
-import Card from './Card.astro';
 import MediaButton from './MediaButton.astro';
 
 export interface Props {
@@ -32,7 +28,6 @@ url: string;
 name?:string;
 altText?:string;
 }
-const { title, body, url} = Astro.props as Props;
 
 //ARG Modules Data
 import ARGData from '../data/ARGModuleData.json';
