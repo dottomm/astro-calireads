@@ -71,7 +71,7 @@ import { Icon } from 'astro-icon'
     </header>
     <article class="main">
            {ARGData.map(ARG => (
-            <h3>{ARG.title}  </h3>
+            <a href={ARG.url}><h3>{ARG.title}  </h3></a>
         <div>
             <p>{ARG.body} </p>
         </div>

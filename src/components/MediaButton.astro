@@ -4,6 +4,7 @@ export interface Props {
 title: string;
 body: string;
 url: string;
+bgImg: string;
 dark?: boolean;
 
 }
@@ -20,8 +21,8 @@ const { title, body, url,  dark = false } = Astro.props as Props
 
 .mediaBtn {
   background-color: #fff;
- background-image:url('../images/sm-media-play.jpg') ;
- background-repeat: no-repeat;
+  background-image:url('../images/sm-media-play.jpg');
+  background-repeat: no-repeat;
  background-position: center;
   padding: 20px;
   border-radius: 10px;
@@ -35,6 +36,9 @@ const { title, body, url,  dark = false } = Astro.props as Props
 
 .mediaBtn a:hover{
   color: var(--color-accent);
+  background-position: center;
+  background-repeat: no-repeat;
+
 }
 
 
