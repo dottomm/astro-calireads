@@ -16,7 +16,7 @@ import vocabImg from '../images/VocabMaps_500.png';
 import vocabSmall from '../images/gettyImages/vocabImgSmall.jpg';
 import WBImg from '../images/wordBuilder_500.png';
 import WBSmall from '../images/gettyImages/wordBuilder-small.jpg';
-import WordParts from './WordParts.astro';
+//import WordParts from './WordParts.astro';
 import Button from './Button.astro';
 import MediaButton from './MediaButton.astro';
 
@@ -90,7 +90,7 @@ import { Icon } from 'astro-icon'
     </div>
   </aside>
     <footer class="footer">
-      <h3 >Anticipation Reaction Guides Module Resources</h3>
+      <h3 >Anticipation Reaction Guides Resources</h3>
           <ul class="column-list"> 
             {ARGResources.map(ARGResource => (
             
@@ -133,7 +133,7 @@ import { Icon } from 'astro-icon'
     </aside>
 
     <footer class="footer">
-        <h3 >Get The Gist Module Resources</h3>
+        <h3 >Get The Gist Resources</h3>
             <ul class="column-list"> 
               {GTGResources.map(GTGResources => (
                 <li><a href={GTGResources.url}>{GTGResources.title}</a> 
@@ -170,7 +170,7 @@ import { Icon } from 'astro-icon'
           ))}
       </aside>
     <footer class='footer'>
-        <h3> Morphology Module Resources</h3>
+        <h3> Morphology Resources</h3>
         <ul class="column-list">
           {MorphResources.map(MorphResource =>(
             <li><a href={MorphResource.url}>{MorphResource.title}</a>
@@ -209,7 +209,7 @@ import { Icon } from 'astro-icon'
           ))}
         </aside>
       <footer class='footer'>
-        <h3>Reciprocal Teaching Module Resources</h3>
+        <h3>Reciprocal Teaching Resources</h3>
         <div class="tabs">
     
           <div class="tab">
@@ -312,7 +312,7 @@ import { Icon } from 'astro-icon'
         ))}
       </aside>
       <footer class='footer'>
-      <h3>Self-Generated Questions Module Resources</h3>
+      <h3>Self-Generated Questions Resources</h3>
         <ul class="column-list">
           {sgqResources.map(sgqResource=>(
             <li><a href={sgqResource.url}>{sgqResource.title}</a>
@@ -351,7 +351,7 @@ import { Icon } from 'astro-icon'
       </aside>
       
       <footer  class='footer'>
-        <h3 >Vocabulary Maps Module Resources</h3>
+        <h3 >Vocabulary Maps Resources</h3>
         <ul class="column-list">
           {vocabResources.map(vocabResource=>(
             <li><a href={vocabResource.url}>{vocabResource.title}</a>
@@ -394,8 +394,8 @@ import { Icon } from 'astro-icon'
         ))}
       </article>
      <footer class='footer'>
-      <WordParts />
-      <h3>Wordbuilder Module Resources</h3>
+     
+      <h3>Wordbuilder Resources</h3>
         <ul class="column-list">
             {wbResources.map(wbResource =>(
               <li><a href={wbResource.url}>{wbResource.title}</a>

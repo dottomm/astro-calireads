@@ -35,12 +35,7 @@
       "name": "carbon:document-pdf",
       "altText": "Adobe PDF"
     },
-    {
-      "title": "digiCoach walkthrough Look Fors",
-      "url": "https://calireads.org/bridge-content/ARGuides/AR_Guides_Course_Resources/digiCoach walkthrough Look Fors.pdf",
-      "name": "carbon:document-pdf",
-      "altText": "Adobe PDF"
-    },
+    
     {
       "title": "Reading Scaffolds",
       "url": "https://calireads.org/bridge-content/ARGuides/AR_Guides_Course_Resources/Reading Scaffolds.pdf",
@@ -51,6 +46,12 @@
       "title": "Student Work Rubric",
       "url": "https://calireads.org/bridge-content/ARGuides/AR_Guides_Course_Resources/Student Work Ruberic.pdf",
       "name": "carbon:document-pdf" ,
+      "altText": "Adobe PDF"
+    },
+    {
+      "title": "AR Guides Walkthrough Tool",
+      "url": "https://calireads.org/bridge-content/ARGuides/AR_Guides_Course_Resources/digiCoach walkthrough Look Fors.pdf",
+      "name": "carbon:document-pdf",
       "altText": "Adobe PDF"
     },
     {

@@ -6,11 +6,17 @@
       "altText": "Adobe PDF"
     },
     {
-        "title": "Vocabulary Maps Walkthrough",
+        "title": "Vocabulary Maps Walkthrough Tool",
         "url": "https://calireads.org/bridge-content/VocabularyMaps/Vocabulary-Maps-Walkthrough.pdf",
         "name": "carbon:document-pdf",
         "altText": "Adobe PDF"
     },
+    {
+      "title": "Vocabulary Maps Template Blank",
+      "url": "https://calireads.org/bridge-content/VocabularyMaps/VocMap_blank_portrait(accessible).docx",
+      "name": "carbon:document-word-processor",
+      "altText": "Word Doc"
+  },
     {
       "title": "Steps for Instruction", 
       "url": "https://calireads.org/bridge-content/VocabularyMaps/Handout-Steps_for_Vocabulary_Map_Instruction.pdf",
