@@ -5,12 +5,7 @@
       "name": "carbon:ppt",
       "altText": "PowerPoint"
     },
-    {
-      "title": "Morphology Walkthrough Tool",
-      "url": "https://calireads.org/bridge-content/Morphology/CALIReads-MorphologyWalkthrough.pdf",
-      "name": "carbon:document-pdf",
-      "altText": "Adobe PDF"
-    },
+    
     {
       "title": "Study of Word Meaning Notes", 
       "url": "https://calireads.org/bridge-content/Morphology/Terminology/Study_of_Word_Meaning_Notes.pdf",
@@ -112,6 +107,12 @@
       "url": "https://www.etymonline.com/",
       "name": "carbon:application-web",
       "altText": "Web Site"
+    },
+    {
+      "title": "Morphology Walkthrough Tool",
+      "url": "https://calireads.org/bridge-content/Morphology/CALIReads-MorphologyWalkthrough.pdf",
+      "name": "carbon:document-pdf",
+      "altText": "Adobe PDF"
     },
     {
       "title": "Vocabulary VIP", 

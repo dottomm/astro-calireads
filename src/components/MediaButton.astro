@@ -16,24 +16,28 @@ const { title,  url} = Astro.props as Props
 <style>
 
 .mediaBtn {
-  background-color: #fff;
-  background-image:url('../images/sm-media-play.jpg');
-  background-repeat: no-repeat;
- background-position: center;
-  padding: 20px;
-  border-radius: 10px;
+  padding: 25px;
+  border-radius: 14px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   margin-bottom: 20px;
+  background: url('../images/gr-media-play.png') ;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: center;
+
 }
 
-.mediaBtn a {
+.mediaBtn a{
+  width:100%;
+  padding:22px;
+  
   color:var(--color-secondary);
 }
 
 .mediaBtn a:hover{
   color: var(--color-accent);
   background-position: center;
-  background-repeat: no-repeat;
+
 
 }
 

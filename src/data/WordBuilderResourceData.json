@@ -54,12 +54,7 @@
       "name": "carbon:document-pdf",
       "altText": "Adobe PDF"
     },
-    {
-      "title": "Wordbuilder Walkthrough Tool",
-      "url": "https://calireads.org/bridge-content/wordbuilder/CALI-Reads-WordBuilder.pdf",
-      "name": "carbon:document-pdf",
-      "altText": "Adobe PDF"
-    },
+
     {
       "title": "Quizlet Word Part Flashcards",
       "url": "https://www.calireads.org/assets/Remote-WordBuilder.pptx",
@@ -71,5 +66,11 @@
       "url": "https://calireads.org/bridge-content/wordbuilder/word-part-cards.zip",
       "name": "ph:file-zip",
       "altText": "Zip File"
+    },
+    {
+      "title": "Wordbuilder Walkthrough Tool",
+      "url": "https://calireads.org/bridge-content/wordbuilder/CALI-Reads-WordBuilder.pdf",
+      "name": "carbon:document-pdf",
+      "altText": "Adobe PDF"
     }
   ]

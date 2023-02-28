@@ -383,17 +383,24 @@ import { Icon } from 'astro-icon'
             </a>
         
         ))}
-          <MediaButton url="https://vimeo.com/showcase/9843748"  title="Watch: WordBuilder Demonstration Videos"   />
-          
-          <MediaButton url='https://vimeo.com/showcase/calireadswebinars' title="Watch: WordBuilder Training Webinars"  />
-      </aside>
+         </aside>
       <article class='main'>
         {wbData.map(wordbuilder => (
           <a href={wordbuilder.url}><h3>{wordbuilder.title}</h3></a>
           <p>{wordbuilder.body} </p>
         ))}
+        
       </article>
+       
      <footer class='footer'>
+      <div class='media-button-container' id='media-button-container'>
+        <div >
+          <MediaButton url="https://vimeo.com/showcase/9843748"  title="Watch: WordBuilder Demonstration Videos"   />
+        </div>    
+        <div >
+          <MediaButton url='https://vimeo.com/showcase/calireadswebinars' title="Watch: WordBuilder Training Webinars"  />
+      </div>
+        </div>
      
       <h3>Wordbuilder Resources</h3>
         <ul class="column-list">
@@ -406,8 +413,15 @@ import { Icon } from 'astro-icon'
     </div>
   </section>
   <style>
-   
-  
+
+.media-button-container{
+  background-color: var(#F7FAFC);
+  display: flex;
+  flex-wrap: nowrap;
+  column-gap: 20px;
+  justify-content:space-around;
+}
+
 .moduleButton {
   
   color: #fff;
