@@ -368,6 +368,7 @@ import { Icon } from 'astro-icon'
       <header class='mod-header'>
         <h2>Wordbuilder Modules</h2>
       </header>
+      
       <aside class='aside aside-1'>
         <div class="imgHolder">
           <img class='logos' src={WBImg} alt="">
@@ -391,8 +392,6 @@ import { Icon } from 'astro-icon'
         ))}
         
       </article>
-       
-     <footer class='footer'>
       <div class='media-button-container' id='media-button-container'>
         <div >
           <MediaButton url="https://vimeo.com/showcase/9843748"  title="Watch: WordBuilder Demonstration Videos"   />
@@ -401,6 +400,8 @@ import { Icon } from 'astro-icon'
           <MediaButton url='https://vimeo.com/showcase/calireadswebinars' title="Watch: WordBuilder Training Webinars"  />
       </div>
         </div>
+     <footer class='footer'>
+      
      
       <h3>Wordbuilder Resources</h3>
         <ul class="column-list">
@@ -415,7 +416,7 @@ import { Icon } from 'astro-icon'
   <style>
 
 .media-button-container{
-  background-color: var(#F7FAFC);
+  float: bottom;
   display: flex;
   flex-wrap: nowrap;
   column-gap: 20px;
@@ -542,7 +543,8 @@ color:var(--color-accent);
   .aside-1 { order: 1; } 
   .main    { order: 2; }
   .aside-2 { order: 3; }
-  .footer  { order: 4; }
+  .media-button-container{ order:4;}
+  .footer  { order: 5; }
   
 }
 
