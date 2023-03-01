@@ -6,7 +6,7 @@ const { title,  url,  buttonText, addText } = Astro.props
 
       <button class="btn" title={title} {url} >
         
-        <span>{addText}  {buttonText}</span>
+        <span class='launch'>{addText}</span> <span>  {buttonText}</span>
       
       </button>
 
@@ -22,6 +22,10 @@ const { title,  url,  buttonText, addText } = Astro.props
   transition: 1s ease-in-out;
   margin-bottom:3em;
 }
+
+.launch{
+
+      }
 
 svg {
   position: absolute;

@@ -1,5 +1,29 @@
 [
-    {
+  {
+    "title": "Teacher Planning Template", 
+    "url": "https://calireads.org/bridge-content/GettheGist/Resources/Teacher_Planning_Template.pdf",
+    "name": "carbon:document-pdf",
+    "altText": "Adobe PDF"
+  },
+  {
+  "title": "Teacher Planning Template Word Doc", 
+  "url": "https://calireads.org/bridge-content/GettheGist/Resources/Teacher_Planning_Template.docx",
+  "name": "carbon:document-word-processor",
+  "altText": "Word Doc"
+  },
+  {
+    "title": "Teacher Planning Template Example", 
+    "url": "https://calireads.org/bridge-content/GettheGist/Resources/Teacher_Planning_Template_Example.pdf",
+    "name": "carbon:document-pdf",
+    "altText": "Adobe PDF"
+  },
+  {
+    "title": "Teacher Planning Template Example Word Doc", 
+    "url": "https://calireads.org/bridge-content/GettheGist/Resources/Teacher_Planning_Template_Example.docx",
+    "name": "carbon:document-word-processor",
+    "altText": "Word Doc"
+  },
+  {
       "title": "Get the Gist Graphic Organizer", 
       "url": "https://calireads.org/bridge-content/GettheGist/Resources/Get_the_Gist_Graphic_Organizer.pdf",
       "name": "carbon:document-pdf",
@@ -12,46 +36,21 @@
       "altText": "Word Doc"
     },
     {
-      "title": "Teacher Planning Template Example", 
-      "url": "https://calireads.org/bridge-content/GettheGist/Resources/Teacher_Planning_Template_Example.pdf",
+    "title": "Get The Gist Rubric Word Doc", 
+    "url": "https://calireads.org/bridge-content/GettheGist/Resources/Get the Gist Rubric.docx",
+    "name": "carbon:document-word-processor",
+    "altText": "Word Doc"
+    },
+    {
+      "title": "Get The Gist Rubric ",
+      "url": "https://www.calireads.org/bridge-content/GettheGist/Resources/Get the Gist Rubric.pdf",
       "name": "carbon:document-pdf",
       "altText": "Adobe PDF"
     },
     {
-      "title": "Teacher Planning Template Example Word Doc", 
-      "url": "https://calireads.org/bridge-content/GettheGist/Resources/Teacher_Planning_Template_Example.docx",
-      "name": "carbon:document-word-processor",
-      "altText": "Word Doc"
-    },
-    {
-      "title": "Teacher Planning Template", 
-      "url": "https://calireads.org/bridge-content/GettheGist/Resources/Teacher_Planning_Template.pdf",
+      "title": "Get The Gist Guides Walkthrough Tool",
+      "url": "https://www.calireads.org/bridge-content/GettheGist/Resources/GettheGist_walkthrough.pdf",
       "name": "carbon:document-pdf",
       "altText": "Adobe PDF"
-    },
-  
-    {
-      "title": "Teacher Planning Template Word Doc", 
-      "url": "https://calireads.org/bridge-content/GettheGist/Resources/Teacher_Planning_Template.docx",
-      "name": "carbon:document-word-processor",
-      "altText": "Word Doc"
-        },
-    {
-      "title": "Get The Gist Rubric Word Doc", 
-      "url": "https://calireads.org/bridge-content/GettheGist/Resources/Get the Gist Rubric.docx",
-      "name": "carbon:document-word-processor",
-      "altText": "Word Doc"
-        },
-        {
-          "title": "Get The Gist Guides Walkthrough Tool",
-          "url": "https://www.calireads.org/bridge-content/GettheGist/Resources/GettheGist_walkthrough.pdf",
-          "name": "carbon:document-pdf",
-          "altText": "Adobe PDF"
-        },
-        {
-          "title": "Get The Gist Rubric ",
-          "url": "https://www.calireads.org/bridge-content/GettheGist/Resources/Get the Gist Rubric.pdf",
-          "name": "carbon:document-pdf",
-          "altText": "Adobe PDF"
-        }
-  ]
+    }     
+]
