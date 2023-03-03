@@ -1,0 +1,45 @@
+---
+const { title,  url,  buttonText, addText } = Astro.props 
+import LaunchSVG from '../images/SVG/launch.svg';
+---
+
+
+        <a href={url}  >
+        <span class='articleContent'>
+            <span><img src={LaunchSVG} width='88px'/></span>
+            <h3><span class='articleHeader'>{buttonText}</span></h3>
+        </span>
+        </a>
+
+
+
+
+<style>
+ .articleHeader{
+  display: flex;
+  flex-wrap: nowrap;
+  min-width: 100&;
+  justify-content: baseline;
+  
+}
+.articleContent{
+    width: 100%;
+    
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap:20px;
+  justify-content: flex-start;
+  justify-items: center;
+
+}
+
+
+@media all and (max-width:30em){
+    a.button7{
+    display:block;
+    margin:0.4em auto;
+}
+}
+
+</style>

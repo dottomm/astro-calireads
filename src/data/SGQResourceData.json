@@ -1,10 +1,5 @@
 [
-  {
-    "title": "Self-Generated Questions Walkthrough Tool", 
-    "url": "https://www.calireads.org/bridge-content/SGQ/Self-Generated-Questions-digiCOACH-Edition.pdf",
-    "name": "carbon:document-pdf",
-    "altText": "Adobe PDF"
-  },
+  
   {
     "title": "Teacher Planning Sheet", 
     "url": "https://www.calireads.org/bridge-content/SGQ/SGQ-Planning-Sheet.pdf",
@@ -50,6 +45,12 @@
     {
       "title": "Trees Please article", 
       "url": "https://www.calireads.org/bridge-content/SGQ/PR_SWI_Gen_Ques_supplemental_handouts.pdf",
+      "name": "carbon:document-pdf",
+      "altText": "Adobe PDF"
+    },
+    {
+      "title": "Self-Generated Questions Walkthrough Tool", 
+      "url": "https://www.calireads.org/bridge-content/SGQ/Self-Generated-Questions-digiCOACH-Edition.pdf",
       "name": "carbon:document-pdf",
       "altText": "Adobe PDF"
     }

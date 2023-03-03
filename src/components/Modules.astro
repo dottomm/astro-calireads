@@ -19,7 +19,8 @@ import WBSmall from '../images/gettyImages/wordBuilder-small.jpg';
 //import WordParts from './WordParts.astro';
 import Button from './Button.astro';
 import MediaButton from './MediaButton.astro';
-
+import LaunchButton from './LaunchButton.astro';
+import HTMLButton from './HTMLButton.astro';
 export interface Props {
 
 title: string;
@@ -375,20 +376,24 @@ import { Icon } from 'astro-icon'
           <img class='logos-small' src={WBSmall} alt="">
         </div>
       </aside>
-      <aside  class='aside aside-2'>
-         
-         
+      <!--
+        <aside  class='aside aside-2'>
+      
         {wbData.map(wordbuilder => (
           <a href={wordbuilder.url}>
             <Button addText={"Launch: "} buttonText={wordbuilder.title} />
             </a>
-        
         ))}
          </aside>
+       -->
       <article class='main'>
         {wbData.map(wordbuilder => (
-          <a href={wordbuilder.url}><h3>{wordbuilder.title}</h3></a>
+
+           
+              <HTMLButton buttonText={wordbuilder.title} url={wordbuilder.url} />
+            
           <p>{wordbuilder.body} </p>
+         
         ))}
         
       </article>
@@ -414,6 +419,8 @@ import { Icon } from 'astro-icon'
     </div>
   </section>
   <style>
+
+
 
 .media-button-container{
   float: bottom;
@@ -478,7 +485,7 @@ color:var(--color-accent);
 
 .main {
   text-align: left;
-  max-width: 650px;
+  max-width: 750px;
 }
 
 .aside-1 {
