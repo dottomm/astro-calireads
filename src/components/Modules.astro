@@ -95,7 +95,7 @@ import { Icon } from 'astro-icon'
           <ul class="column-list"> 
             {ARGResources.map(ARGResource => (
             
-              <li><a href={ARGResource.url}>{ARGResource.title}</a> 
+              <li><a href={ARGResource.url} title={ARGResource.title+' '+ARGResource.altText}>{ARGResource.title}</a> 
                 <Icon name={ARGResource.name} alt={ARGResource.altText} title={ARGResource.altText} /></li>
             ))}
           </ul>
@@ -137,7 +137,7 @@ import { Icon } from 'astro-icon'
         <h3 >Get The Gist Resources</h3>
             <ul class="column-list"> 
               {GTGResources.map(GTGResources => (
-                <li><a href={GTGResources.url}>{GTGResources.title}</a> 
+                <li><a href={GTGResources.url} title={GTGResources.title+' '+GTGResources.altText}>{GTGResources.title}</a> 
                 <Icon name={GTGResources.name} alt={GTGResources.altText} title={GTGResources.altText} /></li>
               ))}
             </ul>
@@ -174,7 +174,7 @@ import { Icon } from 'astro-icon'
         <h3> Morphology Resources</h3>
         <ul class="column-list">
           {MorphResources.map(MorphResource =>(
-            <li><a href={MorphResource.url}>{MorphResource.title}</a>
+            <li><a href={MorphResource.url} title={MorphResource.title+' '+MorphResource.altText}>{MorphResource.title}</a>
               <Icon name={MorphResource.name} alt={MorphResource.altText} title={MorphResource.altText} /> </li>
           ))}
          </ul>
@@ -220,7 +220,7 @@ import { Icon } from 'astro-icon'
               <div class="content">
                 <ul class="column-list">
                   {RTOverview.map(RTOverview =>(
-                    <li><a href={RTOverview.url}>{RTOverview.title}</a>
+                    <li><a href={RTOverview.url} title={RTOverview.title+' '+RTOverview.altText}>{RTOverview.title}</a>
                       <Icon name={RTOverview.name}  alt={RTOverview.altText} title={RTOverview.altText} /></li>
                   ))}
                  </ul>
@@ -234,7 +234,7 @@ import { Icon } from 'astro-icon'
               <div class="content">
                 <ul class="column-list">
                   {RTSummary.map(RTSummary =>(
-                    <li><a href={RTSummary.url}>{RTSummary.title}</a>
+                    <li><a href={RTSummary.url} title={RTSummary.title+' '+RTSummary.altText}>{RTSummary.title}</a>
                       <Icon name={RTSummary.name}  alt={RTSummary.altText} title={RTSummary.altText} /></li>
                   ))}
                  </ul>
@@ -248,7 +248,7 @@ import { Icon } from 'astro-icon'
               <div class="content">
                 <ul class="column-list">
                   {RTQuestioning.map(RTQuestioning =>(
-                    <li><a href={RTQuestioning.url}>{RTQuestioning.title}</a>
+                    <li><a href={RTQuestioning.url} title={RTQuestioning.title+' '+RTQuestioning.altText}>{RTQuestioning.title}</a>
                       <Icon name={RTQuestioning.name} alt={RTQuestioning.altText} title={RTQuestioning.altText} /></li>
                   ))}
                  </ul>
@@ -263,7 +263,7 @@ import { Icon } from 'astro-icon'
               <div class="content">
                 <ul class="column-list">
                   {RTPredicting.map(RTPredicting =>(
-                    <li><a href={RTPredicting.url}>{RTPredicting.title}</a>
+                    <li><a href={RTPredicting.url} title={RTPredicting.title+' '+RTPredicting.altText}>{RTPredicting.title}</a>
                       <Icon name={RTPredicting.name} alt={RTPredicting.altText} title={RTPredicting.altText} /></li>
                   ))}
                  </ul>
@@ -277,7 +277,7 @@ import { Icon } from 'astro-icon'
               <div class="content">
                 <ul class="column-list">
                   {RTClarifying.map(RTClarifying =>(
-                    <li><a href={RTClarifying.url}>{RTClarifying.title}</a>
+                    <li><a href={RTClarifying.url} title={RTClarifying.title+' '+RTClarifying.altText}>{RTClarifying.title}</a>
                       <Icon name={RTClarifying.name} alt={RTClarifying.altText} title={RTClarifying.altText} /></li>
                   ))}
                  </ul>              
@@ -316,7 +316,7 @@ import { Icon } from 'astro-icon'
       <h3>Self-Generated Questions Resources</h3>
         <ul class="column-list">
           {sgqResources.map(sgqResource=>(
-            <li><a href={sgqResource.url}>{sgqResource.title}</a>
+            <li><a href={sgqResource.url} title={sgqResource.title+' '+sgqResource.altText}>{sgqResource.title}</a>
               <Icon name={sgqResource.name} alt={sgqResource.altText} title={sgqResource.altText} /></li>
           ))}
         </ul>
@@ -355,7 +355,7 @@ import { Icon } from 'astro-icon'
         <h3 >Vocabulary Maps Resources</h3>
         <ul class="column-list">
           {vocabResources.map(vocabResource=>(
-            <li><a href={vocabResource.url}>{vocabResource.title}</a>
+            <li><a href={vocabResource.url} title={vocabResource.title+' '+vocabResource.altText}>{vocabResource.title}</a>
               <Icon name={vocabResource.name} alt={vocabResource.altText} title={vocabResource.altText} /></li>
           ))}
         </ul>
@@ -411,7 +411,7 @@ import { Icon } from 'astro-icon'
       <h3>Wordbuilder Resources</h3>
         <ul class="column-list">
             {wbResources.map(wbResource =>(
-              <li><a href={wbResource.url}>{wbResource.title}</a>
+              <li><a href={wbResource.url} title={wbResource.title+' '+wbResource.altText}>{wbResource.title}</a>
                 <Icon name={wbResource.name} alt={wbResource.altText} title={wbResource.altText} /></li>
             ))}
         </ul>
