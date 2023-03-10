@@ -7,10 +7,12 @@ url: string;
 }
 
 const { title,  url} = Astro.props as Props
+
+import PlayButton from '../images/SVG/SM-PlayButton.svg';
 ---
 
 <button class='mediaBtn'>
-<h3><a href={url} >{title}</a></h3>
+<h3><a href={url} ><img src={PlayButton} width="25px" /> {title}</a></h3>
 
 </button>
 <style>
@@ -20,7 +22,7 @@ const { title,  url} = Astro.props as Props
   border-radius: 14px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   margin-bottom: 20px;
-  background: url('../images/gr-media-play.png') ;
+ /* background: url('../images/gr-media-play.png') ;*/
   background-repeat: no-repeat;
   background-position-x: center;
   background-position-y: center;

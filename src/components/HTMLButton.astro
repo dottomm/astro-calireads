@@ -1,12 +1,15 @@
 ---
 const { title,  url,  buttonText, addText } = Astro.props 
 import LaunchSVG from '../images/SVG/launch.svg';
+import RArrow from '../images/SVG/RArrow.svg';
 ---
 
 
         <a href={url}  >
         <span class='articleContent'>
-            <span><img src={LaunchSVG} width='88px'/></span>
+            <!--
+              <span><img src={LaunchSVG} width='90px'/></span>
+             -->
             <h3><span class='articleHeader'>{buttonText}</span></h3>
         </span>
         </a>
@@ -33,13 +36,59 @@ import LaunchSVG from '../images/SVG/launch.svg';
   justify-items: center;
 
 }
+a{
+  display: block;
+  padding-left:.1em;
+  line-height: 40px;
+  font-size: 18px;
+  font-family: sans-serif;
+  text-decoration: none;
+  color: #333;
+  letter-spacing: .8px;
+  text-align: left;
+  position: relative;
+  transition: all .35s;
+  background-repeat: no-repeat;
+  background-position: left;
+  
+}
+
+a span{
+  position: relative;
+  z-index: 2;
+}
+
+
+a:after{
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: var(--color-accent);
+  background-image: url('../images/SVG/LG-RArrow.svg');
+  background-repeat: no-repeat;
+  background-position: right;
+  transition: all .35s;
+}
+
+a:hover{
+  color: #fff;
+}
+
+a:hover:after{
+  width: 100%;
+}
 
 
 @media all and (max-width:30em){
-    a.button7{
+    a.{
     display:block;
     margin:0.4em auto;
+  
 }
+
 }
 
 </style>
