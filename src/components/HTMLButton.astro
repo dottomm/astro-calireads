@@ -1,13 +1,13 @@
 ---
 const { title,  url,  buttonText, addText } = Astro.props 
 import LaunchSVG from '../images/SVG/launch.svg';
-import RArrow from '../images/SVG/RArrow.svg';
+
 ---
 
 
-        <a href={url}  >
+        <a href={url} >
         <span class='articleContent'>
-          <span><img src={LaunchSVG} width='66px' height='100%'/></span>
+          <span><img src={LaunchSVG} width='64px' height='100%'/></span>
             <h3><span class='articleHeader'>{buttonText}</span></h3>
         </span>
         </a>
@@ -48,7 +48,7 @@ a{
   transition: all .35s;
   background-repeat: no-repeat;
   background-position: left;
-  
+  z-index: 1;
 }
 
 a span{
@@ -59,12 +59,12 @@ a span{
 
 a:after{
   position: absolute;
-  content: "";
+  content: attr(data-hover);
   top: 0;
   left: 0;
   width: 0;
   height: 100%;
-  background: var(--color-accent);
+/*  background: var(--color-accent);*/
   background-image: url('../images/SVG/LG-RArrow.svg');
   background-repeat: no-repeat;
   background-position: right;
@@ -72,7 +72,7 @@ a:after{
 }
 
 a:hover{
-  color: #fff;
+  color: var(--color-accent);
 }
 
 a:hover:after{
