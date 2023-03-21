@@ -11,13 +11,18 @@ const { title,  url} = Astro.props as Props
 import PlayButton from '../images/SVG/SM-PlayButton.svg';
 ---
 
-<button class='mediaBtn'>
+<button class='mediaBtn' id='medias'>
 <h3><a href={url} ><img src={PlayButton} width="25px" /> {title}</a></h3>
 
 </button>
 <style>
+  button{
+border:0;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+transition: transform 100ms ease-in-out;
+  }
 
-.mediaBtn {
+.media-button-container .mediaBtn {
   padding: 25px;
   border-radius: 14px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -26,19 +31,24 @@ import PlayButton from '../images/SVG/SM-PlayButton.svg';
   background-repeat: no-repeat;
   background-position-x: center;
   background-position-y: center;
-
+  transition: transform 100ms ease-in-out;
+	display: flex;
 }
 
 .mediaBtn a{
+  height: 100%;
   width:100%;
-  padding:22px;
-  
+  padding:12px;
   color:var(--color-secondary);
+  justify-content: center;
+  
 }
 
-.mediaBtn a:hover{
-  color: var(--color-accent);
+ .mediaBtn a:hover{
+  border-radius: 14px;
+  transform: scale (1.035);
   background-position: center;
+  color: var(--color-accent);
 
 
 }

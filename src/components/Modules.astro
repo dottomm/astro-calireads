@@ -68,13 +68,14 @@ import { Icon } from 'astro-icon'
     </header>
     <article class="main">
            {ARGData.map(ARG => (
-            <a href={ARG.url}><h3>{ARG.title}  </h3></a>
+            <HTMLButton buttonText={ARG.title} url={ARG.url}/>
         <div>
             <p>{ARG.body} </p>
         </div>
       ))}
     </article>
-    <aside class='aside aside-2'>
+    <!--
+      <aside class='aside aside-2'>
       {ARGData.map(ARG => (
           
             <a href={ARG.url}>
@@ -85,6 +86,7 @@ import { Icon } from 'astro-icon'
   ))}
       
   </aside>
+     -->
     <aside class="aside aside-1"> 
       <div class='imgHolder'> 
         <img class='logos' src={ARGImg} alt="">
@@ -112,8 +114,8 @@ import { Icon } from 'astro-icon'
         <article class="main">
           
       {GTGData.map(GTG => (
-        <a href={GTG.url}><h3>{GTG.title}</h3></a>
-       <p>{GTG.body} </p>
+      <HTMLButton buttonText={GTG.title} url={GTG.url} />
+      <p>{GTG.body} </p>
       
       ))} 
       </article>
@@ -124,7 +126,8 @@ import { Icon } from 'astro-icon'
         </div>
      
     </aside>
-    <aside class='aside aside-2'>
+   <!--
+     <aside class='aside aside-2'>
           
       {GTGData.map(GTG => (
         <a href={GTG.url}>
@@ -133,6 +136,7 @@ import { Icon } from 'astro-icon'
       
           ))} 
     </aside>
+    -->
 
     <footer class="footer">
         <h3 >Get The Gist Resources</h3>
@@ -153,7 +157,7 @@ import { Icon } from 'astro-icon'
       </header>
       <article class="main">
         {MorphData.map(morph => (
-        <a href={morph.url}><h3>{morph.title}</h3></a>
+        <HTMLButton buttonText={morph.title} url={morph.url} />
         <p>{morph.body} </p>
         ))}
       </article>
@@ -163,7 +167,8 @@ import { Icon } from 'astro-icon'
           <img class='logos-small' src={MorphSmall} alt="">
         </div>
       </aside>
-      <aside class='aside aside-2'>
+      <!--
+        <aside class='aside aside-2'>
         {MorphData.map(morph => (
           <a href={morph.url}>
             <Button addText={"Launch: "} buttonText={morph.title} />
@@ -171,6 +176,7 @@ import { Icon } from 'astro-icon'
           
           ))}
       </aside>
+       -->
     <footer class='footer'>
         <h3> Morphology Resources</h3>
         <ul class="column-list">
@@ -196,12 +202,13 @@ import { Icon } from 'astro-icon'
         </aside>
         <article class="main">
           {RTData.map(rt => (
-            <a href={rt.url}><h3>{rt.title}</h3></a>
+            <HTMLButton buttonText={rt.title} url={rt.url} />
           <p>{rt.body} </p>
           
           ))}
         </article>
-        <aside class='aside aside-2'>
+       <!--
+         <aside class='aside aside-2'>
           {RTData.map(rt => (
             <a href={rt.url}>
               <Button addText={"Launch: "} buttonText={rt.title} />
@@ -210,6 +217,7 @@ import { Icon } from 'astro-icon'
           
           ))}
         </aside>
+        -->
       <footer class='footer'>
         <h3>Reciprocal Teaching Resources</h3>
         <div class="tabs">
@@ -302,17 +310,19 @@ import { Icon } from 'astro-icon'
   </aside>
   <article class='main'>
       {sgqData.map(SGQ => (
-        <a href={SGQ.url}><h3>{SGQ.title}</h3></a>
+       <HTMLButton buttonText={SGQ.title} url={SGQ.url} />
        <p>{SGQ.body} </p>
       ))}
       </article>
-      <aside class='aside aside-2'>
+     <!--
+       <aside class='aside aside-2'>
         {sgqData.map(SGQ => (
           <a href={SGQ.url}>
             <Button addText={"Launch: "} buttonText={SGQ.title} />
             </a>
         ))}
       </aside>
+      -->
       <footer class='footer'>
       <h3>Self-Generated Questions Resources</h3>
         <ul class="column-list">
@@ -338,12 +348,12 @@ import { Icon } from 'astro-icon'
     </aside>
     <article class='main'>
       {vocabData.map(vocab => (
-       <div class='module'> <a href={vocab.url}><h3>{vocab.title}</h3></a>
+        <HTMLButton buttonText={vocab.title} url={vocab.url} />
         <p>{vocab.body} </p>
-       </div>
       ))}
       </article>
-      <aside class='aside aside-2'>
+      <!--
+        <aside class='aside aside-2'>
         {vocabData.map(vocab => (
          <a href={vocab.url}>
           <Button addText={"Launch: "} buttonText={vocab.title} />
@@ -351,6 +361,7 @@ import { Icon } from 'astro-icon'
           
          ))}
       </aside>
+       -->
       
       <footer  class='footer'>
         <h3 >Vocabulary Maps Resources</h3>
@@ -400,15 +411,14 @@ import { Icon } from 'astro-icon'
       </article>
       <div class='media-button-container' id='media-button-container'>
         <div >
-          <MediaButton url="https://vimeo.com/showcase/9843748"  title="Watch: WordBuilder Demonstration Videos"   />
+          <MediaButton url="https://vimeo.com/showcase/9843748"  title="WordBuilder Demonstration Videos"   />
         </div>    
         <div >
-          <MediaButton url='https://vimeo.com/showcase/calireadswebinars' title="Watch: WordBuilder Training Webinars"  />
+          <MediaButton url='https://vimeo.com/showcase/calireadswebinars' title="WordBuilder Training Webinars"  />
       </div>
         </div>
      <footer class='footer'>
-      
-     
+    
       <h3>Wordbuilder Resources</h3>
         <ul class="column-list">
             {wbResources.map(wbResource =>(
@@ -424,25 +434,51 @@ import { Icon } from 'astro-icon'
 
 
 .media-button-container{
-  float: bottom;
+  float: top;
   display: flex;
   flex-wrap: nowrap;
   column-gap: 20px;
   justify-content:space-around;
 }
+.media-button-container.mediaBtn {
+  padding: 25px;
+  border-radius: 14px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+ /* background: url('../images/gr-media-play.png') ;*/
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: center;
+  transition: transform 100ms ease-in-out;
+	display: flex;
+}
+
+.media-button-container.mediaBtn a{
+  height: 100%;
+  width:100%;
+  padding:12px;
+  color:var(--color-secondary);
+  justify-content: center;
+  
+}
+
+.media-button-container.mediaBtn a:hover{
+  border-radius: 14px;
+  transform: scale (1.035);
+  color: var(--color-accent);
+  background-position: center;
+
+
+}
+
 
 .moduleButton {
-  
   color: #fff;
-  
-  
 }
 
 .moduleButton a:hover{
 background-color: #666;
 }
-
-  
 
     .column-list {
   columns: 400px;

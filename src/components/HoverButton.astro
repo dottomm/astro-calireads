@@ -1,0 +1,67 @@
+---
+export interface Props {
+
+title: string;
+url: string;
+
+}
+
+const { title,  url} = Astro.props as Props
+
+import PlayButton from '../images/SVG/SM-PlayButton.svg';
+---
+<div class="media-button-container">
+    <div class="center">
+      <button class="btn">
+        <img src={PlayButton} width="125px" />
+        <svg viewBox="0 0 180 60" class="border">
+          <polyline points="179,1 179,59 1,59 1,1 179,1" class="bg-line" />
+          <polyline points="179,1 179,59 1,59 1,1 179,1" class="hl-line" />
+        </svg>
+        <span>{title}</span>
+      </button>
+    </div>
+  </div>
+
+  <style>
+  
+   
+    
+    .center {
+      width: 280px;
+ 
+      position: absolute;
+    }
+    
+    .btn {
+      cursor: pointer;
+      border: 1px solid #a90d0d;
+      outline: none;
+      transition: 2s ease-in-out;
+    }
+    
+    svg {
+      position: absolute;
+      left: 0;
+      top: 10;
+      fill: none;
+      stroke:  #f2ee09;
+      stroke-dasharray: 150 480;
+      stroke-dashoffset: 250;
+      transition: 1s ease-in-out;
+    }
+    
+    .btn:hover {
+      transition: 1s ease-in-out;
+    }
+    
+    .btn:hover svg {
+      stroke-dashoffset: -1480;
+    }
+    
+    .btn span {
+      color: white;
+      font-size: 18px;
+      font-weight: 100;
+    }
+    </style>
