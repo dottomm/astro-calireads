@@ -1,0 +1,63 @@
+[
+    {
+      "title": "AR Guide Template",
+      "url": "https://calireads.org/bridge-content/ARGuides/AR_Guides_Course_Resources/AR Guide Template.docx",
+      "name": "carbon:document-word-processor",
+      "altText": "Microsoft Word Document"
+    },
+    {
+      "title": "AR Guide Template",
+      "url": "https://calireads.org/bridge-content/ARGuides/AR_Guides_Course_Resources/AR Guide Template.pdf",
+      "name": "carbon:document-pdf",
+      "altText": "Adobe PDF"
+    },
+    {
+      "title": "AR Guide Zoo Lesson",
+      "url": "https://calireads.org/bridge-content/ARGuides/AR_Guides_Course_Resources/AR Guide Zoo Lesson PowerPoint.pptx",
+      "name": "carbon:ppt",
+      "altText": "Microsoft PowerPoint"
+    },
+    {
+      "title": "AR Guide Zoo Module Example",
+      "url": "https://calireads.org/bridge-content/ARGuides/AR_Guides_Course_Resources/AR Guide Zoo Module Example.pdf",
+      "name": "carbon:document-pdf",
+      "altText": "Adobe PDF" 
+    },
+    {
+      "title": "AR Guide Zoo Student Example",
+      "url": "https://calireads.org/bridge-content/ARGuides/AR_Guides_Course_Resources/AR Guide Zoo Student Example.pdf",
+      "name": "carbon:document-pdf",
+      "altText": "Adobe PDF"
+    },
+    {
+      "title": "digiCoach Walkthrough Feedback",
+      "url": "https://calireads.org/bridge-content/ARGuides/AR_Guides_Course_Resources/digiCoach walkthrough Feedback.pdf",
+      "name": "carbon:document-pdf",
+      "altText": "Adobe PDF"
+    },
+    
+    {
+      "title": "Reading Scaffolds",
+      "url": "https://calireads.org/bridge-content/ARGuides/AR_Guides_Course_Resources/Reading Scaffolds.pdf",
+      "name": "carbon:document-pdf",
+      "altText": "Adobe PDF"
+    },
+    {
+      "title": "Student Work Rubric",
+      "url": "https://calireads.org/bridge-content/ARGuides/AR_Guides_Course_Resources/Student Work Ruberic.pdf",
+      "name": "carbon:document-pdf" ,
+      "altText": "Adobe PDF"
+    },
+    {
+      "title": "AR Guides Walkthrough Tool",
+      "url": "https://calireads.org/bridge-content/ARGuides/AR_Guides_Course_Resources/digiCoach walkthrough Look Fors.pdf",
+      "name": "carbon:document-pdf",
+      "altText": "Adobe PDF"
+    },
+    {
+      "title": "Vocabulary Map Template",
+      "url": "https://calireads.org/bridge-content/ARGuides/AR_Guides_Course_Resources/Vocabulary Map Template.pdf",
+      "name": "carbon:document-pdf",
+      "altText": "Adobe PDF"
+    }
+  ]

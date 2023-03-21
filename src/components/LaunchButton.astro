@@ -1,0 +1,23 @@
+---
+
+
+const { title,  url,  buttonText, addText } = Astro.props 
+---
+
+      <button class="btnLaunch" title={title} {url} >
+        
+        <span class='launch'>{addText}</span> <span>  {buttonText}</span>
+      
+      </button>
+
+  <style>
+.btnLaunch{
+    width:240px;
+    height: 40px;
+    border:1px solid orange;
+    background-color: #fff;
+    color: black;
+}
+  </style>
+
+

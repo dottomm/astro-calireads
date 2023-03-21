@@ -1,624 +1,606 @@
 ---
 import SGQWalkthrough from '/sgqresources/Self-Generated-Questions-digiCOACH-Edition.pdf';
-import ARGImg from '../images/gettyImages/GettyImages-121518480075.jpg';
+
+//import ARGImg from '../images/gettyImages/GettyImages-121518480075.jpg';
+import ARGImg from '../images/ARG-module_500.jpg';
 import ARGSmall from '../images/gettyImages/ARGSmall.jpg';
-import GTGIMg from '../images/gettyImages/GTG75.jpg';
+import GTGIMg from '../images/GTG_500.png';
 import GTGsm from '../images/gettyImages/GTGsm.jpg';
-import MorphImg from '../images/gettyImages/GettyImages-94176587275.jpg';
+import MorphImg from '../images/MorphImg_500.png';
 import MorphSmall from '../images/gettyImages/MorphSmall.jpg';
-import RecipTechImg from '../images/gettyImages/reciprocalTeaching.jpg';
+import RecipTechImg from '../images/reciprocalTeaching.png';
 import RTSmall from '../images/gettyImages/reciprocalTeachingSmall.jpg';
 import sgqImg from '../images/gettyImages/sgq-overview.jpg';
 import SGQSmall from '../images/gettyImages/sgq-overview-small.jpg';
-import vocabImg from '../images/gettyImages/GettyImages-666835804SGQ.jpg';
+import vocabImg from '../images/VocabMaps_500.png';
 import vocabSmall from '../images/gettyImages/vocabImgSmall.jpg';
-import WBImg from '../images/gettyImages/wordBuilder75.jpg';
+import WBImg from '../images/wordBuilder_500.png';
 import WBSmall from '../images/gettyImages/wordBuilder-small.jpg';
+//import WordParts from './WordParts.astro';
+import Button from './Button.astro';
+import MediaButton from './MediaButton.astro';
+import LaunchButton from './LaunchButton.astro';
+import HTMLButton from './HTMLButton.astro';
+import HoverButton from './HoverButton.astro';
 export interface Props {
 
 title: string;
 body: string;
 url: string;
+name?:string;
+altText?:string;
 }
 
-const ARGData =[
-    {
-      title: 'AR Guides Overview', 
-      body: 'This course provides you with an overview of Anticipation-Reaction Guides (AR Guides), a tool designed to support students’ reading comprehension through a set of anticipatory statements used Before, During, and After reading.',  
-      url: 'https://calireads.org/modules/ARGuides/overview-of-anticipation-reaction-guides/content/'
-    },
-    {
-      title: 'Instructional Steps for AR Guides', 
-      body: 'This course demonstrates the Instructional Steps for teaching students to use Anticipation-Reaction Guides Before, During, and After reading.', 
-      url: 'https://calireads.org/modules/ARGuides/instructional-steps-for-anticipation-reaction-guides/content/'
-    },
-    {
-      title: 'Remote Learning with AR Guides', 
-      body: 'This course provides technological supports for using AR Guides during remote instruction. Synchonous and asynchronous options are included.', 
-      url: 'https://www.calireads.org/anticipation-reaction-support-guides/'
-    }
-]
+//ARG Modules Data
+import ARGData from '../data/ARGModuleData.json';
+import ARGResources from '../data/ARGResourceData.json';
+//Get The Gist Data
+import GTGData from '../data/GTGModuleData.json';
+import GTGResources from '../data/GTGResourceData.json';
+//Morphology
+import MorphData from '../data/MorphologyModuleData.json';
+import MorphResources from '../data/MorphologyResourceData.json';
+//Reciprocal Teaching
+import RTData from '../data/ReciprocalTeachingModuleData.json';
+import RTResources from '../data/ReciprocalTeachingResourceData.json';
+import RTOverview from '../data/ReciprocalTeachingOverviewData.json';
+import RTSummary from '../data/ReciprocalTeachingSummarizingData.json';
+import RTQuestioning from '../data/ReciprocalTeachingQuestioningData.json';
+import RTPredicting from '../data/ReciprocalTeachingPredictingData.json';
+import RTClarifying from '../data/ReciprocalTeachingClarifyingData.json';
+//Self-Generated Questions
+import sgqData from '../data/SGQModuleData.json';
+import sgqResources from '../data/SGQResourceData.json';
+//Vocabulary Maps
+import vocabData from '../data/VocabMapsModuleData.json';
+import vocabResources from '../data/VocabMapsResourceData.json';
+//WordBuilder
+import wbData from '../data/WordBuilderModuleData.json';
+import wbResources from '../data/WordBuilderResourceData.json';
 
-const ARGResources = [
-  {
-    title: 'AR Guide Module Resources', 
-    url: 'https://calireads.org/bridge-content/ARGuides/zipIt_AR_Guides_Course_Resources.php'},
-  {
-    title: 'Remote Learning Supports', 
-    url: 'https://www.calireads.org/anticipation-reaction-support-guides/'
-  },
-  {
-    title: 'Support', 
-    url: 'https://vimoe.com'
-  }
-]
-
-const GTGData = [
-    {
-      title: 'Get The Gist Overview', 
-      body: 'This course overviews Get The Gist strategy.', 
-      url: 'https://calireads.org/modules/GetTheGist/GTG-Overview/'
-    },
-    {
-      title: 'Get The Gist Implementation', 
-      body: 'This course demonstrates how to implement Get The Gist.', url: 'https://calireads.org/modules/GetTheGist/GTG-Implementation/'
-    }
-]
-
-const GTGResousrces = [
-  {
-    title: 'Get the Gist Graphic Organizer', 
-    url: 'https://calireads.org/bridge-content/GettheGist/Resources/Get_the_Gist_Graphic_Organizer.pdf'
-  },
-  {
-    title: 'Get the Gist Graphic Organizer MS Word', 
-    url: 'https://calireads.org/bridge-content/GettheGist/Resources/Get_the_Gist_Graphic_Organizer.docx'
-  },
-  {
-    title: 'Teacher Planning Template Example', 
-    url: 'https://calireads.org/bridge-content/GettheGist/Resources/Teacher_Planning_Template_Example.pdf'
-  },
-  {
-    title: 'Teacher Planning Template Example MS Word', 
-    url: 'https://calireads.org/bridge-content/GettheGist/Resources/Teacher_Planning_Template_Example.docx'
-  },
-  {
-    title: 'Teacher Planning Template', 
-    url: 'https://calireads.org/bridge-content/GettheGist/Resources/Teacher_Planning_Template.pdf'
-  },
-  {
-    title: 'Teacher Planning Template MS Word', 
-    url: 'https://calireads.org/bridge-content/GettheGist/Resources/Teacher_Planning_Template.docx'
-  }
-]
-
-const MorphData = [
-    {
-      title: 'Morphology Overview', 
-      body: 'This course overviews the Morphology strategy.', 
-      url: 'https://calireads.org/modules/Morphology/overview-of-morphology/'
-    },
-    {
-      title: 'Activities for Morphology Instruction', 
-      body: 'This course demonstrates morphology instruction activities', url: 'https://calireads.org/modules/Morphology/activities-for-morphology-instruction/'
-    },
-    {
-      title: 'Morphology Terminology & Concepts', 
-      body: 'This course demonstrates basic morphology terminolgy and concepts.', 
-      url: 'https://calireads.org/modules/Morphology/basic-morphology-terminology-and-concepts/'
-    },
-    {
-      title: 'Effective Morphology Instruction', 
-      body: 'This course demonstrates effective morphology instruction', url: 'https://calireads.org/modules/Morphology/effective-morphology-instruction'
-    }
-]
-
-const MorphResources = [
-  {
-    title: 'Introduction to Morphology', 
-    url: 'https://calireads.org/bridge-content/Morphology/Terminology/Introduction_to_Morphology.pptx'
-  },
-  {
-    title: 'Study of Word Meaning Notes', 
-    url: 'https://calireads.org/bridge-content/Morphology/Terminology/Study_of_Word_Meaning_Notes.pdf'
-  },
-  {
-    title: 'Personal Dictionary', 
-    url: 'https://calireads.org/bridge-content/Morphology/Instruction_materials/Personal_Dictionary.docx'
-  },
-  {
-    title: 'Keywords for Roots Handout', 
-    url: 'https://calireads.org/bridge-content/Morphology/Instruction_materials/Keywords_for_Roots_Handout.pdf'
-  },
-  {
-    title: 'Prefix Reference List', 
-    url: 'https://calireads.org/bridge-content/Morphology/Instruction_materials/Prefix_Reference_List.pdf'
-  },
-  {
-    title: 'Robust Vocabulary Scrib and Script', 
-    url: 'https://calireads.org/bridge-content/Morphology/Instruction_materials/Robust_Vocabulay_Scrib_and_Scipt.pptx'
-  },
-  {
-    title: 'Generative Morphology Scrib Script', 
-    url: 'https://calireads.org/bridge-content/Morphology/Activities/Morphological_Problem_Solving_Script.pdf'
-  },
-  {
-    title: 'Morphology Problem Solving Script', 
-    url: 'https://calireads.org/bridge-content/Morphology/Activities/Morphological_Problem_Solving_Script.pdf'
-  },
-  {
-    title: 'Jeopardy PowerPoint', 
-    url: 'https://calireads.org/bridge-content/Morphology/Activities/Morphology_Jeopardy.pptx'
-  },
-  {
-    title: 'What’s my Word?', 
-    url: 'https://calireads.org/bridge-content/Morphology/Activities/Whats_My_Word.pdf'
-  },
-  {
-    title: 'Mini Matrix Maker', 
-    url: 'http://www.neilramsden.co.uk/spelling/matrix/'
-  },
-  {
-    title: 'Cloze Activity for the Root', 
-    url: 'https://calireads.org/bridge-content/Morphology/Activities/Cloze_Activity.pdf'
-  },
-  {
-    title: 'Identifying the Meaning of Word Roots', 
-    url: 'https://calireads.org/bridge-content/Morphology/Activities/Identify_the_Meanings_of_Word_Roots.pptx'
-  },
-  {
-    title: 'Word Sort: Changes in Sound and/or Spelling of the Root', 
-    url: 'https://calireads.org/bridge-content/Morphology/Activities/Word_Sort.pdf'
-  },
-  {
-    title: 'Highlighter Races', 
-    url: 'https://docs.google.com/document/u/1/d/1gUWImWWN7_rW5_L86BUuUjkjaC3FLCdPGQrnkgEc8ig/copy?usp=sharing'
-  },
-  {
-    title: 'Morphological Problem Solving', 
-    url: 'https://calireads.org/bridge-content/Morphology/Activities/Morphological_Problem_Solving_Script.pdf'
-  },
-  {
-    title: 'Illustrated Word Stories', 
-    url: 'https://calireads.org/bridge-content/Morphology/Activities/Illustrated_Word_Stories.pptx'
-  },
-  {
-    title: 'Etymonline', 
-    url: 'https://www.etymonline.com/'
-  },
-  {
-    title: 'Vocabulary VIP', 
-    url: 'https://calireads.org/bridge-content/Morphology/Activities/Vocabulary_VIP.pdf'
-  }
-]
-
-
-const RTData =[
-    {
-      title: 'Reciprocal Teaching: Overview', 
-      body: 'This course provides an introduction and overview of Reciprocal Teaching and a brief review of research supporting it.', url: 'https://calireads.org/modules/ReciprocalTeaching/Reciprocal-Teaching-Overview/content/'
-    },
-    {
-      title: 'Reciprocal Teaching: Summarizing', 
-      body: 'This course is the beginning of comprehension strategy instruction and includes materials and directions for teaching students to summarize.', 
-      url: 'https://calireads.org/modules/ReciprocalTeaching/Reciprocal-Teaching-Summarizing/content/'
-    },
-    {
-      title: 'Reciprocal Teaching: Questioning', 
-      body: 'This course includes materials and directions for teaching students to generate questions.', 
-      url: 'https://calireads.org/modules/ReciprocalTeaching/Reciprocal-Teaching-Questioning/content/'
-    },
-    {
-      title: 'Reciprocal Teaching: Predicting', 
-      body: 'This course includes materials and directions for teaching students to make predictions.', 
-      url: 'https://calireads.org/modules/ReciprocalTeaching/Reciprocal-Teaching-Predicting/content/'
-    },
-    {
-      title: 'Reciprocal Teaching: Clarifying and Putting it All Together', 
-      body: 'This course includes materials and directions for teaching students to determine what needs to be clarified, how to ask for clarification, and how to combine all of the Reciprocal Teaching strategies.', 
-      url: 'https://calireads.org/modules/ReciprocalTeaching/Reciprocal-Teaching-Clarifying-and-Putting-it-All-Together/content/'
-    },
-    {
-      title: 'Reciprocal Teaching: Making It Work for You', 
-      body: 'This course includes tips for common challenges, prompting strategies, and how to fit Reciprocal Teaching into your instructional sequence.', 
-      url: 'Reciprocal Teaching: Making It Work for You'
-    }
-]
-
-const RTResosurces = [
-  {
-    title: 'General Resources', 
-    url: 'https://calireads.org/bridge-content/reciprocalteaching/reciprocalTeaching-overview-Zip.php'
-  },
-  {
-    title: 'Summarizing Resources', 
-    url: 'https://www.calireads.org/bridge-content/reciprocalteaching/reciprocalTeaching-summarizing-Zip.php'
-  },
-  {
-    title: 'Questioning Resources', 
-    url: 'https://www.calireads.org/bridge-content/reciprocalteaching/reciprocalTeaching-questioning-Zip.php'
-  },
-  {
-    title: 'Predicting Resources', 
-    url: 'https://www.calireads.org/bridge-content/reciprocalteaching/reciprocalTeaching-predicting-Zip.php'
-  },
-  {
-    title: 'Clarifying Resources', 
-    url: 'https://www.calireads.org/bridge-content/reciprocalteaching/reciprocalTeaching-clarifying-Zip.php'
-  }
-
-]
-
-const sgqData = [
-    {
-      title: 'Self-Generated Questions Overview', 
-      body: 'This course overviews to the Self-Generated Questions strategy', 
-      url: 'https://calireads.org/modules/SGQs/sgq-overview-raw/content/'
-    },
-    {
-      title: 'Self-Generated Questions Level 1', 
-      body: 'This course demonstrates how to teach students to self-generate Level 1 or Right There questions.', 
-      url: 'https://calireads.org/modules/SGQs/sgq-level1-raw/content/'
-    },
-    {
-      title: 'Self-Generated Questions Level 2', 
-      body: 'This course demonstrates how to teach students to self-generate Level 2 or Putting It Together questions.', 
-      url: 'https://calireads.org/modules/SGQs/sgq-level2-raw/content/'
-    },
-    {
-      title: 'Self-Generated Questions Level 3', 
-      body: 'This course demonstrates how to teach students to self-generate Level 3 or Making Connections questions.', 
-      url: 'https://calireads.org/modules/SGQs/sgq-level3-raw/content/'
-    },
-    {
-      title: 'Self-Generated Questions Level 1 through Level 3 & Differentiation', 
-      body: 'This course reviews the Self-Generated Questions (SGQs) strategy and introduces tips for differentiation.', 
-      url: 'https://calireads.org/modules/SGQs/sgq-levels1-3andDifferation-raw/content/'
-    }
-]
-
-const sgqResources =[
-  {
-    title: 'digiCOACH SGQ walkthrough tool', 
-    url: 'https://www.calireads.org/pdfs/Self-Generated-Questions-digiCOACH-Edition.pdf'
-  },
-  {
-    title: 'Teacher Planning Sheet', 
-    url: 'https://www.calireads.org/bridge-content/SGQ-Planning-Sheet.pdf'
-  },
-  {
-    title: 'Student Cue Cards', 
-    url: 'https://www.calireads.org/bridge-content/SGQ_Cue_Cards.pdf'
-  },
-  {
-    title: 'Student Question Log', 
-    url: 'https://www.calireads.org/bridge-content/Student-Log-for-SGQ.pdf'
-  }
-]
-
-const vocabData =[
-    {
-      title: 'Vocabulary Maps Overview', 
-      body: 'In this course, you will learn the importance of explicit vocabulary instruction and how to prepare for Vocabulary Map instruction.', 
-      url: 'https://calireads.org/modules/vocabularyMaps/vocabMaps-overview/'
-    },
-    {
-      title: 'Vocabulary Maps Instruction', 
-      body: 'In this course, you will learn key instructional steps for explicit instruction using VocabularyMaps through a classroom scenario.', 
-      url: 'https://calireads.org/modules/vocabularyMaps/vocabMaps-instruction/'
-    },
-    {
-      title: 'Vocabulary Maps Completion', 
-      body: 'In this course, you will learn more about the features of the Vocabulary Map and their importance through a peer teacher scenario.', 
-      url: 'https://calireads.org/modules/vocabularyMaps/vocabMaps-completion/'
-    }
-
-]
-
-const vocabResources =[
-  {
-    title: 'Vocabulary Map Template', 
-    url: 'https://www.calireads.org/bridge-content/Voc-Map-portrait.pdf'
-  },
-  {
-    title: 'Steps for Instruction', 
-    url: 'https://calireads.org/bridge-content/Handout-Steps_for_Vocabulary_Map_Instruction.pdf'
-  },
-  {
-    title: 'Isabel Beck Activitiess', 
-    url: 'https://calireads.org/bridge-content/Handout_IsabelBeckActivities.pdf'
-  }
-
-]
-
-const wbData = [
-    {
-      title: 'Overview', 
-      body: 'This course is an overview of WordBuilder, a free application that helps older struggling readers break down multisyllabic words.', url: 'https://calireads.org/modules/wordbuilder/overview/'
-    },
-    {
-      title: 'Decoding Strategy', 
-      body: 'This course describes a flexible approach used to break down multisyllabic words, how to teach it to your students, and how it is used in WordBuilder.', 
-      url: 'https://calireads.org/modules/wordbuilder/decoding-strategy/'
-    },
-    {
-      title: 'Building and Spelling Multisyllabic Words', 
-      body: 'This course demonstrates how teachers can effectively support students as they move from breaking down a multisyllabic word to building, spelling, and mastering the word in WordBuilder.', 
-      url: 'https://calireads.org/modules/wordbuilder/building-and-spelling-multisyllabic-words/'
-    },
-    {
-      title: 'Boosting WordBuilder Effects', 
-      body: 'This course demonstrates how to get the most out of WordBuilder through word-part manipulation and game-based review.', url: 'https://calireads.org/modules/wordbuilder/boosting-word-builder-effects/'
-    }
-]
-
-const wbResources =[
-  {
-    title: 'WordBuilder Scope and Sequence', 
-    url: 'https://www.calireads.org/bridge-content/wordbuilder/Overview_WordBuilder/WordBuilder-Scope-and-Sequence.pdf'
-  },
-  {
-    title: 'Decoding Strategy', 
-    url: 'https://www.calireads.org/bridge-content/Decoding_Strategy_Poster.pdf'
-  },
-  {
-    title: 'Guidelines for Teaching Word Parts', 
-    url: 'https://www.calireads.org/bridge-content/wordbuilder/Teaching-Word-Parts-Guidelines.pdf'
-  },
-  {
-    title: 'Lesson Plan: Teaching the Decoding Strategy', 
-    url: 'https://www.calireads.org/bridge-content/Lesson_Plan_for_Teaching_the_Decoding_Strategy.pdf'
-  },
-  {
-    title: 'Lesson Plan: Teaching Prefixes and Suffixes', 
-    url: 'https://www.calireads.org/bridge-content/wordbuilder/Scripted-Lesson%20Plan-for-Teaching-Prefixes-and-Suffixes.pdf'
-  },
-  {
-    title: 'Lesson Plan: Teaching Vowel Patterns', 
-    url: 'https://www.calireads.org/bridge-content/wordbuilder/Scripted-Lesson-Plan-for-Teaching-Vowel-Patterns.pdf'
-  },
-  {
-    title: 'Possible Errors and Prompts', 
-    url: 'https://www.calireads.org/bridge-content/wordbuilder/Table-of-Prompts.pdf'
-  },
-  {
-    title: 'Word Part Manipulation', 
-    url: 'https://www.calireads.org/bridge-content/wordbuilder/word-part-manipulation.pdf'
-  },
-  {
-    title: 'Game Based Review Activities', 
-    url: 'https://www.calireads.org/bridge-content/Game-Based-Review-Activities.pdf'
-  }
-]
-
-const { title, body, url} = Astro.props as Props;
-
+import { Icon } from 'astro-icon'
 ---
 
 <section class="ARGuides" id="ARGuides">
-  
-    <div class="container">
-        <h2>Anticipation Reaction Guides Modules</h2>
-     <div class='imgHolder'> 
-      <img class='logos' src={ARGImg} alt="">
-      <img class='logos-small' src={ARGSmall} alt="">
-    </div>
-      {ARGData.map(ARG => (
-        <a href={ARG.url}><h3>{ARG.title}</h3></a>
-       <p>{ARG.body} </p>
-       
+  <div class="module-wrapper">
+    <header class="mod-header">
+      <h2>Anticipation Reaction Guides Modules</h2>
+    </header>
+    <article class="main">
+           {ARGData.map(ARG => (
+            <HTMLButton buttonText={ARG.title} url={ARG.url}/>
+        <div>
+            <p>{ARG.body} </p>
+        </div>
       ))}
-    
-      <div class='resources'>
-        <h3 >Additional Anticipation Reaction Guides Resources</h3>
-        <ul class=""> 
-        {ARGResources.map(ARGResource => (
+    </article>
+    <!--
+      <aside class='aside aside-2'>
+      {ARGData.map(ARG => (
           
-      <li><a href={ARGResource.url}>{ARGResource.title}</a></li>
-        ))}
-        </ul>
-      </div>
+            <a href={ARG.url}>
+             <Button addText={"Launch: "} buttonText={ARG.title}/>
+          
+          </a>
+   
+  ))}
+      
+  </aside>
+     -->
+    <aside class="aside aside-1"> 
+      <div class='imgHolder'> 
+        <img class='logos' src={ARGImg} alt="">
+        <img class='logos-small' src={ARGSmall} alt="">
     </div>
+  </aside>
+    <footer class="footer">
+      <h3 >Anticipation Reaction Guides Resources</h3>
+          <ul class="column-list"> 
+            {ARGResources.map(ARGResource => (
+            
+              <li><a href={ARGResource.url} title={ARGResource.title+' '+ARGResource.altText}>{ARGResource.title}</a> 
+                <Icon name={ARGResource.name} alt={ARGResource.altText} title={ARGResource.altText} /></li>
+            ))}
+          </ul>
+    </footer>
+  </div>
   </section>
-
-
 
   <section class="GTG" id="GTG">
-  
-    <div class="container">
+    <div class="module-wrapper">
+      <header class="mod-header">
         <h2>Get The Gist Modules</h2>
-        <div class='imgHolder'>  
-          <img class='logos' src={GTGIMg} alt="">
-          <img class='logos-small' src={GTGsm}  alt="">
-        </div>
-        
-      {GTGData.map(GTG => (
-        <a href={GTG.url}><h3>{GTG.title}</h3></a>
-       <p>{GTG.body} </p>
-       
-      ))}
-      <div class='resources'>      
-        <h3 >Additional Get The Gist Resources</h3>
-      <ul class="column-list">
-        {GTGResousrces.map(GTGResource => (
+        </header>
+        <article class="main">
           
-      <li><a href={GTGResource.url}>{GTGResource.title}</a></li>
-        ))}
-        </ul>
+      {GTGData.map(GTG => (
+      <HTMLButton buttonText={GTG.title} url={GTG.url} />
+      <p>{GTG.body} </p>
+      
+      ))} 
+      </article>
+      <aside class="main"> 
+        <div class='imgHolder'>
+          <img class='logos' src={GTGIMg} alt="">
+          <img class='logos-small' src={GTGsm} alt="">
         </div>
+     
+    </aside>
+   <!--
+     <aside class='aside aside-2'>
+          
+      {GTGData.map(GTG => (
+        <a href={GTG.url}>
+          <Button addText={"Launch: "}buttonText={GTG.title} />
+          </a>
+      
+          ))} 
+    </aside>
+    -->
+
+    <footer class="footer">
+        <h3 >Get The Gist Resources</h3>
+            <ul class="column-list"> 
+              {GTGResources.map(GTGResources => (
+                <li><a href={GTGResources.url} title={GTGResources.title+' '+GTGResources.altText}>{GTGResources.title}</a> 
+                <Icon name={GTGResources.name} alt={GTGResources.altText} title={GTGResources.altText} /></li>
+              ))}
+            </ul>
+      </footer>
     </div>
   </section>
-
 
   <section class="morphology" id="morphology">
-  
-    <div class="container">
+    <div class="module-wrapper">
+      <header class='mod-header'>
         <h2>Morphology Modules</h2>
-      <div class='imgHolder'>
-        <img class='logos' src={MorphImg} alt="">
-        <img class='logos-small' src={MorphSmall} alt="">
-      </div>
-      {MorphData.map(morph => (
-        <a href={morph.url}><h3>{morph.title}</h3></a>
-       <p>{morph.body} </p>
-       
-      ))}
-      
-        <div class='resources'>
-          <h3>Additional Morphology Resources</h3>
-
-          <ul class="column-list">
-            {MorphResources.map(MorphResource =>(
-              <li><a href={MorphResource.url}>{MorphResource.title}</a></li>
-            ))}
-
-          </ul>
-
+      </header>
+      <article class="main">
+        {MorphData.map(morph => (
+        <HTMLButton buttonText={morph.title} url={morph.url} />
+        <p>{morph.body} </p>
+        ))}
+      </article>
+      <aside class="aside aside 1">
+        <div class='imgHolder'>
+          <img class='logos' src={MorphImg} alt="">
+          <img class='logos-small' src={MorphSmall} alt="">
         </div>
-
+      </aside>
+      <!--
+        <aside class='aside aside-2'>
+        {MorphData.map(morph => (
+          <a href={morph.url}>
+            <Button addText={"Launch: "} buttonText={morph.title} />
+          </a>
+          
+          ))}
+      </aside>
+       -->
+    <footer class='footer'>
+        <h3> Morphology Resources</h3>
+        <ul class="column-list">
+          {MorphResources.map(MorphResource =>(
+            <li><a href={MorphResource.url} title={MorphResource.title+' '+MorphResource.altText}>{MorphResource.title}</a>
+              <Icon name={MorphResource.name} alt={MorphResource.altText} title={MorphResource.altText} /> </li>
+          ))}
+         </ul>
+      </footer>
     </div>
   </section>
-
-
-  <section class="ReciprocalTeaching" id="ReciprocalTeaching">
   
-    <div class="container">
+  <section class="ReciprocalTeaching" id="ReciprocalTeaching">
+    <div class="module-wrapper">
+      <header class='mod-header'>
         <h2>Reciprocal Teaching Modules</h2>
-        <div class='imgHolder'> 
+      </header>
+      <aside class='aside aside-1'>
+       <div class='imgHolder'> 
           <img class='logos' src={RecipTechImg} alt="">
           <img class='logos-small' src={RTSmall} alt="">
         </div>
-      {RTData.map(rt => (
-        <a href={rt.url}><h3>{rt.title}</h3></a>
-       <p>{rt.body} </p>
+        </aside>
+        <article class="main">
+          {RTData.map(rt => (
+            <HTMLButton buttonText={rt.title} url={rt.url} />
+          <p>{rt.body} </p>
+          
+          ))}
+        </article>
+       <!--
+         <aside class='aside aside-2'>
+          {RTData.map(rt => (
+            <a href={rt.url}>
+              <Button addText={"Launch: "} buttonText={rt.title} />
+                </a>
+          
+          
+          ))}
+        </aside>
+        -->
+      <footer class='footer'>
+        <h3>Reciprocal Teaching Resources</h3>
+        <div class="tabs">
+    
+          <div class="tab">
+              <input type="radio" id="tab-1" name="tab-group-1" checked>
+              <label for="tab-1">General Resources</label>
+              
+              <div class="content">
+                <ul class="column-list">
+                  {RTOverview.map(RTOverview =>(
+                    <li><a href={RTOverview.url} title={RTOverview.title+' '+RTOverview.altText}>{RTOverview.title}</a>
+                      <Icon name={RTOverview.name}  alt={RTOverview.altText} title={RTOverview.altText} /></li>
+                  ))}
+                 </ul>
+              </div> 
+          </div>
+           
+          <div class="tab">
+              <input type="radio" id="tab-2" name="tab-group-1">
+              <label for="tab-2">Summarizing</label>
+              
+              <div class="content">
+                <ul class="column-list">
+                  {RTSummary.map(RTSummary =>(
+                    <li><a href={RTSummary.url} title={RTSummary.title+' '+RTSummary.altText}>{RTSummary.title}</a>
+                      <Icon name={RTSummary.name}  alt={RTSummary.altText} title={RTSummary.altText} /></li>
+                  ))}
+                 </ul>
+              </div> 
+          </div>
+           
+           <div class="tab">
+              <input type="radio" id="tab-3" name="tab-group-1">
+              <label for="tab-3">Questioning</label>
+            
+              <div class="content">
+                <ul class="column-list">
+                  {RTQuestioning.map(RTQuestioning =>(
+                    <li><a href={RTQuestioning.url} title={RTQuestioning.title+' '+RTQuestioning.altText}>{RTQuestioning.title}</a>
+                      <Icon name={RTQuestioning.name} alt={RTQuestioning.altText} title={RTQuestioning.altText} /></li>
+                  ))}
+                 </ul>
+              </div> 
+          </div>
        
-      ))}
-      
-      <div class='resources'>
-        <h3>Additional Reciprocal Teaching Resources</h3>
-        <ul class="column-list">
-        {RTResosurces.map(rtResoource =>(
-          <li><a href={rtResoource.url}>{rtResoource.title}</a></li>
-        ))}
-        </ul>
+       
+          <div class="tab">
+              <input type="radio" id="tab-4" name="tab-group-1">
+              <label for="tab-4">Predicting</label>
+            
+              <div class="content">
+                <ul class="column-list">
+                  {RTPredicting.map(RTPredicting =>(
+                    <li><a href={RTPredicting.url} title={RTPredicting.title+' '+RTPredicting.altText}>{RTPredicting.title}</a>
+                      <Icon name={RTPredicting.name} alt={RTPredicting.altText} title={RTPredicting.altText} /></li>
+                  ))}
+                 </ul>
+              </div> 
+          </div>
+       
+            <div class="tab">
+              <input type="radio" id="tab-5" name="tab-group-1">
+              <label for="tab-5">Clarifying</label>
+            
+              <div class="content">
+                <ul class="column-list">
+                  {RTClarifying.map(RTClarifying =>(
+                    <li><a href={RTClarifying.url} title={RTClarifying.title+' '+RTClarifying.altText}>{RTClarifying.title}</a>
+                      <Icon name={RTClarifying.name} alt={RTClarifying.altText} title={RTClarifying.altText} /></li>
+                  ))}
+                 </ul>              
+                </div> 
+          </div>
+       </div> 
+      </footer>
       </div>
-    </div>
   </section>
-
-
 
 <section class="SGQmodules" id="SGQmodules">
-    <div class="container">
+    <div class="module-wrapper">
+      <header class='mod-header'>
         <h2>Self-Generated Questions Modules</h2>
-
-      <div class='imgHolder'>
-        <img class='logos' src={sgqImg}  alt="">
-        <img class='logos-small' src={SGQSmall}  alt="">
-      </div>
+      </header>
+<aside class='aside aside-1'>
+  <div class='imgHolder'> 
+    <img class='logos' src={sgqImg} alt="">
+    <img class='logos-small' src={SGQSmall} alt="">
+  </div>
+  </aside>
+  <article class='main'>
       {sgqData.map(SGQ => (
-        <a href={SGQ.url}><h3>{SGQ.title}</h3></a>
+       <HTMLButton buttonText={SGQ.title} url={SGQ.url} />
        <p>{SGQ.body} </p>
-       
       ))}
-            
-     <div class='resources'>
-      <h3>Self-Generated Questions Module Resources</h3>
-      <ul class="column-list">
-        {sgqResources.map(sgqResource=>(
-          <li><a href={sgqResource.url}>{sgqResource.title}</a></li>
-
+      </article>
+     <!--
+       <aside class='aside aside-2'>
+        {sgqData.map(SGQ => (
+          <a href={SGQ.url}>
+            <Button addText={"Launch: "} buttonText={SGQ.title} />
+            </a>
         ))}
-
-      </ul>
+      </aside>
+      -->
+      <footer class='footer'>
+      <h3>Self-Generated Questions Resources</h3>
+        <ul class="column-list">
+          {sgqResources.map(sgqResource=>(
+            <li><a href={sgqResource.url} title={sgqResource.title+' '+sgqResource.altText}>{sgqResource.title}</a>
+              <Icon name={sgqResource.name} alt={sgqResource.altText} title={sgqResource.altText} /></li>
+          ))}
+        </ul>
+      </footer>
      </div>
-    </div>
   </section>
-
+  
   <section class="vocabModules" id="vocabModules">
-    <div class="container">
+    <div class="module-wrapper">
+      <header class='mod-header'>        
         <h2>Vocabulary Maps Modules</h2>
+      </header>
+      <aside class='aside aside-1'>
       <div class='imgHolder'>
         <img class='logos' src={vocabImg} alt="">
         <img class='logos-small' src={vocabSmall} alt="">
       </div>
+    </aside>
+    <article class='main'>
       {vocabData.map(vocab => (
-       <div class='module'> <a href={vocab.url}><h3>{vocab.title}</h3></a>
-       <p>{vocab.body} </p></div>
-       
+        <HTMLButton buttonText={vocab.title} url={vocab.url} />
+        <p>{vocab.body} </p>
       ))}
+      </article>
+      <!--
+        <aside class='aside aside-2'>
+        {vocabData.map(vocab => (
+         <a href={vocab.url}>
+          <Button addText={"Launch: "} buttonText={vocab.title} />
+          </a>
+          
+         ))}
+      </aside>
+       -->
       
-      <div  class='resources'>
-        <h3 >Additional Vocabulary Maps Resources</h3>
-        <ul >
+      <footer  class='footer'>
+        <h3 >Vocabulary Maps Resources</h3>
+        <ul class="column-list">
           {vocabResources.map(vocabResource=>(
-            <li><a href={vocabResource.url}>{vocabResource.title}</a></li>
+            <li><a href={vocabResource.url} title={vocabResource.title+' '+vocabResource.altText}>{vocabResource.title}</a>
+              <Icon name={vocabResource.name} alt={vocabResource.altText} title={vocabResource.altText} /></li>
           ))}
         </ul>
+        </footer>
       </div>
-
-    </div>
   </section>
 
   <section class="wordbuilder" id="wordbuilder">
   
-    <div class="container">
+    <div class="module-wrapper">
+      <header class='mod-header'>
         <h2>Wordbuilder Modules</h2>
+      </header>
+      
+      <aside class='aside aside-1'>
         <div class="imgHolder">
           <img class='logos' src={WBImg} alt="">
           <img class='logos-small' src={WBSmall} alt="">
         </div>
-      {wbData.map(wordbuilder => (
-        <a href={wordbuilder.url}><h3>{wordbuilder.title}</h3></a>
-       <p>{wordbuilder.body} </p>
-       
-      ))}
+      </aside>
+      <!--
+        <aside  class='aside aside-2'>
       
-      <div class='resources'>
-      <h3>Additonal Wordbuilder Resources</h3>
-       <ul class="column-list">
-        {wbResources.map(wbResource =>(
-          <li><a href={wbResource.url}>{wbResource.title}</a></li>
-
+        {wbData.map(wordbuilder => (
+          <a href={wordbuilder.url}>
+            <Button addText={"Launch: "} buttonText={wordbuilder.title} />
+            </a>
         ))}
-       </ul>
-    </div>
+         </aside>
+       -->
+      <article class='main'>
+        {wbData.map(wordbuilder => (
 
+           
+              <HTMLButton buttonText={wordbuilder.title} url={wordbuilder.url} />
+            
+          <p>{wordbuilder.body} </p>
+         
+        ))}
+        
+      </article>
+      <div class='media-button-container' id='media-button-container'>
+        <div >
+          <MediaButton url="https://vimeo.com/showcase/9843748"  title="WordBuilder Demonstration Videos"   />
+        </div>    
+        <div >
+          <MediaButton url='https://vimeo.com/showcase/calireadswebinars' title="WordBuilder Training Webinars"  />
+      </div>
+        </div>
+     <footer class='footer'>
     
+      <h3>Wordbuilder Resources</h3>
+        <ul class="column-list">
+            {wbResources.map(wbResource =>(
+              <li><a href={wbResource.url} title={wbResource.title+' '+wbResource.altText}>{wbResource.title}</a>
+                <Icon name={wbResource.name} alt={wbResource.altText} title={wbResource.altText} /></li>
+            ))}
+        </ul>
+    </footer>
     </div>
   </section>
-
-  
-
-
-
   <style>
-    
-    .container { color: var(--color-secondary);
- }
 
-    .container h3{opacity: 50;}
 
-    .container a {color: var(--color-secondary);
-        text-decoration: underline;
 
-    }
-    
-    .container a:hover{
-        color: #0C7D9E;
-    }
+.media-button-container{
+  float: top;
+  display: flex;
+  flex-wrap: nowrap;
+  column-gap: 20px;
+  justify-content:space-around;
+}
+.media-button-container.mediaBtn {
+  padding: 25px;
+  border-radius: 14px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+ /* background: url('../images/gr-media-play.png') ;*/
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: center;
+  transition: transform 100ms ease-in-out;
+	display: flex;
+}
 
-    .resources{
-      border: 1px solid var(--color-secondary);
-    
-      padding: 1em;
-    }
+.media-button-container.mediaBtn a{
+  height: 100%;
+  width:100%;
+  padding:12px;
+  color:var(--color-secondary);
+  justify-content: center;
+  
+}
 
-    .column-list a{
-    }
+.media-button-container.mediaBtn a:hover{
+  border-radius: 14px;
+  transform: scale (1.035);
+  color: var(--color-accent);
+  background-position: center;
+
+
+}
+
+
+.moduleButton {
+  color: #fff;
+}
+
+.moduleButton a:hover{
+background-color: #666;
+}
 
     .column-list {
   columns: 400px;
+  text-align: left;
 }
+.column-list li a:link{
+  justify-content: baseline;
+  text-decoration: underline;
+
+
+}
+
+.column-list li a:hover{
+color:var(--color-accent);
+}
+
+.module-wrapper {
+  
+  display: flex;  
+  flex-flow: row wrap;
+  font-weight: bold;
+  text-align: center; 
+}
+
+.module-wrapper > * {
+  padding: 10px;
+  flex: 1 100%;
+}
+
+.mod-header {
+/*
+  background: tomato;
+*/
+}
+
+.footer {
+  background: #fff;
+
+
+}
+
+.main {
+  text-align: left;
+  max-width: 750px;
+}
+
+.aside-1 {
+}
+
+.aside-2 {
+  text-align: left;
+}
+
+.tabs {
+  position: relative;   
+  min-height: 300px; /* This part sucks */
+  clear: both;
+  margin: 25px 0;
+}
+.tab {
+  float: left;
+}
+.tab label {
+  background: #eee; 
+  padding: 10px; 
+  border: 1px solid #ccc; 
+  margin-left: -1px; 
+  position: relative;
+  left: 1px; 
+}
+.tab [type=radio] {
+  display: none;   
+}
+.content {
+  position: absolute;
+  top: 28px;
+  left: 0;
+  background: white;
+  right: 0;
+  bottom: 0;
+  padding: 10px;
+  border: 1px solid #ccc; 
+}
+[type=radio]:checked ~ label {
+  background: white;
+  border-bottom: 1px solid white;
+  z-index: 2;
+}
+[type=radio]:checked ~ label ~ .content {
+  z-index: 1;
+}
+
+[astro-icon] {
+        color: #666;
+        /* OR */
+        width:22px;
+        padding-top: 12px;
+    }
+
+@media all and (min-width: 600px) {
+  .aside { flex: 1 0 0; }
+}
+
+@media all and (min-width: 800px) {
+  .main    { flex: 3 0px; }
+  .aside-1 { order: 1; } 
+  .main    { order: 2; }
+  .aside-2 { order: 3; }
+  .media-button-container{ order:4;}
+  .footer  { order: 5; }
+  
+}
+
+@media (max-width: 1100px) {
+.tabs{
+  max-width: 600px;
+  overflow: hidden;
+}
+}
+
+
+
   </style>
       
       

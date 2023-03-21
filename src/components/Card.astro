@@ -5,13 +5,14 @@ title: string;
 body: string;
 url: string;
 dark?: boolean;
+
 }
 
-const { title, body, url, dark = false } = Astro.props as Props
+const { title, body, url,  dark = false } = Astro.props as Props
 ---
 
 <div class={`card ${dark && 'dark'}`}>
-<h3><a href={url}>{title}</a></h3>
+<h3><a href={url} >{title}</a></h3>
 <p>{body}</p>
 
 </div>

@@ -9,6 +9,13 @@
     --color-accent:#C2DA69;
     --color-accent-secondary:#E9F1C8;
   }
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
   html, body {
     scroll-behavior: smooth;
     margin: 0;
@@ -19,27 +26,9 @@
     vertical-align: baseline;
     display: flex;
     flex-direction: column;
-  
-    
 }
 
-.skipLink{
- color: var(--color-primary);
-}
-
-  *,
-  *::before,
-  *::after {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-  }
-  
-
-  html {
-    scroll-behavior: smooth;
-  } 
-  @font-face {
+@font-face {
     font-family: 'poppins';
     src: url('../fonts/Poppins/poppins-regular-webfont.woff2') format('woff2'),
          url('../fonts/Poppins/poppins-regular-webfont.woff') format('woff');
@@ -47,9 +36,7 @@
     font-style: normal;
 
 }
-    
-    
-  body {
+body {
     font-family: 'Poppins','Roboto','Helvetica', 'Arial', sans-serif;
     font-size: 1rem;
     line-height: 1.5;
@@ -61,6 +48,9 @@
     text-decoration: none;
     color: #333;
   }
+  .skipLink{
+    color: var(--color-primary);
+   }
   
   p {
     margin: 1rem 0;
@@ -79,19 +69,16 @@
   h3 {
     line-height: 1.2;
   }
-  
-  .container {
-    width: 100%;
-   /*max-width: 1200px; */
-    margin: 0 auto;
-    padding: 0 30px;
-  }
+
+h4{
+  line-height: 3.2;
+}
 
   .imgHolder{
-    width: 100%;
-    height: auto;
+    width: 500px;
+    max-height: 500px;
     overflow: hidden;
-    object-fit: cover;
+    margin-bottom: 1em;
   }
   
   .btn {
@@ -113,10 +100,10 @@
 
   /* Page Content */
 .page-content {
-margin: 35px auto;
-max-width: 1220px;
+  display: flex;
+  flex-wrap: wrap;
 line-height: 1.7;
-padding:0 10px;
+
 }
 
 .page-content h2,
@@ -132,64 +119,6 @@ padding:0 10px;
   font-size: 25px;
 }
 
-  @media (max-width: 1100px) {
-    .logos-small {
-      
-      display: block;
-      margin: auto;
-    }
-    .logos {
-      display: none;
-    }
-    /*
-    section{
-      min-width: 600px;
-    }
-    */
-
-    .page-content h2,
-.page-content h3 {
-  margin: 15px 0;
-}
-
-.page-content h2 {
-  font-size: 30px;
-}
-
-.page-content h3 {
-  font-size: 20px;
-}
-
-    .footer img{
-      display: flex;
-    }
-   /*
-    :root {
-      --color-accent: #fff;
-      --color-accent-secondary:#fff;
-    }
-    */
-    .imgHolder{
-      width:100%;
-      height: auto;
-      display: inline-block;
-      overflow:hidden;
-    }
-  }
-  
-/*
-  @media (max-width: 500px) {
-    .logos-small {
-      display: block;
-      margin: auto;
-    }
-    .logos {
-      display: none;
-    }
-}
-*/
-
-
 h1,
 h2 {
   text-align: center;
@@ -199,10 +128,9 @@ h2 {
 /*Custom Global Styles*/
 section{
   width: 100%;
-  padding-top: 6ch;
-  padding-bottom: 6ch;
-  padding-left: 3ch;
-  padding-right: 3ch;
+padding: 4em;
+
+  
 }
 .section-title{
   border-radius: 15px 15px 0px 0px; 
@@ -288,32 +216,7 @@ section{
 }
 
 
-.ARGuides{
-  background-color: var(--color-accent);
-}
 
-.GTG{
-  background-color: var(--color-accent-secondary);
-}
-
-.morphology{
-  background-color: var(--color-accent);
-}
-
-.ReciprocalTeaching{
-  background-color: var(--color-accent-secondary);
-}
-.SGQmodules{
-  background-color: var(--color-accent);
-}
-
-.vocabModules{
-  background-color: var(--color-accent-secondary);
-}
-
-.wordbuilder{
-  background-color: var(--color-accent);
-}
 
 /*details tag style */
 details summary { 
@@ -343,4 +246,43 @@ details summary {
     .heading{
       padding-right: 1em;
     font-size:1.4em;
+  }
+
+
+
+
+  @media (max-width: 1100px) {
+    .logos-small {
+      
+      display: block;
+      margin: auto;
+    }
+    .logos {
+      display: none;
+    }
+    
+
+    .page-content h2,
+.page-content h3 {
+  margin: 15px 0;
+}
+
+.page-content h2 {
+  font-size: 30px;
+}
+
+.page-content h3 {
+  font-size: 20px;
+}
+
+  .footer img{
+      display: flex;
+    }
+
+    .imgHolder{
+      width:100%;
+      height: auto;
+      display: inline-block;
+      overflow:hidden;
+    }
   }
