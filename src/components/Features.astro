@@ -5,7 +5,8 @@ import Card from './Card.astro';
 const featuresData = [
     { 
       title: 'Anticipation Reaction Guides', 
-      body: 'Anticipation Reaction Guides (AR Guides) are advanced organizers that are used before, during, and after reading. The teacher creates a set of opinion statements to activate student background knowledge before they read, to identify textual evidence related to the statements while they are reading, and to reconsider their opinions in the light of textual evidence after reading.', url: '/anticipation-reaction-guides'
+      body: 'Anticipation Reaction Guides (AR Guides) are advanced organizers that are used before, during, and after reading. The teacher creates a set of opinion statements to activate student background knowledge before they read, to identify textual evidence related to the statements while they are reading, and to reconsider their opinions in the light of textual evidence after reading.', 
+      url: '/anticipation-reaction-guides'
     },
     { 
       title: 'Get The Gist', 
@@ -47,7 +48,7 @@ const featuresData = [
       {featuresData.map(feature => (
        <Card dark={true} title={feature.title} body={feature.body} url={feature.url}   />
       ))}
-       <p ><a href="#" style='color:#fff;'>TEST</a></p>
+       
     </div>
   
   </section>
