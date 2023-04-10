@@ -4,20 +4,64 @@
 const { title,  url,  buttonText, addText } = Astro.props 
 ---
 
-      <button class="btnLaunch" title={title} {url} >
-        
-        <span class='launch'>{addText}</span> <span>  {buttonText}</span>
-      
-      </button>
+
+  <li>
+    <a href={url} >
+       <div class="btn-9">
+          Start The Module >>
+        </div>
+      </a>
+  </li>
 
   <style>
-.btnLaunch{
-    width:240px;
-    height: 40px;
-    border:1px solid orange;
-    background-color: #fff;
-    color: black;
+   
+    li{
+      display: flex;
+      justify-content: center;
+      justify-items: center;
+   
+    }
+      button span{
+        color: rgb(9, 71, 85);
+       
+      }
+     
+    
+    
+    
+    .btn-9 {
+            background:#387796;
+            font-size:1em;
+            color: #fff;
+            border-radius: 7px;
+            box-shadow: 0 7px 0px var(--color-accent);
+            display: inline-block;
+            transition: all .2s;
+            position: relative;
+            padding: 20px 25px;
+            top: 10;
+            cursor: pointer;
+            margin:0 20px;
 }
+
+ .btn-9:active {
+            top: 3px;
+            box-shadow: 0 2px 0px #387796;
+            transition: all .2s;
+        }
+/* Buton 9 Bitti */
+    /*
+   
+    @media all and (max-width:30em){
+        a.{
+        display:block;
+        margin:0.4em auto;
+      
+    }
+    
+    }
+    
+    */
   </style>
 
 

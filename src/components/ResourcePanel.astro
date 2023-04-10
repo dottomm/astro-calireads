@@ -1,0 +1,34 @@
+---
+const { title,  url,  buttonText, body, demoVideo, trainWebinar, des } = Astro.props 
+
+---
+
+<div class='resource-panel'>
+
+    <div class='moduleTitle'>
+        <a href={url} ><p>{buttonText}</p></a>
+    </div>
+    <div class='resourceBody'>
+        <p>{body}</p>
+    </div>
+    <div class=''><a href={demoVideo} >{demoVideo}</a></div>
+    <div class={des}><a href={trainWebinar}>{trainWebinar}</a></div>
+</div>
+
+
+
+<style>
+    .resource-panel {
+        width:500px;
+        background-color:#ccc;
+        border:1px solid orange;
+        font-size:smaller;
+    }
+
+    .vimeo{
+        border:1px solid green;
+        min-height:30px;
+        width:70%;
+    }
+    
+ </style>

@@ -1,83 +1,44 @@
 ---
-const { title,  url,  buttonText, addText } = Astro.props 
+const { title,  url,   buttonText, addText } = Astro.props 
 import LaunchSVG from '../images/SVG/launch.svg';
 
 ---
 
-
-        <a href={url} >
-        <span class='articleContent'>
-          <span><img src={LaunchSVG} width='64px' height='100%'/></span>
-            <h4><span class='articleHeader'>{buttonText}</span></h4>
-        </span>
-        </a>
-
-
-
+    <li  class='flex-item'>
+      <a href={url} title={title} >{title}</a>
+   </li>
 
 <style>
- .articleHeader{
-  display: flex;
-  flex-wrap: nowrap;
-  min-width: 100&;
-  justify-content: baseline;
-  
-}
-.articleContent{
-    width: 100%;
-    
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  gap:20px;
-  justify-content: flex-start;
-  justify-items: center;
 
-}
-a{
-  display: block;
-  padding-left:.1em;
-  line-height: 40px;
-  font-size: 18px;
-  font-family: sans-serif;
-  text-decoration: none;
-  color: #333;
-  letter-spacing: .8px;
-  text-align: left;
-  position: relative;
-  transition: all .35s;
-  background-repeat: no-repeat;
-  background-position: left;
-  z-index: 1;
-}
+  li{
+    font-size: .8em;
+  }
 
-a span{
-  position: relative;
-  z-index: 2;
-}
-
-
-a:after{
-  position: absolute;
-  content: attr(data-hover);
-  top: 0;
-  left: 0;
-  width: 0;
-  height: 100%;
-/*  background: var(--color-accent);*/
-  background-image: url('../images/SVG/LG-RArrow.svg');
-  background-repeat: no-repeat;
-  background-position: right;
-  transition: all .35s;
-}
-
-a:hover{
-  color: var(--color-accent);
-}
-
-a:hover:after{
+.flex-container{
   width: 100%;
+      padding: 0;
+      margin: 0;
+      list-style: none;
+      display: flex-end;
+
+    }
+.flex-item {
+  transition:1.5ms;
+top:5;
+margin: 0 10px;
+padding: 5px;
+
 }
+
+.flex-item a:hover{
+ text-decoration: underline;
+color:var(--color-accent);
+ transition: all .5s;
+}
+
+
+
+
 
 
 @media all and (max-width:30em){

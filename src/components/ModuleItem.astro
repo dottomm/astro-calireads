@@ -19,24 +19,20 @@ const { title, body, url,  dark = false } = Astro.props as Props
 <style>
 
 .card {
+  background: var(--color-primary);
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   margin-bottom: 20px;
-  background-size: 9%;
-  background-position: center;
-  background-image: url('../images/svg/SM-PlayButton.svg') ;
-  background-repeat: no-repeat;
 }
 
 .card a {
   color:var(--color-secondary);
-  text-decoration: none;
+  text-decoration: underline;
 }
 
 .card a:hover{
-  color:var(--color-accent);
- transition: all .5s;
+  color: var(--color-accent);
 }
 
 .dark{
