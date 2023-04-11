@@ -1,15 +1,36 @@
 ---
 const { title,  url,   buttonText, addText } = Astro.props 
-import LaunchSVG from '../images/SVG/launch.svg';
 
 ---
 
     <li  class='flex-item'>
-      <a href={url} title={title} >{title}</a>
+      <a href={url} title={title} >{title}
+      <button class='button'>{buttonText}</button>
+    </a>
    </li>
 
 <style>
+.button{
+ 
+  background-color: var( --color-secondary);
+  border: none;
+  color: white;
+  padding: 15px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  margin-left:2em;
 
+}
+.button {
+  transition-duration: 0.4s;
+}
+
+.button:hover {
+  background-color: var(--color-accent);
+  color: white;
+}
   li{
     font-size: .8em;
   }

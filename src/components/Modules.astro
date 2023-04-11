@@ -68,14 +68,16 @@ import { Icon } from 'astro-icon'
     </header>
     <article class="main">
       <p>The ARG is a routine using an advanced organizer to prompt student thinking about key topics before reading, to document related text evidence during reading, and to reconsider opinions of key topics after reading based on documented evidence. This course demonstrates how to plan and implement instruction of the Anticipation-Reaction Guides (ARGs) to support students’ reading comprehension. </p>
-           {ARGData.map(ARG => (
-            <HTMLButton buttonText={ARG.title} url={ARG.url}/>
+          <ul>
+          {ARGData.map(ARG => (
+            <HTMLButton title={ARG.title} url={ARG.url} buttonText={ARG.buttonText}/>
         <div>
            <!--
             <p>{ARG.body} </p>
             -->
         </div>
       ))}
+      </ul>
     </article>
     <!--
       <aside class='aside aside-2'>
@@ -115,12 +117,15 @@ import { Icon } from 'astro-icon'
         <h2>Get The Gist Modules</h2>
         </header>
         <article class="main">
-          
+          <p>The GtG strategy teaches students a systematic procedure for identifying the main idea in a text. This course will teach you how to plan and implement instruction of the Get the Gist (GtG) strategy. </p>
+          <p>The GtG course has 2 sections: </p>
+    <ul>
       {GTGData.map(GTG => (
-      <HTMLButton buttonText={GTG.title} url={GTG.url} />
-      <p>{GTG.body} </p>
-      
-      ))} 
+        <HTMLButton title={GTG.title} url={GTG.url} buttonText={GTG.buttonText}/>
+        
+        
+        ))} 
+    </ul>
       </article>
       <aside class="main"> 
         <div class='imgHolder'>
@@ -159,10 +164,21 @@ import { Icon } from 'astro-icon'
         <h2>Morphology Modules</h2>
       </header>
       <article class="main">
-        {MorphData.map(morph => (
-        <HTMLButton buttonText={morph.title} url={morph.url} />
-        <p>{morph.body} </p>
-        ))}
+        <p>The Morphology course demonstrates how to deliver effective morphology instruction that fosters morphological knowledge and word consciousness through five critical components: </p>
+        <ol style='margin-left:3em;'>
+          <li>Explicit instruction of roots, </li>
+          <li>Generative morphology, </li>
+          <li>Morphological problem solving, </li>
+          <li>Use of contextual information, and </li>
+          <li>Word etymology.  </li>
+        </ol>
+        <p>The Morphology course has 4 sections: </p>
+        <ul>
+          {MorphData.map(morph => (
+            <HTMLButton title={morph.title} url={morph.url} buttonText={morph.buttonText}/>
+            
+            ))}
+        </ul>
       </article>
       <aside class="aside aside 1">
         <div class='imgHolder'>
@@ -204,11 +220,15 @@ import { Icon } from 'astro-icon'
         </div>
         </aside>
         <article class="main">
-          {RTData.map(rt => (
-            <HTMLButton buttonText={rt.title} url={rt.url} />
-          <p>{rt.body} </p>
-          
-          ))}
+          <p>The Reciprocal Teaching (RT) course demonstrates how to support student reading comprehension through cooperative group discussion focused on four, high leverage reading comprehension strategies: Predicting, Questioning, Clarifying, and Summarizing (Palinscar & Brown, 1984). This course illustrates a 5-week sample schedule for building cooperative groups and folding in the four RT strategies one at a time. This course also provides teacher opportunity for practice, sample teacher scripts, teacher tips, and suggestions for student warm-up and group activities.  </p>
+          <p>The RT Course includes 6 sections: </p>
+          <ul>
+            {RTData.map(rt => (
+              <HTMLButton title={rt.title} url={rt.url} buttonText={rt.buttonText}/>
+           
+            
+            ))}
+          </ul>
         </article>
        <!--
          <aside class='aside aside-2'>
@@ -312,10 +332,12 @@ import { Icon } from 'astro-icon'
   </div>
   </aside>
   <article class='main'>
+     <ul>
       {sgqData.map(SGQ => (
-       <HTMLButton buttonText={SGQ.title} url={SGQ.url} />
-       <p>{SGQ.body} </p>
-      ))}
+        <HTMLButton title={SGQ.title} url={SGQ.url} buttonText={SGQ.buttonText}/>
+        
+       ))}
+     </ul>
       </article>
      <!--
        <aside class='aside aside-2'>
@@ -350,10 +372,13 @@ import { Icon } from 'astro-icon'
       </div>
     </aside>
     <article class='main'>
-      {vocabData.map(vocab => (
-        <HTMLButton buttonText={vocab.title} url={vocab.url} />
-        <p>{vocab.body} </p>
-      ))}
+      <p>A Vocabulary Map is a graphic organizer used to preteach key vocabulary. This course will illustrate how to prepare Vocabulary Maps and how to deliver explicit vocabulary instruction using them.</p>
+      <p>The Vocabulary Map course has 3 sections:</p>
+      <ul>
+        {vocabData.map(vocab => (
+          <HTMLButton title={vocab.title} url={vocab.url} buttonText={vocab.buttonText}/>
+        ))}
+      </ul>
       </article>
       <!--
         <aside class='aside aside-2'>
@@ -402,14 +427,14 @@ import { Icon } from 'astro-icon'
          </aside>
        -->
       <article class='main'>
+        <p>WordBuilder Intervention is a free application in the <a href='https://apple.com/'>Apple App Store</a>, the <a href='https://play.google.com/store/apps/details?id=org.napacoe.wordbuilder'>Google Play Store</a> & <a href='http://bit.ly/wordbuilder_int'>The Amazon Store!</a> and a free web version on <a href='https://calireads.org/wordbuilder/'>CALI Reads Wordbuilder</a>. The WordBuilder Intervention course demonstrates how to effectively and systematically deliver teacher-led, small group instruction using this tool to teach struggling readers how to break down, build, and spell multisyllabic words.  </p>
+        <p>The WordBuilder Intervention course has 4 sections:</p>
+       <ul>
         {wbData.map(wordbuilder => (
-
-           
-              <HTMLButton buttonText={wordbuilder.title} url={wordbuilder.url} />
-            
-          <p>{wordbuilder.body} </p>
-         
-        ))}
+          <HTMLButton title={wordbuilder.title} url={wordbuilder.url} buttonText={wordbuilder.buttonText}/>
+     
+    ))}
+       </ul>
         
       </article>
       <div class='media-button-container' id='media-button-container'>

@@ -2,12 +2,14 @@
   
     {
       "title": "AR Guides Overview", 
+      "buttonText":"Begin Section I",
       "body": "This course provides you with an overview of Anticipation-Reaction Guides (AR Guides), a tool designed to support students’ reading comprehension through a set of anticipatory statements used Before, During, and After reading.",  
       "url": "https://calireads.org/modules/ARGuides/overview-of-anticipation-reaction-guides/content/"
       
     },
     {
       "title": "Instructional Steps for AR Guides", 
+      "buttonText":"Begin Section II",
       "body": "This course demonstrates the Instructional Steps for teaching students to use Anticipation-Reaction Guides Before, During, and After reading.", 
       "url": "https://calireads.org/modules/ARGuides/instructional-steps-for-anticipation-reaction-guides/content/"
     }

@@ -2,26 +2,31 @@
     {
       "title": "Self-Generated Questions Overview", 
       "body": "This course overviews to the Self-Generated Questions strategy", 
+      "buttonText":"Begin Section I",
       "url": "https://calireads.org/modules/SGQs/sgq-overview-raw/content/"
     },
     {
       "title": "Self-Generated Questions Level 1", 
       "body": "This course demonstrates how to teach students to self-generate Level 1 or Right There questions.", 
+      "buttonText":"Begin Section II",
       "url": "https://calireads.org/modules/SGQs/sgq-level1-raw/content/"
     },
     {
       "title": "Self-Generated Questions Level 2", 
       "body": "This course demonstrates how to teach students to self-generate Level 2 or Putting It Together questions.", 
+      "buttonText":"Begin Section III",
       "url": "https://calireads.org/modules/SGQs/sgq-level2-raw/content/"
     },
     {
       "title": "Self-Generated Questions Level 3", 
       "body": "This course demonstrates how to teach students to self-generate Level 3 or Making Connections questions.", 
+      "buttonText":"Begin Section IV",
       "url": "https://calireads.org/modules/SGQs/sgq-level3-raw/content/"
     },
     {
       "title": "Level 1 — Level 3 & Differentiation", 
       "body": "This course reviews the Self-Generated Questions (SGQs) strategy and introduces tips for differentiation.", 
+      "buttonText":"Begin Section V",
       "url": "https://calireads.org/modules/SGQs/sgq-levels1-3andDifferation-raw/content/"
     }
 ]

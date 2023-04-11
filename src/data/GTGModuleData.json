@@ -3,11 +3,13 @@
     {
       "title": "Get The Gist Overview", 
       "body": "This course overviews Get The Gist strategy.", 
+      "buttonText": "Begin Section 1 ",
       "url": "https://calireads.org/modules/GetTheGist/GTG-Overview/"
     },
     {
       "title": "Get The Gist Implementation", 
       "body": "This course demonstrates how to implement Get The Gist.", 
+      "buttonText": "Begin Section 2 ",
       "url": "https://calireads.org/modules/GetTheGist/GTG-Implementation/"
     }
 ]
