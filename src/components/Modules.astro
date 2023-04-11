@@ -67,10 +67,18 @@ import { Icon } from 'astro-icon'
       <h2>Anticipation Reaction Guides Modules</h2>
     </header>
     <article class="main">
+      <p>The ARG is a routine using an advanced organizer to prompt student thinking about key topics before reading, to document related text evidence during reading, and to reconsider opinions of key topics after reading based on documented evidence. This course demonstrates how to plan and implement instruction of the Anticipation-Reaction Guides (ARGs) to support students’ reading comprehension. </p>
+      <p>
+        The ARG course has 2 sections: 
+Section I:  Anticipation-Reaction Guides (ARGs) Overview
+Section II: Anticipation-Reaction Guides (ARGs) Instructional Steps 
+      </p>
            {ARGData.map(ARG => (
             <HTMLButton buttonText={ARG.title} url={ARG.url}/>
         <div>
+           <!--
             <p>{ARG.body} </p>
+            -->
         </div>
       ))}
     </article>

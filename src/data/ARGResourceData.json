@@ -59,5 +59,12 @@
       "url": "https://calireads.org/bridge-content/ARGuides/AR_Guides_Course_Resources/Vocabulary Map Template.pdf",
       "name": "carbon:document-pdf",
       "altText": "Adobe PDF"
+    },
+    
+    {
+      "title": "Remote Learning with AR Guides", 
+      "url": "https://www.calireads.org/anticipation-reaction-support-guides/",
+      "name": "carbon:application-web",
+      "altText": "Web Site"
     }
   ]
