@@ -1,36 +1,35 @@
 ---
-  import SGQWalkthrough from '/sgqresources/Self-Generated-Questions-digiCOACH-Edition.pdf';
+import SGQWalkthrough from '/sgqresources/Self-Generated-Questions-digiCOACH-Edition.pdf';
 
-  //import ARGImg from '../images/gettyImages/GettyImages-121518480075.jpg';
-  import ARGImg from '../images/ARG-module_500.jpg';
-  import ARGSmall from '../images/gettyImages/ARGSmall.jpg';
-  import GTGIMg from '../images/GTG_500.png';
-  import GTGsm from '../images/gettyImages/GTGsm.jpg';
-  import MorphImg from '../images/MorphImg_500.png';
-  import MorphSmall from '../images/gettyImages/MorphSmall.jpg';
-  import RecipTechImg from '../images/reciprocalTeaching.png';
-  import RTSmall from '../images/gettyImages/reciprocalTeachingSmall.jpg';
-  import sgqImg from '../images/gettyImages/sgq-overview.jpg';
-  import SGQSmall from '../images/gettyImages/sgq-overview-small.jpg';
-  import vocabImg from '../images/VocabMaps_500.png';
-  import vocabSmall from '../images/gettyImages/vocabImgSmall.jpg';
-  import WBImg from '../images/wordBuilder_500.png';
-  import WBSmall from '../images/gettyImages/wordBuilder-small.jpg';
-  //import WordParts from './WordParts.astro';
-  import Button from './Button.astro';
-  import MediaButton from './MediaButton.astro';
-  import LaunchButton from './LaunchButton.astro';
-  import HTMLButton from './HTMLButton.astro';
-  import ResourcePanel from './ResourcePanel.astro';
-  import HoverButton from './HoverButton.astro';
-  export interface Props {
+//import ARGImg from '../images/gettyImages/GettyImages-121518480075.jpg';
+import ARGImg from '../images/ARG-module_500.jpg';
+import ARGSmall from '../images/gettyImages/ARGSmall.jpg';
+import GTGIMg from '../images/GTG_500.png';
+import GTGsm from '../images/gettyImages/GTGsm.jpg';
+import MorphImg from '../images/MorphImg_500.png';
+import MorphSmall from '../images/gettyImages/MorphSmall.jpg';
+import RecipTechImg from '../images/reciprocalTeaching.png';
+import RTSmall from '../images/gettyImages/reciprocalTeachingSmall.jpg';
+import sgqImg from '../images/gettyImages/sgq-overview.jpg';
+import SGQSmall from '../images/gettyImages/sgq-overview-small.jpg';
+import vocabImg from '../images/VocabMaps_500.png';
+import vocabSmall from '../images/gettyImages/vocabImgSmall.jpg';
+import WBImg from '../images/wordBuilder_500.png';
+import WBSmall from '../images/gettyImages/wordBuilder-small.jpg';
+//import WordParts from './WordParts.astro';
+import Button from './Button.astro';
+import MediaButton from './MediaButton.astro';
+import LaunchButton from './LaunchButton.astro';
+import HTMLButton from './HTMLButton.astro';
+import HoverButton from './HoverButton.astro';
+export interface Props {
 
-  title: string;
-  body: string;
-  url: string;
-  name?:string;
-  altText?:string;
-  }
+title: string;
+body: string;
+url: string;
+name?:string;
+altText?:string;
+}
 
 //ARG Modules Data
 import ARGData from '../data/ARGModuleData.json';
@@ -59,8 +58,6 @@ import vocabResources from '../data/VocabMapsResourceData.json';
 import wbData from '../data/WordBuilderModuleData.json';
 import wbResources from '../data/WordBuilderResourceData.json';
 
-import ModuleItem from './ModuleItem.astro';
-import Card from './Card.astro'
 import { Icon } from 'astro-icon'
 ---
 
@@ -70,34 +67,29 @@ import { Icon } from 'astro-icon'
       <h2>Anticipation Reaction Guides Modules</h2>
     </header>
     <article class="main">
-      <div class='ModItem '>
-        <ul >
-          {ARGData.map(ARG => (
-           <HTMLButton
-           title={ARG.title} 
-           url={ARG.url} 
-
-           />
-            <!--
-             <p>{ARG.body}</p>
-              -->
-          
-     ))}
-     </ul>
-      </div>
-      <div class='ModItem'>
-        <ul >
-         <LaunchButton title='AR Guides Module' tabindex=1/>
-        </ul>
-      </div>
-     
-   
-      <MediaButton title="AR Guides Training Webinar" url='https://google.com'/>
-      
-      <MediaButton title="AR Guides Demonstration Videos" />
-    
+      <p>The ARG is a routine using an advanced organizer to prompt student thinking about key topics before reading, to document related text evidence during reading, and to reconsider opinions of key topics after reading based on documented evidence. This course demonstrates how to plan and implement instruction of the Anticipation-Reaction Guides (ARGs) to support students’ reading comprehension. </p>
+           {ARGData.map(ARG => (
+            <HTMLButton buttonText={ARG.title} url={ARG.url}/>
+        <div>
+           <!--
+            <p>{ARG.body} </p>
+            -->
+        </div>
+      ))}
     </article>
+    <!--
+      <aside class='aside aside-2'>
+      {ARGData.map(ARG => (
+          
+            <a href={ARG.url}>
+             <Button addText={"Launch: "} buttonText={ARG.title}/>
+          
+          </a>
    
+  ))}
+      
+  </aside>
+     -->
     <aside class="aside aside-1"> 
       <div class='imgHolder'> 
         <img class='logos' src={ARGImg} alt="">
@@ -106,7 +98,6 @@ import { Icon } from 'astro-icon'
   </aside>
     <footer class="footer">
       <h3 >Anticipation Reaction Guides Resources</h3>
-
           <ul class="column-list"> 
             {ARGResources.map(ARGResource => (
             
@@ -125,35 +116,31 @@ import { Icon } from 'astro-icon'
         </header>
         <article class="main">
           
-     <div class='ModItem'>
-      <ul>
-        
-        {GTGData.map(GTG => (
-        <HTMLButton title={GTG.title} url={GTG.url} />
-       <!--
-        <p>{GTG.body} </p>
-         -->
-       
-        ))} 
-         </ul>
-     </div>
-     <div class='ModItem'>
-      <ul>
-      <LaunchButton title='Get The Gist Module' />
-      </ul>
-</div>
-    
-      <MediaButton title="Get The Gist Training Webinar" />
-    
+      {GTGData.map(GTG => (
+      <HTMLButton buttonText={GTG.title} url={GTG.url} />
+      <p>{GTG.body} </p>
+      
+      ))} 
       </article>
-      <aside class="aside aside-1"> 
+      <aside class="main"> 
         <div class='imgHolder'>
           <img class='logos' src={GTGIMg} alt="">
           <img class='logos-small' src={GTGsm} alt="">
         </div>
      
     </aside>
-  
+   <!--
+     <aside class='aside aside-2'>
+          
+      {GTGData.map(GTG => (
+        <a href={GTG.url}>
+          <Button addText={"Launch: "}buttonText={GTG.title} />
+          </a>
+      
+          ))} 
+    </aside>
+    -->
+
     <footer class="footer">
         <h3 >Get The Gist Resources</h3>
             <ul class="column-list"> 
@@ -172,26 +159,10 @@ import { Icon } from 'astro-icon'
         <h2>Morphology Modules</h2>
       </header>
       <article class="main">
-       
-
-      <div class='ModItem'>
-        <ul>
-          {MorphData.map(morph => (
-          <HTMLButton title={morph.title} url={morph.url} />
-          <!--
-            <p>{morph.body} </p>
-            -->
-          ))}
-          </ul>
-      </div>
-      <div class='ModItem'>
-        <ul>
-         <LaunchButton title='Morphology Module' />
-        </ul>
-       </div>
-        <MediaButton title='Morphology Demonstration Videos' />
-
-        <MediaButton title='Morphology Training Webinars' />
+        {MorphData.map(morph => (
+        <HTMLButton buttonText={morph.title} url={morph.url} />
+        <p>{morph.body} </p>
+        ))}
       </article>
       <aside class="aside aside 1">
         <div class='imgHolder'>
@@ -199,7 +170,16 @@ import { Icon } from 'astro-icon'
           <img class='logos-small' src={MorphSmall} alt="">
         </div>
       </aside>
-    
+      <!--
+        <aside class='aside aside-2'>
+        {MorphData.map(morph => (
+          <a href={morph.url}>
+            <Button addText={"Launch: "} buttonText={morph.title} />
+          </a>
+          
+          ))}
+      </aside>
+       -->
     <footer class='footer'>
         <h3> Morphology Resources</h3>
         <ul class="column-list">
@@ -224,25 +204,11 @@ import { Icon } from 'astro-icon'
         </div>
         </aside>
         <article class="main">
+          {RTData.map(rt => (
+            <HTMLButton buttonText={rt.title} url={rt.url} />
+          <p>{rt.body} </p>
           
-        <div class='ModItem'>
-          <ul>
-            {RTData.map(rt => (
-              <HTMLButton title={rt.title} url={rt.url} />
-            <!--
-              <p>{rt.body} </p>
-              -->
-            
-            ))}
-           </ul>
-        </div>
-        <div class='ModItem'>
-          <ul>
-           <LaunchButton title='Reciprocal Teaching Module' />
-          </ul>
-         </div>
-        <MediaButton title='Reciprocal Teaching Training Webinars' />
-        <MediaButton title="Reciprocal Teaching Demondstration Videos" />
+          ))}
         </article>
        <!--
          <aside class='aside aside-2'>
@@ -346,26 +312,20 @@ import { Icon } from 'astro-icon'
   </div>
   </aside>
   <article class='main'>
-   
-     <div class='ModItem'>
-      <ul>
-        {sgqData.map(SGQ => (
-          <HTMLButton title={SGQ.title} url={SGQ.url} />
-          <!--
-           <p>{SGQ.body} </p>
-           -->
-         ))}
-      </ul>
-     </div>
-     <div class='ModItem'>
-      <ul>
-        <LaunchButton title="Self-Generated Questions Module" />
-      </ul>
-    </div>
-
-      <MediaButton title='Self-Generated Questions Training Demonstration Videos' />
+      {sgqData.map(SGQ => (
+       <HTMLButton buttonText={SGQ.title} url={SGQ.url} />
+       <p>{SGQ.body} </p>
+      ))}
       </article>
-   
+     <!--
+       <aside class='aside aside-2'>
+        {sgqData.map(SGQ => (
+          <a href={SGQ.url}>
+            <Button addText={"Launch: "} buttonText={SGQ.title} />
+            </a>
+        ))}
+      </aside>
+      -->
       <footer class='footer'>
       <h3>Self-Generated Questions Resources</h3>
         <ul class="column-list">
@@ -390,25 +350,10 @@ import { Icon } from 'astro-icon'
       </div>
     </aside>
     <article class='main'>
-     
-    <div class='ModItem'>
-
       {vocabData.map(vocab => (
-        <HTMLButton title={vocab.title} url={vocab.url} />
-       <!--
-         <p>{vocab.body} </p>
-        -->
-      ))} 
-    </div>
-    
-    <div class='ModItem'>
-      <ul>
-        <LaunchButton title='Vocabulary Maps Module' />
-      </ul>      
-    </div>
-<div class='ModItem'></div> 
-<div class='ModItem'></div> 
-
+        <HTMLButton buttonText={vocab.title} url={vocab.url} />
+        <p>{vocab.body} </p>
+      ))}
       </article>
       <!--
         <aside class='aside aside-2'>
@@ -457,34 +402,24 @@ import { Icon } from 'astro-icon'
          </aside>
        -->
       <article class='main'>
-       
-      <div class='ModItem'>
-        <ul>
-          {wbData.map(wordbuilder => (
-            <HTMLButton title={wordbuilder.title} url={wordbuilder.url} />
-                    
-                  <!--
-                    <p>{wordbuilder.body} </p>
-                    -->
-                 
-                ))}
-        </ul>
-      </div>
-      <div class='ModItem '>
-        <ul>
-          <LaunchButton title='WordBuilder Module' url='https://google.com' />
-        </ul>
-          </div>
+        {wbData.map(wordbuilder => (
 
-        
-          <MediaButton url="https://vimeo.com/showcase/9843748"  title="WordBuilder Demonstration Videos"   />
-          <MediaButton url='https://vimeo.com/showcase/10178533' title="WordBuilder Training Webinars"  />
-
-      
+           
+              <HTMLButton buttonText={wordbuilder.title} url={wordbuilder.url} />
+            
+          <p>{wordbuilder.body} </p>
+         
+        ))}
         
       </article>
-      
-      
+      <div class='media-button-container' id='media-button-container'>
+        <div >
+          <MediaButton url="https://vimeo.com/showcase/9843748"  title="WordBuilder Demonstration Videos"   />
+        </div>    
+        <div >
+          <MediaButton url='https://vimeo.com/showcase/10178533' title="WordBuilder Training Webinars"  />
+      </div>
+        </div>
      <footer class='footer'>
     
       <h3>Wordbuilder Resources</h3>
@@ -495,33 +430,50 @@ import { Icon } from 'astro-icon'
             ))}
         </ul>
     </footer>
-    
+    </div>
   </section>
-
   <style>
 
-.main {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 20px;
-  padding: 0 10px;
-  margin: 20px auto;
-   box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-  padding: 0 20px;
-  margin: 10px auto;
-}
 
-.full-module{
-font-size: x-large;  
-}
 
-.ModItem{
-  background: var(--color-primary);
-  padding: 20px;
-  border-radius: 10px;
+.media-button-container{
+  float: top;
+  display: flex;
+  flex-wrap: nowrap;
+  column-gap: 20px;
+  justify-content:space-around;
+}
+.media-button-container.mediaBtn {
+  padding: 25px;
+  border-radius: 14px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   margin-bottom: 20px;
+ /* background: url('../images/gr-media-play.png') ;*/
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: center;
+  transition: transform 100ms ease-in-out;
+	display: flex;
 }
+
+.media-button-container.mediaBtn a{
+  height: 100%;
+  width:100%;
+  padding:12px;
+  color:var(--color-secondary);
+  justify-content: center;
+  
+}
+
+.media-button-container.mediaBtn a:hover{
+  border-radius: 14px;
+  transform: scale (1.035);
+  color: var(--color-accent);
+  background-position: center;
+
+
+}
+
 
 .moduleButton {
   color: #fff;
@@ -531,7 +483,7 @@ font-size: x-large;
 background-color: #666;
 }
 
-.column-list {
+    .column-list {
   columns: 400px;
   text-align: left;
 }
