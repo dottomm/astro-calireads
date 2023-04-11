@@ -7,8 +7,9 @@ import LaunchSVG from '../images/SVG/launch.svg';
 
         <a href={url} >
         <span class='articleContent'>
-          <span><img src={LaunchSVG} width='64px' height='100%'/></span>
+          
             <h4><span class='articleHeader'>{buttonText}</span></h4>
+            <button class='button'>Begin Module &#62;</button>
         </span>
         </a>
 
@@ -16,6 +17,25 @@ import LaunchSVG from '../images/SVG/launch.svg';
 
 
 <style>
+  .button {
+  background-color:var(--color-secondary); /* Green */
+  border: none;
+  color: white;
+  padding: 4px 11px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  border:1px solid black;
+}
+.button {
+  transition-duration: 0.4s;
+}
+
+.button:hover {
+  background-color: var(--color-accent); 
+  color: white;
+}
  .articleHeader{
   display: flex;
   flex-wrap: nowrap;
@@ -65,7 +85,7 @@ a:after{
   width: 0;
   height: 100%;
 /*  background: var(--color-accent);*/
-  background-image: url('../images/SVG/LG-RArrow.svg');
+  /*background-image: url('../images/SVG/LG-RArrow.svg');*/
   background-repeat: no-repeat;
   background-position: right;
   transition: all .35s;
