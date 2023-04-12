@@ -11,9 +11,8 @@ const { title,  url,   buttonText, addText } = Astro.props
 
 <style>
 .button{
- 
   background-color: var( --color-secondary);
-  border: none;
+  border: 1px solid var( --color-secondary);
   color: white;
   padding: 15px 15px;
   text-align: center;
@@ -21,7 +20,7 @@ const { title,  url,   buttonText, addText } = Astro.props
   display: inline-block;
   font-size: 12px;
   margin-left:2em;
-
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
 .button {
   transition-duration: 0.4s;
@@ -29,26 +28,23 @@ const { title,  url,   buttonText, addText } = Astro.props
 
 .button:hover {
   background-color: var(--color-accent);
-  color: white;
+  color: #666;
+  box-shadow: 0 6px 8px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+
 }
   li{
-    font-size: .8em;
+    font-size: .9em;
+  
   }
 
-.flex-container{
-  width: 100%;
-      padding: 0;
-      margin: 0;
-      list-style: none;
-      display: flex-end;
 
-    }
 .flex-item {
   transition:1.5ms;
 top:5;
 margin: 0 10px;
 padding: 5px;
-
+display: flex;
+align-items: center;
 }
 
 .flex-item a:hover{
@@ -56,10 +52,6 @@ padding: 5px;
 color:var(--color-accent);
  transition: all .5s;
 }
-
-
-
-
 
 
 @media all and (max-width:30em){

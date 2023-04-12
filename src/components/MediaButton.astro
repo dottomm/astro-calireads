@@ -20,17 +20,29 @@ const { title, body, url,  dark = false } = Astro.props as Props
 <style>
 
 .card {
+
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   margin-bottom: 20px;
-  background-size: 9%;
+  background-repeat: no-repeat;
   background-position: center;
   background-image: url('../images/SVG/SMPlayButton.svg') ;
-  background-repeat: no-repeat;
+  background-size: 17%;
+  opacity: 0.95;
+}
+
+.card:before a{
+  content: "";
+  top: 0px;
+      right: 0px;
+      bottom: 0px;
+      left: 0px;
+      
 }
 
 .card a {
+  
   color:var(--color-secondary);
   text-decoration: none;
 }

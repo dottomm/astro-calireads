@@ -67,31 +67,25 @@ import { Icon } from 'astro-icon'
       <h2>Anticipation Reaction Guides Modules</h2>
     </header>
     <article class="main">
+      <div class="flex-container">
       <p>The ARG is a routine using an advanced organizer to prompt student thinking about key topics before reading, to document related text evidence during reading, and to reconsider opinions of key topics after reading based on documented evidence. This course demonstrates how to plan and implement instruction of the Anticipation-Reaction Guides (ARGs) to support students’ reading comprehension. </p>
-          <ul>
+          <ul >
           {ARGData.map(ARG => (
             <HTMLButton title={ARG.title} url={ARG.url} buttonText={ARG.buttonText}/>
-        <div>
-           <!--
-            <p>{ARG.body} </p>
-            -->
-        </div>
+      
       ))}
       </ul>
-    </article>
-    <!--
-      <aside class='aside aside-2'>
-      {ARGData.map(ARG => (
-          
-            <a href={ARG.url}>
-             <Button addText={"Launch: "} buttonText={ARG.title}/>
-          
-          </a>
-   
-  ))}
       
-  </aside>
-     -->
+    </div>
+   
+    </article>
+    <div class='media-button-container'>
+      <div>
+        <MediaButton title="Anticipation Reaction Guides Training Webinar" />
+      </div>
+      
+      </div>
+   
     <aside class="aside aside-1"> 
       <div class='imgHolder'> 
         <img class='logos' src={ARGImg} alt="">
@@ -117,16 +111,21 @@ import { Icon } from 'astro-icon'
         <h2>Get The Gist Modules</h2>
         </header>
         <article class="main">
+          <div class='flex-container'>
           <p>The GtG strategy teaches students a systematic procedure for identifying the main idea in a text. This course will teach you how to plan and implement instruction of the Get the Gist (GtG) strategy. </p>
-          <p>The GtG course has 2 sections: </p>
-    <ul>
+          <h4>The GtG course has 2 sections: </h4>
+    <ul >
       {GTGData.map(GTG => (
         <HTMLButton title={GTG.title} url={GTG.url} buttonText={GTG.buttonText}/>
         
         
         ))} 
     </ul>
+  </div>
       </article>
+      <div class='media-button-container'>
+        <MediaButton title='Get The Gist Training Webinar' />
+      </div>
       <aside class="main"> 
         <div class='imgHolder'>
           <img class='logos' src={GTGIMg} alt="">
@@ -164,6 +163,7 @@ import { Icon } from 'astro-icon'
         <h2>Morphology Modules</h2>
       </header>
       <article class="main">
+        <div class='flex-container'>
         <p>The Morphology course demonstrates how to deliver effective morphology instruction that fosters morphological knowledge and word consciousness through five critical components: </p>
         <ol style='margin-left:3em;'>
           <li>Explicit instruction of roots, </li>
@@ -172,14 +172,24 @@ import { Icon } from 'astro-icon'
           <li>Use of contextual information, and </li>
           <li>Word etymology.  </li>
         </ol>
-        <p>The Morphology course has 4 sections: </p>
-        <ul>
-          {MorphData.map(morph => (
-            <HTMLButton title={morph.title} url={morph.url} buttonText={morph.buttonText}/>
-            
-            ))}
-        </ul>
+        <h4>The Morphology course has 4 sections: </h4>
+     
+          <ul>
+            {MorphData.map(morph => (
+              <HTMLButton title={morph.title} url={morph.url} buttonText={morph.buttonText}/>
+              
+              ))}
+          </ul>
+        </div>
       </article>
+      <div class='media-button-container'>
+        <div>
+         <MediaButton title='Morphology Training Webinar' /> 
+        </div>
+        <div>
+         <MediaButton title='Morphology Demonstration Videos' /> 
+        </div>
+       </div>
       <aside class="aside aside 1">
         <div class='imgHolder'>
           <img class='logos' src={MorphImg} alt="">
@@ -220,8 +230,10 @@ import { Icon } from 'astro-icon'
         </div>
         </aside>
         <article class="main">
+          <div class='flex-container'>
           <p>The Reciprocal Teaching (RT) course demonstrates how to support student reading comprehension through cooperative group discussion focused on four, high leverage reading comprehension strategies: Predicting, Questioning, Clarifying, and Summarizing (Palinscar & Brown, 1984). This course illustrates a 5-week sample schedule for building cooperative groups and folding in the four RT strategies one at a time. This course also provides teacher opportunity for practice, sample teacher scripts, teacher tips, and suggestions for student warm-up and group activities.  </p>
-          <p>The RT Course includes 6 sections: </p>
+          <h4>The RT Course includes 6 sections: </h4>
+         
           <ul>
             {RTData.map(rt => (
               <HTMLButton title={rt.title} url={rt.url} buttonText={rt.buttonText}/>
@@ -229,18 +241,16 @@ import { Icon } from 'astro-icon'
             
             ))}
           </ul>
+         </div>
         </article>
-       <!--
-         <aside class='aside aside-2'>
-          {RTData.map(rt => (
-            <a href={rt.url}>
-              <Button addText={"Launch: "} buttonText={rt.title} />
-                </a>
-          
-          
-          ))}
-        </aside>
-        -->
+      <div class='media-button-container'>
+       <div>
+        <MediaButton title='Reciprocal Teaching Training Webinar' /> 
+       </div>
+       <div>
+        <MediaButton title='Reciprocal Teaching Demonstration Videos' /> 
+       </div>
+      </div>
       <footer class='footer'>
         <h3>Reciprocal Teaching Resources</h3>
         <div class="tabs">
@@ -332,30 +342,28 @@ import { Icon } from 'astro-icon'
   </div>
   </aside>
   <article class='main'>
-     <ul>
-      {sgqData.map(SGQ => (
-        <HTMLButton title={SGQ.title} url={SGQ.url} buttonText={SGQ.buttonText}/>
-        
-       ))}
-     </ul>
-      </article>
-     <!--
-       <aside class='aside aside-2'>
-        {sgqData.map(SGQ => (
-          <a href={SGQ.url}>
-            <Button addText={"Launch: "} buttonText={SGQ.title} />
-            </a>
-        ))}
-      </aside>
-      -->
-      <footer class='footer'>
-      <h3>Self-Generated Questions Resources</h3>
-        <ul class="column-list">
-          {sgqResources.map(sgqResource=>(
-            <li><a href={sgqResource.url} title={sgqResource.title+' '+sgqResource.altText}>{sgqResource.title}</a>
-              <Icon name={sgqResource.name} alt={sgqResource.altText} title={sgqResource.altText} /></li>
+      <div class='flex-container'>
+        <p>This course will teach you how to use the Self-Generated Questions (SGQs) strategy as a tool to support adolescent reading comprehension. The SGQ strategy teaches students how to self-generate three levels of questions while reading in order to help build and monitor their comprehension of text.</p>
+        <h4>The SGQ Course contains 5 sections:</h4>
+        <ul>
+          {sgqData.map(SGQ => (
+            <HTMLButton title={SGQ.title} url={SGQ.url} buttonText={SGQ.buttonText}/>
+            
           ))}
         </ul>
+      </div>
+    </article>
+    <div class='media-button-container'>
+      <MediaButton title='Self-Generated Questions Demonstration Videos' url='https://vimeo.com/showcase/10308765'/>
+    </div>
+      <footer class='footer'>
+        <h3>Self-Generated Questions Resources</h3>
+          <ul class="column-list">
+            {sgqResources.map(sgqResource=>(
+              <li><a href={sgqResource.url} title={sgqResource.title+' '+sgqResource.altText}>{sgqResource.title}</a>
+                <Icon name={sgqResource.name} alt={sgqResource.altText} title={sgqResource.altText} /></li>
+            ))}
+          </ul>
       </footer>
      </div>
   </section>
@@ -372,13 +380,15 @@ import { Icon } from 'astro-icon'
       </div>
     </aside>
     <article class='main'>
-      <p>A Vocabulary Map is a graphic organizer used to preteach key vocabulary. This course will illustrate how to prepare Vocabulary Maps and how to deliver explicit vocabulary instruction using them.</p>
+      <div class='flex-container'>
+        <p>A Vocabulary Map is a graphic organizer used to preteach key vocabulary. This course will illustrate how to prepare Vocabulary Maps and how to deliver explicit vocabulary instruction using them.</p>
       <p>The Vocabulary Map course has 3 sections:</p>
       <ul>
         {vocabData.map(vocab => (
           <HTMLButton title={vocab.title} url={vocab.url} buttonText={vocab.buttonText}/>
         ))}
       </ul>
+      </div>
       </article>
       <!--
         <aside class='aside aside-2'>
@@ -416,18 +426,10 @@ import { Icon } from 'astro-icon'
           <img class='logos-small' src={WBSmall} alt="">
         </div>
       </aside>
-      <!--
-        <aside  class='aside aside-2'>
-      
-        {wbData.map(wordbuilder => (
-          <a href={wordbuilder.url}>
-            <Button addText={"Launch: "} buttonText={wordbuilder.title} />
-            </a>
-        ))}
-         </aside>
-       -->
+    
       <article class='main'>
-        <p>WordBuilder Intervention is a free application in the <a href='https://apple.com/'>Apple App Store</a>, the <a href='https://play.google.com/store/apps/details?id=org.napacoe.wordbuilder'>Google Play Store</a> & <a href='http://bit.ly/wordbuilder_int'>The Amazon Store!</a> and a free web version on <a href='https://calireads.org/wordbuilder/'>CALI Reads Wordbuilder</a>. The WordBuilder Intervention course demonstrates how to effectively and systematically deliver teacher-led, small group instruction using this tool to teach struggling readers how to break down, build, and spell multisyllabic words.  </p>
+        <div class='flex-container'>
+          <p>WordBuilder Intervention is a free application in the <a href='https://apple.com/'>Apple App Store</a>, the <a href='https://play.google.com/store/apps/details?id=org.napacoe.wordbuilder'>Google Play Store</a> & <a href='http://bit.ly/wordbuilder_int'>The Amazon Store!</a> and a free web version on <a href='https://calireads.org/wordbuilder/'>CALI Reads Wordbuilder</a>. The WordBuilder Intervention course demonstrates how to effectively and systematically deliver teacher-led, small group instruction using this tool to teach struggling readers how to break down, build, and spell multisyllabic words.  </p>
         <p>The WordBuilder Intervention course has 4 sections:</p>
        <ul>
         {wbData.map(wordbuilder => (
@@ -435,11 +437,13 @@ import { Icon } from 'astro-icon'
      
     ))}
        </ul>
+        </div>
         
       </article>
       <div class='media-button-container' id='media-button-container'>
+   
         <div >
-          <MediaButton url="https://vimeo.com/showcase/9843748"  title="WordBuilder Demonstration Videos"   />
+          <MediaButton url="https://vimeo.com/showcase/9843748"  title="WordBuilder Demonstration Videos" />
         </div>    
         <div >
           <MediaButton url='https://vimeo.com/showcase/10178533' title="WordBuilder Training Webinars"  />
@@ -459,21 +463,34 @@ import { Icon } from 'astro-icon'
   </section>
   <style>
 
+.flex-container{
+  width: 100%;
+      padding: 0px;
+      margin-top:-20px;
+      list-style: none;
+      display: flex-end;
+/*
+      box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+*/
 
+    }
+
+    .flex-container a{
+      text-decoration: underline;
+    }
 
 .media-button-container{
-  float: top;
+
   display: flex;
   flex-wrap: nowrap;
   column-gap: 20px;
-  justify-content:space-around;
+  justify-content:center;
 }
 .media-button-container.mediaBtn {
   padding: 25px;
   border-radius: 14px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   margin-bottom: 20px;
- /* background: url('../images/gr-media-play.png') ;*/
   background-repeat: no-repeat;
   background-position-x: center;
   background-position-y: center;
@@ -495,8 +512,6 @@ import { Icon } from 'astro-icon'
   transform: scale (1.035);
   color: var(--color-accent);
   background-position: center;
-
-
 }
 
 

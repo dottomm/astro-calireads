@@ -72,6 +72,9 @@ body {
 
 h4{
   line-height: 3.2;
+  font-weight:bolder;
+  color:#000;
+  font-size: larger;
 }
 
   .imgHolder{
