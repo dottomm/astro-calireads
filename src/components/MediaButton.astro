@@ -2,7 +2,7 @@
 export interface Props {
 
 title: string;
-body: string;
+body?: string;
 url: string;
 dark?: boolean;
 
@@ -10,15 +10,19 @@ dark?: boolean;
 
 const { title, body, url,  dark = false } = Astro.props as Props
 
+import { Icon } from 'astro-icon';
 ---
 
 <div class={`card ${dark && 'dark'}`}>
 <h3><a href={url} >{title}</a></h3>
 <p>{body}</p>
-
+<Icon name='logos:vimeo' />
 </div>
 <style>
-
+ [astro-icon="logos:vimeo"]{
+      width:4ch;
+     
+}
 .card {
 
   padding: 20px;
@@ -29,6 +33,7 @@ const { title, body, url,  dark = false } = Astro.props as Props
   background-repeat: no-repeat;
   background-position: center;
   background-image: url('../images/SVG/GR-SMPlayButton.svg') ;
+
   background-size: 12%;
   opacity: 0.95;
 }

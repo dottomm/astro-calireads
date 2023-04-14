@@ -82,7 +82,7 @@ import { Icon } from 'astro-icon'
     </article>
     <div class='media-button-container'>
       <div>
-        <MediaButton title="Anticipation Reaction Guides Training Webinar" />
+        <MediaButton title="Anticipation Reaction Guides Training Webinar" url={}/>
       </div>
       
       </div>
@@ -126,7 +126,7 @@ import { Icon } from 'astro-icon'
   </div>
       </article>
       <div class='media-button-container'>
-        <MediaButton title='Get The Gist Training Webinar' />
+        <MediaButton title='Get The Gist Training Webinar' url={}/>
       </div>
       <aside class="main"> 
         <div class='imgHolder'>
@@ -187,10 +187,10 @@ import { Icon } from 'astro-icon'
       </article>
       <div class='media-button-container'>
         <div>
-         <MediaButton title='Morphology Training Webinar' /> 
+         <MediaButton title='Morphology Training Webinar' url={}/> 
         </div>
         <div>
-         <MediaButton title='Morphology Demonstration Videos' /> 
+         <MediaButton title='Morphology Demonstration Videos' url={}/> 
         </div>
        </div>
       <aside class="aside aside 1">
@@ -249,10 +249,10 @@ import { Icon } from 'astro-icon'
         </article>
       <div class='media-button-container'>
        <div>
-        <MediaButton title='Reciprocal Teaching Training Webinar' /> 
+        <MediaButton title='Reciprocal Teaching Training Webinar' url={}/> 
        </div>
        <div>
-        <MediaButton title='Reciprocal Teaching Demonstration Videos' /> 
+        <MediaButton title='Reciprocal Teaching Demonstration Videos' url={}/> 
        </div>
       </div>
       <footer class='footer'>
@@ -450,13 +450,18 @@ import { Icon } from 'astro-icon'
         
       </article>
       <div class='media-button-container' id='media-button-container'>
-   
+  
         <div >
+          <div>
+            
+           </div>
           <MediaButton url="https://vimeo.com/showcase/9843748"  title="WordBuilder Demonstration Videos" />
         </div>    
         <div >
+      
           <MediaButton url='https://vimeo.com/showcase/10178533' title="WordBuilder Training Webinars"  />
       </div>
+     
         </div>
      <footer class='footer'>
     
@@ -471,6 +476,8 @@ import { Icon } from 'astro-icon'
     </div>
   </section>
   <style>
+
+
 
 .flex-container{
   width: 100%;
@@ -494,36 +501,14 @@ import { Icon } from 'astro-icon'
   display: flex;
   flex-wrap: nowrap;
   column-gap: 20px;
-  justify-content:center;
-}
-.media-button-container.mediaBtn {
-  padding: 25px;
-  border-radius: 14px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  margin-bottom: 20px;
-  background-repeat: no-repeat;
-  background-position-x: center;
-  background-position-y: center;
-  transition: transform 100ms ease-in-out;
-	display: flex;
+  justify-content:flex-end;
 }
 
-.media-button-container.mediaBtn a{
-  height: 100%;
-  width:100%;
-  padding:12px;
-  color:var(--color-secondary);
-  justify-content: center;
-  
+.media-button-container .end{
+  display: flex;
+  wrap:nowrap;
+  justify-content: flex-end;
 }
-
-.media-button-container.mediaBtn a:hover{
-  border-radius: 14px;
-  transform: scale (1.035);
-  color: var(--color-accent);
-  background-position: center;
-}
-
 
 .moduleButton {
   color: #fff;
@@ -630,6 +615,9 @@ color:var(--color-accent);
         width:22px;
         padding-top: 12px;
     }
+
+   
+
 
 @media all and (min-width: 600px) {
   .aside { flex: 1 0 0; }
