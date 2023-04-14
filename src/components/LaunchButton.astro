@@ -6,10 +6,10 @@ const { title,  url,  buttonText, addText } = Astro.props
 
 
   <li>
-    <a href={url} title={}>
-       <div class="btn-9">
+    <a href={url} title={} >
+       <button class="btn-9">
           Start The Course &gt;&gt;
-        </div>
+       </button>
       </a>
   </li>
 
@@ -30,7 +30,9 @@ const { title,  url,  buttonText, addText } = Astro.props
     
     
     .btn-9 {
+      border:0;
             background:#387796;
+            
             font-size:1em;
             color: #fff;
             border-radius: 7px;
@@ -42,6 +44,7 @@ const { title,  url,  buttonText, addText } = Astro.props
             top: 10;
             cursor: pointer;
             margin:0 23px 10px 10px;
+            
 }
 
  .btn-9:active {
