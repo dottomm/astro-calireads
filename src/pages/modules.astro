@@ -6,29 +6,50 @@ import Modules from '../components/Modules.astro';
 import Showcase from '../components/Showcase.astro';
 import ModuleNav from '../components/ModuleNav.astro';
 
+import Advert from '../images/SVG/free-literacy.svg';
+import { Icon } from 'astro-icon';
+import litImage from '../images/free-logo.png';
 ---
-
-<ModuleLayout title="Literacy Modules">
+<ModuleLayout title="Literacy Courses">
     <Showcase showExtra={false} />
+
     <ModuleNav />
+   
 
     <section class="page-content" id="page-content">
-        <p class='intro'>CALI Reads offers 7 free e-Learning Courses on Adolescent Literacy Instruction. These courses can be used for professional learning by educators and administrators on how to provide quality literacy instruction proven to enhance content area learning (ELA, social studies, science, math, etc.).  </p>
-
-        <p class='intro'>
+        <div class='intro-block'>
+            <div class='intro-text'>
+                <p class='intro'>CALI Reads offers 7 free e-Learning Courses on Adolescent Literacy Instruction. These courses can be used for professional learning by educators and administrators on how to provide quality literacy instruction proven to enhance content area learning (ELA, social studies, science, math, etc.).  </p>
+            <p class='intro'>
             Each e-Learning course takes approximately 2-3 hours to complete. You can launch the full course below or complete it section by section.
+            </p>
+            <p class="intro">
+            You can make a difference for your students! They deserve your best. Get started today! 
         </p>
-        
-        <p class="intro">You can make a difference for your students! They deserve your best. Get started today! </p>
-        
-        <Modules />
+            </div>
+        </div>
+        <Modules title='Literacy Courses' body={} url={}/>
 
 </section>
 </ModuleLayout>
 
 
 <style>
+    .intro-block{
+        display:flex;
+        
+        justify-content: space-around;
+    }
     .intro{
         font-size: larger;
+    }
+
+    [astro-icon='twemoji:books']:before{
+        content:"HERE WE GO";
+        width:95ch;
+        transform:scale(40%);
+        
+        
+
     }
 </style>
