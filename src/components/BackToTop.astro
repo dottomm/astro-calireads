@@ -1,7 +1,4 @@
 
----
-
----
 <a href="#" class="back-to-top" id="scrollBtn"></a>
 <style>
     .back-to-top {
@@ -31,7 +28,7 @@
     }
     
     /* show the button when the user scrolls */
-    @media only screen and (min-height: 500px) {
+    @media only screen and (min-height: 1000px) {
       .back-to-top {
         display: block;
       }
@@ -44,7 +41,7 @@ const scrollBtn = document.getElementById("scrollBtn");
 // Add a scroll event listener to the window
 window.addEventListener("scroll", () => {
   // Check if the user has scrolled more than 100 pixels
-  if (window.scrollY > 200) {
+  if (window.scrollY > 1000) {
     // If so, show the button
     scrollBtn.style.display = "block";
   } else {
