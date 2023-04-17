@@ -1,0 +1,55 @@
+
+---
+
+---
+<a href="#" class="back-to-top" id="scrollBtn"></a>
+<style>
+    .back-to-top {
+       
+      display: none; /* hide the button by default */
+      position: fixed; /* position the button */
+      bottom: 20px;
+      right: 20px;
+      z-index: 9999; /* make sure it's always on top */
+      font-size: 16px;
+      font-weight: bold;
+      color: #fff;
+      background: url('https://api.iconify.design/material-symbols/arrow-circle-up-outline.svg?color=%2317577b&width=130') no-repeat center center / cover ;
+      border-radius: 50%;
+      padding: 30px;
+      text-align: center;
+      text-decoration: none;
+      transition: opacity 0.2s; /* add a transition effect to opacity */
+    }
+    
+    .back-to-top:hover {
+      background-color: var(--color-accent); /* change the background color on hover */
+    }
+    .back-to-top:active{
+        padding: 28px;
+        transition: .3s;
+    }
+    
+    /* show the button when the user scrolls */
+    @media only screen and (min-height: 500px) {
+      .back-to-top {
+        display: block;
+      }
+    }
+    </style>
+    <script>
+        // Get the button element
+const scrollBtn = document.getElementById("scrollBtn");
+
+// Add a scroll event listener to the window
+window.addEventListener("scroll", () => {
+  // Check if the user has scrolled more than 100 pixels
+  if (window.scrollY > 200) {
+    // If so, show the button
+    scrollBtn.style.display = "block";
+  } else {
+    // Otherwise, hide the button
+    scrollBtn.style.display = "none";
+  }
+});
+    </script>
