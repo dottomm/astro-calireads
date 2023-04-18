@@ -42,6 +42,7 @@ body {
     line-height: 1.5;
     background: #f8fafc;
     color: #084E75;
+    
   }
   
   a {
@@ -103,8 +104,7 @@ h4{
 
   /* Page Content */
 .page-content {
-  display: flex;
-  flex-wrap: wrap;
+
 line-height: 1.7;
 
 }
