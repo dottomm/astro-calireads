@@ -22,8 +22,7 @@ import '../styles/global.css';
     <title>{title}</title>
 </head>
 <body>
-
-    <div class='top-container' id='top-container'>
+ <div class='top-container' id='top-container'>
     <Header />
 </div>
  
@@ -36,26 +35,24 @@ import '../styles/global.css';
 </html>
 <style>
     .top-container {
-  background-color: #f1f1f1;
+background-color: #f1f1f1;
 z-index: 10000;
 
 }
 
-
-
-
 .sticky {
   position: fixed;
   top: 0;
-  width: 100%;
+  width: 100%; 
 }
 
-.sticky + .content {
+.sticky + .page-content {
   padding-top: 102px;
 }
 </style>
 
 <script>
+    // When the user scrolls the page, execute myFunction
     window.onscroll = function() {myFunction()};
     
     var header = document.getElementById("top-container");
