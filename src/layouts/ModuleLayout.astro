@@ -23,13 +23,56 @@ import '../styles/global.css';
 </head>
 <body>
 
-    
+    <div class='top-container' id='top-container'>
     <Header />
-    <a href="#" class="back-to-top"></a>
+</div>
+ 
     <slot />
+
    <BackToTop />
     <Footer />
    
 </body>
 </html>
+<style>
+    .top-container {
+  background-color: #f1f1f1;
+z-index: 10000;
+  text-align: center;
+}
 
+.header {
+  padding: 10px 16px;
+  background: #555;
+  color: #f1f1f1;
+}
+
+
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 102px;
+}
+</style>
+</style>
+<script>
+    window.onscroll = function() {myFunction()};
+    
+    var header = document.getElementById("top-container");
+    var sticky = header.offsetTop;
+    
+    function myFunction() {
+      if (window.pageYOffset > sticky) {
+        header.classList.add("sticky");
+      } else {
+        header.classList.remove("sticky");
+      }
+    }
+    </script>
+
+    
