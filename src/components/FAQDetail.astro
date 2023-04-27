@@ -1,0 +1,23 @@
+---
+export interface Props {
+
+title: string;
+answer: string;
+open?: boolean;
+dark?: boolean;
+}
+
+const { open, title, answer, dark = false } = Astro.props as Props
+---
+
+<details  {open}>
+    <summary >
+        <h3>{title}</h3>
+    </summary>
+
+   <p>{answer}</p>
+  </details>
+
+  <style>
+
+  </style>

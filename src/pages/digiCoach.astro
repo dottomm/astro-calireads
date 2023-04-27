@@ -1,0 +1,160 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+
+import Showcase from '../components/Showcase.astro';
+import HTMLButton from '../components/HTMLButton.astro';
+import FAQDetail from '../components/FAQDetail.astro';
+import digiGraphic from '../images/digiGraphic.png';
+import digiCoachWalkthrough from '../images/digi-Walkthrough.png';
+import { Icon } from 'astro-icon';
+import overvieweFlyer from '../images/CALI_Reads_Overview_Flyer-1.png';
+---
+<Layout title="Anticipation Reaction Guide">
+    <Showcase showExtra={false} />
+    <section class="page-content">
+        <div class="container">
+          <section class='intro'>
+            <h2>DIGICOACH WALKTHROUGH TOOL</h2>
+            <p>DigiCOACH is an easy-to-use app designed to enhance teacher efficacy. The digiCOACH app can be accessed on your tablet or phone (Apple and Android).
+                To support literacy training, CALI Reads participants can use the digiCOACH app during lesson walkthroughs to reinforce the key instructional Look-Fors and offer formative feedback through praise and coaching tips from the library of feedback statements (see Self-Generated Questions Walkthrough below).
+                </p>
+                <div class='digi'><img src={digiGraphic} alt='' class='digiGraphic'/> <HTMLButton url='https://calireads.org/pdfs/digiCOACH-Best-Practices-for-Implementation.pdf' buttonText='Download Best Practices For New Implementation — 10 Essential Actions'/>
+                    
+        </div>
+          </section>
+
+
+                <section>
+                    <h2>DigiCOACH Support for CALI Reads</h2>
+                    <p>To learn more about how to use digiCOACH, <a href='visit digiCOACH.com/calireads.html'>visit digiCOACH.com/calireads.html</a></p>
+                    </section>
+
+                <section >
+                <h2>HOW TO ACCESS DIGICOACH</h2>
+                <h3>How is digiCOACH used in CALI Reads?</h3>
+                <p>Following completion of a CALI Reads training module, teacher participants are asked to conduct 15-20 minute digiCOACH walkthroughs to help refine instructional practice for a focal literacy practice. To get the most out of walkthroughs, teachers should conduct them at three points in time: self-rating, peer walkthrough, and coach/instructional leader walkthrough.</p>
+                <p><strong>During a walkthrough, the observer will:</strong></p>
+                <ol>
+                    <li>Identify key Look Fors across Literacy Focus Areas</li>
+                    <li>Select Strategy/Routine specific Coaching Tips</li>
+                    <li>Send a follow-up email with the feedback</li>
+                </ol>
+                <p><strong>Support:</strong> For questions on how you should be using digiCOACH for the project, contact your CALI Reads Site Coach.
+                </p>
+                </section>
+
+                <section >
+                    <h3>How can I download the digiCOACH app?</h3>
+                    <p>To access digiCOACH walkthroughs, you will need the digiCOACH mobile app. All CALI Reads iPads come with the app downloaded and ready for your personal log in.</p>
+                    <p>Support: To download the digiCOACH app onto other devices, go to digiCOACH.com/install.html or search the app store from your device.</p>
+                </section>
+
+                <section >
+
+                    <h3>How do I access my personal digiCOACH account?</h3>
+                    <p>You should have received an email from digiCOACH (search email for: digiCOACH Account Activated) with instructions and a link to where you can create your account password.</p>
+                    <p>Note: Keep your password handy for log in.</p>
+                    <p>Support: If you did NOT receive a digiCOACH invitation email, request one at info@calireads.org.</p>
+                </section>
+
+                <section class='digi'>
+                   <div>
+                    <h3>How do I log into the digiCOACH Mobile App?</h3>
+                    <p>Use your email address and the password you created. Please note, the initial login to the digiCOACH app will take around 90 seconds to complete. When you are logging in, keep your device unlocked and the digiCOACH app active when the spinning icon is on the screen. Once the download completes you will be ready to start your first walkthrough!</p>
+                    <p>Support: For questions about your digiCOACH password or support logging in, contact Brandon@digiCOACH.com</p>
+                   </div>
+                   
+                  
+                  
+                    <img src={overvieweFlyer}   alt='' class='img'  />
+                
+                </section>
+                
+                <section class='digifaq'>
+                    <h2>FREQUENTLY ASKED QUESTIONS</h2>
+                   
+
+                    <FAQDetail title='Who completes the walkthrough?' answer='CALI Reads coaches, site administrators, and teachers.' />
+
+                    <FAQDetail title='How many walkthroughs does each teacher do?' answer='First the teacher begins by using digiCOACH to self-rate a lesson. Second, the teacher conducts a peer walkthrough. Third, the coach or site administrator conducts the walkthrough.'/>
+
+                    <FAQDetail title='How long does a walkthrough take?' answer='No longer than 20-30 minutes.' />
+
+                    <FAQDetail title='What gets recorded during a walkthrough?' answer='Look Fors and selected Coaching Tips.' />
+
+                    <FAQDetail title='How do Look Fors get rated?' answer='On a scale of Exemplary, Evident, Emerging and Not Evident.' />
+
+                    <FAQDetail title='What are Coaching Tips?' answer='Praise and suggestions related to each Look For. For example, “During modeling, you used a Think Aloud to show students how to form a Level Two question”.' />
+
+                    <FAQDetail title='How do I get feedback following a walkthrough?' answer='Following a walkthrough, digiCOACH will prompt the observer to send an email that includes the selected Coaching Tips.' />
+
+                    <FAQDetail title='What reports are created?' answer='digiCOACH can report trends on the frequency of Look Fors and Coaching Tips by District, School, teacher, and coach.' />
+
+                    <FAQDetail title='Who sees the reports?' answer='Individuals can only see a report they have personally recorded the walkthrough. Otherwise, only CALI Reads coaches have access to reports.' />
+
+                    <FAQDetail title='How are reports used?' answer='To determine when and where more coaching and training are needed to support teacher use of a strategy.' />
+
+                </section>
+            
+            </div>
+            </section>
+            </Layout>
+
+
+            <style>
+
+                .container{
+                    display: flex;
+                    flex-direction: column;
+
+                }
+                
+                 section {
+                    justify-content: center;
+                    display: flex;
+                    flex-direction: column;
+                   background: linear-gradient(167deg, rgba(204,204,204,1) 18%, );
+                   margin-bottom:1em;
+                   width:100%;
+                 
+                }
+
+                 img{
+                   justify-content: center;
+                align-items: center;
+                width:100%;
+                text-align: center;
+            
+                }
+
+                .digiGraphic{
+                    width:430px;
+                    display: flex;
+                    justify-content: center;
+                    wrap:nowrap;
+                }
+
+        
+
+                section h2{
+                    background-color: var(--color-accent);
+                padding: 2em;
+                color:#fff;
+                border-radius: 17px;
+            box-shadow: 0 7px 0px #ccc;
+                }
+
+                section h3{
+                    text-align: center;
+                    font-size: 3em;
+                }
+
+                section ol li{
+                    margin-left:2.5em;
+                }
+              
+                .digi{
+                    display: flex;
+                }
+            </style>

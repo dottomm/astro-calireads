@@ -9,13 +9,14 @@ open?: boolean;
 dark?: boolean;
 }
 
-const { id, open, title, src, url, dark = false } = Astro.props as Props
+const { id, open, title,  src, url, dark = false } = Astro.props as Props
 ---
 
 <details  {open}>
     <summary >
         <h3>{title}</h3>
     </summary>
+    
     <div class='webinar'>
     <p><iframe id={id} 
         title={title} 
