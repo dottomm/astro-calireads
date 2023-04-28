@@ -49,6 +49,11 @@ body {
   a {
     text-decoration: none;
     color: #333;
+    text-underline-position: under;
+
+
+    /* Sets the thickness as a percentage of the font size */
+    text-decoration-thickness: 8;
   }
   .skipLink{
     color: var(--color-primary);
