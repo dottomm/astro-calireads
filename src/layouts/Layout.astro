@@ -9,9 +9,47 @@ import '../styles/global.css';
     <BaseHead />
     <body>
     <a href='#page-content' class='skipLink'>skip to content</a>
-    <Header />
+    <div class='top-container' id='top-container'>
+        <Header />
+    </div>
+ 
     <slot />
     <Footer />
 
 </body>
 </html>
+<style>
+    .top-container {
+background-color: #f1f1f1;
+z-index: 10000;
+
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%; 
+}
+
+.sticky + .page-content {
+  padding-top: 102px;
+}
+</style>
+
+<script>
+    // When the user scrolls the page, execute myFunction
+    window.onscroll = function() {myFunction()};
+    
+    var header = document.getElementById("top-container");
+    var sticky = header.offsetTop;
+    
+    function myFunction() {
+      if (window.pageYOffset > sticky) {
+        header.classList.add("sticky");
+      } else {
+        header.classList.remove("sticky");
+      }
+    }
+    </script>
+
+    

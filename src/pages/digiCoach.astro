@@ -6,31 +6,29 @@ import Showcase from '../components/Showcase.astro';
 import HTMLButton from '../components/HTMLButton.astro';
 import FAQDetail from '../components/FAQDetail.astro';
 import digiGraphic from '../images/digiGraphic.png';
-import digiCoachWalkthrough from '../images/digi-Walkthrough.png';
-import { Icon } from 'astro-icon';
-import overvieweFlyer from '../images/CALI_Reads_Overview_Flyer-1.png';
+import overviewFlyer from '../images/CALI_Reads_Overview_Flyer-1.png';
 ---
 <Layout title="Anticipation Reaction Guide">
     <Showcase showExtra={false} />
     <section class="page-content">
         <div class="container">
-          <section class='intro'>
+          <section class='flex-row'>
             <h2>DIGICOACH WALKTHROUGH TOOL</h2>
-            <p>DigiCOACH is an easy-to-use app designed to enhance teacher efficacy. The digiCOACH app can be accessed on your tablet or phone (Apple and Android).
-                To support literacy training, CALI Reads participants can use the digiCOACH app during lesson walkthroughs to reinforce the key instructional Look-Fors and offer formative feedback through praise and coaching tips from the library of feedback statements (see Self-Generated Questions Walkthrough below).
+            <p>DigiCOACH is an easy-to-use app designed to enhance teacher efficacy. The digiCOACH app can be accessed on your tablet or phone (Apple and Android).To support literacy training, CALI Reads participants can use the digiCOACH app during lesson walkthroughs to reinforce the key instructional Look-Fors and offer formative feedback through praise and coaching tips from the library of feedback statements (see Self-Generated Questions Walkthrough below).
                 </p>
-                <div class='digi'><img src={digiGraphic} alt='' class='digiGraphic'/> <HTMLButton url='https://calireads.org/pdfs/digiCOACH-Best-Practices-for-Implementation.pdf' buttonText='Download Best Practices For New Implementation — 10 Essential Actions'/>
+                <div class='digi'>
+                    
+                    <img src={digiGraphic} alt='' class='digiGraphic'/> <HTMLButton url='https://calireads.org/pdfs/digiCOACH-Best-Practices-for-Implementation.pdf' buttonText='Download Best Practices For New Implementation — 10 Essential Actions'/>
                     
         </div>
           </section>
 
-
-                <section>
+        <section>
                     <h2>DigiCOACH Support for CALI Reads</h2>
-                    <p>To learn more about how to use digiCOACH, <a href='visit digiCOACH.com/calireads.html'>visit digiCOACH.com/calireads.html</a></p>
-                    </section>
+                    <p style='text-align:center;'>To learn more about how to use digiCOACH, <a href='visit digiCOACH.com/calireads.html'>visit digiCOACH.com/calireads.html</a></p>
+             </section>
 
-                <section >
+            <section >
                 <h2>HOW TO ACCESS DIGICOACH</h2>
                 <h3>How is digiCOACH used in CALI Reads?</h3>
                 <p>Following completion of a CALI Reads training module, teacher participants are asked to conduct 15-20 minute digiCOACH walkthroughs to help refine instructional practice for a focal literacy practice. To get the most out of walkthroughs, teachers should conduct them at three points in time: self-rating, peer walkthrough, and coach/instructional leader walkthrough.</p>
@@ -66,8 +64,12 @@ import overvieweFlyer from '../images/CALI_Reads_Overview_Flyer-1.png';
                    </div>
                    
                   
-                  
-                    <img src={overvieweFlyer}   alt='' class='img'  />
+                 <div class='flex-row'>
+                     
+                    <div class='flex-item'>
+                        <img src={overviewFlyer}   alt='' class='img'  />
+                    </div>
+                 </div>
                 
                 </section>
                 
@@ -115,9 +117,23 @@ import overvieweFlyer from '../images/CALI_Reads_Overview_Flyer-1.png';
                     display: flex;
                     flex-direction: column;
                    background: linear-gradient(167deg, rgba(204,204,204,1) 18%, );
-                   margin-bottom:1em;
                    width:100%;
                  
+                }
+
+                .flex-row{
+                    width:100%;
+                height:auto;
+                flex-wrap: wrap;
+                display:flex;
+                justify-content: center;
+                justify-items: center;
+                
+                }
+                .flex-item{
+                    width:600px;
+	                align-items: baseline;
+	                justify-content:center;
                 }
 
                  img{
@@ -138,11 +154,12 @@ import overvieweFlyer from '../images/CALI_Reads_Overview_Flyer-1.png';
         
 
                 section h2{
+                    
                     background-color: var(--color-accent);
                 padding: 2em;
                 color:#fff;
                 border-radius: 17px;
-            box-shadow: 0 7px 0px #ccc;
+            box-shadow: 0 6px 8px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
                 }
 
                 section h3{
@@ -157,4 +174,8 @@ import overvieweFlyer from '../images/CALI_Reads_Overview_Flyer-1.png';
                 .digi{
                     display: flex;
                 }
+
+               
+
+                
             </style>
