@@ -117,8 +117,10 @@ import { Icon } from 'astro-icon'
         <article class="main">
           <div class='flex-container'>
           <p>The GtG strategy teaches students a systematic procedure for identifying the main idea in a text. This course will teach you how to plan and implement instruction of the Get the Gist (GtG) strategy. </p>
-          <LaunchButton url='https://calireads.org/modules/GetTheGist/GTG-full-program/content/' />
-          <h3>The GtG course has 2 sections: </h3>
+          
+            <LaunchButton url='https://calireads.org/modules/GetTheGist/GTG-full-program/content/' /> 
+           
+         <h3>The GtG course has 2 sections: </h3>
     <ul >
       {GTGData.map(GTG => (
         <HTMLButton title={GTG.title} url={GTG.url} aria-label={GTG.title} buttonText={GTG.buttonText}/>
