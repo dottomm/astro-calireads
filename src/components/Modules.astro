@@ -69,9 +69,11 @@ import { Icon } from 'astro-icon'
     <article class="main">
       <div class="flex-container">
       <p>The ARG is a routine using an advanced organizer to prompt student thinking about key topics before reading, to document related text evidence during reading, and to reconsider opinions of key topics after reading based on documented evidence. This course demonstrates how to plan and implement instruction of the Anticipation-Reaction Guides (ARGs) to support students’ reading comprehension. </p>
-      <ul>
+     
         <LaunchButton url='https://calireads.org/modules/ARGuides/arg-full-program/content/' />
-      <h4>Anticipation Reaction Guides has 2 sections:</h4>
+      
+        <h3>Anticipation Reaction Guides has 2 sections:</h3>
+        <ul>
           {ARGData.map(ARG => (
             <HTMLButton title={ARG.title} url={ARG.url} aria-label={ARG.title} buttonText={ARG.buttonText}/>
       
@@ -95,7 +97,7 @@ import { Icon } from 'astro-icon'
     </div>
   </aside>
     <footer class="footer">
-      <h3 >Anticipation Reaction Guides Resources</h3>
+      <h4 >Anticipation Reaction Guides Resources</h4>
           <ul class="column-list"> 
             {ARGResources.map(ARGResource => (
             
@@ -116,7 +118,7 @@ import { Icon } from 'astro-icon'
           <div class='flex-container'>
           <p>The GtG strategy teaches students a systematic procedure for identifying the main idea in a text. This course will teach you how to plan and implement instruction of the Get the Gist (GtG) strategy. </p>
           <LaunchButton url='https://calireads.org/modules/GetTheGist/GTG-full-program/content/' />
-          <h4>The GtG course has 2 sections: </h4>
+          <h3>The GtG course has 2 sections: </h3>
     <ul >
       {GTGData.map(GTG => (
         <HTMLButton title={GTG.title} url={GTG.url} aria-label={GTG.title} buttonText={GTG.buttonText}/>
@@ -149,7 +151,7 @@ import { Icon } from 'astro-icon'
     -->
 
     <footer class="footer">
-        <h3 >Get The Gist Resources</h3>
+        <h4 >Get The Gist Resources</h4>
             <ul class="column-list"> 
               {GTGResources.map(GTGResources => (
                 <li><a href={GTGResources.url} title={GTGResources.title+' '+GTGResources.altText} aria-label={GTGResources.title}>{GTGResources.title}</a> 
@@ -176,7 +178,7 @@ import { Icon } from 'astro-icon'
           <li>Word etymology.  </li>
         </ol>
         <LaunchButton url='https://calireads.org/modules/Morphology/Morphology-full-prpgram/content/'/>
-        <h4>The Morphology course has 4 sections: </h4>
+        <h3>The Morphology course has 4 sections: </h3>
      
           <ul>
             {MorphData.map(morph => (
@@ -211,7 +213,7 @@ import { Icon } from 'astro-icon'
       </aside>
        -->
     <footer class='footer'>
-        <h3> Morphology Resources</h3>
+        <h4> Morphology Resources</h4>
         <ul class="column-list">
           {MorphResources.map(MorphResource =>(
             <li><a href={MorphResource.url} title={MorphResource.title+' '+MorphResource.altText} aria-label={MorphResource.title}>{MorphResource.title}</a>
@@ -237,7 +239,7 @@ import { Icon } from 'astro-icon'
           <div class='flex-container'>
           <p>The Reciprocal Teaching (RT) course demonstrates how to support student reading comprehension through cooperative group discussion focused on four, high leverage reading comprehension strategies: Predicting, Questioning, Clarifying, and Summarizing (Palinscar & Brown, 1984). This course illustrates a 5-week sample schedule for building cooperative groups and folding in the four RT strategies one at a time. This course also provides teacher opportunity for practice, sample teacher scripts, teacher tips, and suggestions for student warm-up and group activities.  </p>
           <LaunchButton url='https://calireads.org/modules/ReciprocalTeaching/Reciprocal-Teaching-full-program/content/' />
-          <h4>The RT Course includes 6 sections: </h4>
+          <h3>The RT Course includes 6 sections: </h3>
          
           <ul>
             {RTData.map(rt => (
@@ -257,7 +259,7 @@ import { Icon } from 'astro-icon'
        </div>
       </div>
       <footer class='footer'>
-        <h3>Reciprocal Teaching Resources</h3>
+        <h4>Reciprocal Teaching Resources</h4>
         <div class="tabs">
     
           <div class="tab">
@@ -352,7 +354,7 @@ import { Icon } from 'astro-icon'
       <ul>
         <LaunchButton url='https://calireads.org/modules/SGQs/sgq-full-program/content/'/>
       </ul>
-        <h4>The SGQ Course contains 5 sections:</h4>
+        <h3>The SGQ Course contains 5 sections:</h3>
         <ul>
           {sgqData.map(SGQ => (
             <HTMLButton title={SGQ.title} url={SGQ.url} buttonText={SGQ.buttonText}/>
@@ -365,7 +367,7 @@ import { Icon } from 'astro-icon'
       <MediaButton title='Self-Generated Questions Demonstration Videos' url='https://vimeo.com/showcase/10308765'/>
     </div>
       <footer class='footer'>
-        <h3>Self-Generated Questions Resources</h3>
+        <h4>Self-Generated Questions Resources</h4>
           <ul class="column-list">
             {sgqResources.map(sgqResource=>(
               <li><a href={sgqResource.url} title={sgqResource.title+' '+sgqResource.altText}>{sgqResource.title}</a>
@@ -390,7 +392,7 @@ import { Icon } from 'astro-icon'
     <article class='main'>
       <div class='flex-container'>
         <p>A Vocabulary Map is a graphic organizer used to preteach key vocabulary. This course will illustrate how to prepare Vocabulary Maps and how to deliver explicit vocabulary instruction using them.</p>
-      <h4>The Vocabulary Map course has 3 sections:</h4>
+      <h3>The Vocabulary Map course has 3 sections:</h3>
       <LaunchButton url='http://calireads.org/modules/vocabularyMaps/vocabMaps-full-program/content/'/>
       <ul>
         {vocabData.map(vocab => (
@@ -411,7 +413,7 @@ import { Icon } from 'astro-icon'
        -->
       
       <footer  class='footer'>
-        <h3 >Vocabulary Maps Resources</h3>
+        <h4 >Vocabulary Maps Resources</h4>
         <ul class="column-list">
           {vocabResources.map(vocabResource=>(
             <li><a href={vocabResource.url} title={vocabResource.title+' '+vocabResource.altText} aria-label={vocabResource.title}>{vocabResource.title}</a>
@@ -441,7 +443,7 @@ import { Icon } from 'astro-icon'
           <p>WordBuilder Intervention is an instructional tool to help adolescent struggling readers break down multisyllabic words. </p>
            The WordBuilder Intervention course demonstrates how to effectively and systematically deliver teacher-led, small group instruction using this tool to teach struggling readers how to break down, build, and spell multisyllabic words.  </p>
           <LaunchButton url='https://calireads.org/modules/wordbuilder/wordbuilder-full-program/content/'/>
-        <h4>The WordBuilder Intervention course has 4 sections:</h4>
+        <h3>The WordBuilder Intervention course has 4 sections:</h3>
        <ul>
         {wbData.map(wordbuilder => (
           <HTMLButton title={wordbuilder.title} url={wordbuilder.url} aria-label={wordbuilder.title} buttonText={wordbuilder.buttonText}/>
@@ -467,7 +469,7 @@ import { Icon } from 'astro-icon'
         </div>
      <footer class='footer'>
     
-      <h3>Wordbuilder Resources</h3>
+      <h4>Wordbuilder Resources</h4>
         <ul class="column-list">
             {wbResources.map(wbResource =>(
               <li><a href={wbResource.url} title={wbResource.title+' '+wbResource.altText} aria-label={wbResource.title}>{wbResource.title}</a>

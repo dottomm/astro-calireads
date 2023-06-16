@@ -3,7 +3,7 @@ const { title,  url,   buttonText, addText } = Astro.props
 
 ---
 
-    <li  class='flex-item'>
+    <li class='flex-item'>
       <a href={url} title={title} >{title}
       <button class='button'>{buttonText}</button>
     </a>
@@ -42,6 +42,7 @@ const { title,  url,   buttonText, addText } = Astro.props
 
   li{
     font-size: .9em;
+    
   
   }
 
@@ -53,6 +54,7 @@ margin-left: 30px;
 padding: 5px;
 display: flex;
 align-items: center;
+
 }
 
 .flex-item a:hover{
