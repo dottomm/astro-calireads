@@ -11,7 +11,7 @@ import rtResource from '../data/rtResources.json';
 <div class='section-desc'>
 <ul class='resource-stack'>
 {rtResource.map(resource => (
-    <Resource resourceType={resource.resourceType} category={resource.category} title={resource.title}  url={resource.url}  />
+    <Resource resourceType={resource.resourceType} category={resource.category} title={resource.title}  arial-label={resource.title} url={resource.url}  />
    ))}
 </ul>
 </div>

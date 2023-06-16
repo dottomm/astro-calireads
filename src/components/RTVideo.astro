@@ -7,5 +7,5 @@ import rtVideo from '../data/rtVideo.json';
 
 
 {rtVideo.map(video => (
-    <Detail open={video.open} dark={true} id={video.id} title={video.title}  url={video.url} src={video.src}  client:visible  />
+    <Detail open={video.open} dark={true} id={video.id} title={video.title}  arial-label={video.title} url={video.url} src={video.src}  client:visible  />
    ))}

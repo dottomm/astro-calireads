@@ -6,12 +6,13 @@ resourceType:string;
 title: string;
 url: string;
 
+
 }
 
 const {resourceType, category,title, url} = Astro.props as Props
 ---
      <span class={resourceType}>  {category}</span>
-        <li class={resourceType}><a href={url} title={title} target='_blank'>{title}</a>
+        <li class={resourceType}><a href={url} title={title} aria-Label={title} target='_blank'>{title}</a>
         </li>
 
 
