@@ -1,1 +1,6 @@
-Redirect 301 https://calireads.org/literacy-training/word-builder/ https://calireads.org/wordbuilder-info/
+
+<IfModule mod_rewrite.c>
+RewriteEngine On
+</IfModule>
+
+Redirect 301 literacy-training/word-builder/ https://calireads.org/wordbuilder-info/
