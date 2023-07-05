@@ -2,6 +2,8 @@
 
 import ModuleLayout from '../layouts/ModuleLayout.astro';
 
+import Elearning from '../images/e-learning-banner.png';
+
 import Modules from '../components/Modules.astro';
 import Showcase from '../components/Showcase.astro';
 import ModuleNav from '../components/ModuleNav.astro';
@@ -15,19 +17,22 @@ import ModuleNav from '../components/ModuleNav.astro';
     <section class="page-content" id="page-content">
         <div class='intro-block'>
             <div class='intro-text'>
+                <div class='banner-img'>
+                   <h1> <img src={Elearning} alt="E-Learning" width="50%"  /></h1>
+                </div>
                 <h1>You can make a difference for your students!  </h1>
                 <h2>CALI Reads offers 7 free e-Learning Courses on Adolescent Literacy Instruction </h2>
                 <div class='sub-intro'>
-                <p>These courses can be used for professional learning by educators and administrators on how to provide quality literacy instruction proven to enhance content area learning (ELA, social studies, science, math, etc.). </p>
+                <p>The availability of seven free Adolescent Literacy E-Learning courses is a wonderful opportunity for professional learning. These courses focus on research-based literacy practices proven to be effective with adolescent learners across content area instruction (ELA, social studies, science, math, etc.).  </p>
                 
-                        <p >Each e-Learning course takes approximately 2-3 hours to complete. You can launch the full course below or complete it section by section.</p>
+                        <p >Each course takes approximately 2-3 hours to complete, making it a manageable commitment for educators, administrators, and individuals interested in enhancing their knowledge and skills in supporting adolescent literacy. The flexibility to launch the full e-Learning course or complete it section by section allows educators to tailor their learning experience to their personal schedule and preferences. </p>
                         
-                        <p>Your students deserve your best. Get started today! </p>
+                        <p>Taking advantage of these free e-Learning Courses is an excellent way to invest in professional development that will enhance instructional practices, create engaging learning environments, and make a profound impact on student growth and achievement. Get started today on your professional learning journey! </p>
                 </div>
             </div>
         </div>
    
-        <Modules title='Literacy Courses' body={} url={}/>
+        <Modules title='Literacy Courses'  url={} body={} />
 
 </section>
 </ModuleLayout>

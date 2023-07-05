@@ -11,13 +11,15 @@ showExtra?: boolean;
 
 const {heading = "CALI Reads", 
 
-text="CALIReads is a 5-year project to improve literacy outcomes for adolescent students, especially students with disabilities. It serves nine districts and district consortia across California who in collaboration with three school site administrators applied to participate. CALI Reads offers participating districts and their selected middle schools funding, support, and training through CALI Reads literacy coaching, professional development (PD) and systems support for teachers and administrators.",
+text="",
 //tagline = "California Adolescent Literacy Initiative", 
 showExtra = true } = Astro.props as Props;
 ---
 
 
 <section class="showcase">
+  <h1 style='color:#17577B'>California Adolescent Literacy Initiative </h1>
+
     <div class="showcase-text">
               <h1>{heading}</h1>
               <!--<p class='tagline'>{tagline}</p> -->
@@ -32,8 +34,11 @@ showExtra = true } = Astro.props as Props;
     </div>
 
     <p class="showcase-demo">
-      <small>{text}</small>
-    </p>
+      <small>The CALI Reads project is dedicated to empowering educators to deliver high-quality instruction and improve literacy outcomes for diverse students. By providing free access to instructional resources, CALI Reads ensures that all educators, regardless of financial constraints, can benefit from the research-based strategies and practices presented. We encourage anyone interested in supporting adolescent literacy to explore and use the free learning resources available to the public through this website. </small></p>
+ 
+ <p class="showcase-demo"><small>The CALI Reads project was made possible through a 5-year State Personnel Development Grant awarded to the California Department of Education, Special Education Division, by the Office of Special Education Programs at the U.S. Department of Education. This federal funding demonstrates the commitment to improving literacy and educational opportunities for students in California and beyond. </small></p>
+ 
+
     
     </> }
 
