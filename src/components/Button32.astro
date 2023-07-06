@@ -1,11 +1,11 @@
 ---
-const { title,  url,disabled} = Astro.props 
+const { title,  url} = Astro.props 
 
 ---
 
 <!-- HTML !-->
 <a href={url}  >
-<button class="button-32" type="button" role="button"  {disabled}>{title}</button>
+<button class="button-32" type="button" role="button"  aria-label={title}>{title}</button>
 </a>
 
 
