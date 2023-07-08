@@ -21,14 +21,16 @@ import Button32 from './Button32.astro';
 ---
 
 <div class={`card ${dark && 'dark'}`}>
-  <h3><!--<a href={url} >-->{title}<!--</a>--></h3>
+  <h3><a href={url} >{title}</a></h3>
   <p>{body}</p>
-    <div class="resources">
+    <!--
+      <div class="resources">
       <Button32 title={title +" Course"} url={module} />
       <Button32 title={title +" Demonstration Videos"} url={demoVid} />
       <Button32 title={title +" Training Webinars"} url={trainVid} />
       <Button32 title={title +" Intervention Tool"} url={intervention} />
     </div>
+     -->
 </div>
 <style>
 
