@@ -1,0 +1,161 @@
+---
+import Card from './Card.astro';
+import FeaturesData from '../data/FeaturesData.json';
+
+export interface Props {
+
+text:string;
+url: string;
+menuname:string;
+menurul:string;
+toolname:string;
+toolurl:string[];
+}
+
+import Button32 from './Button32.astro';
+
+---
+
+<section class="features" id="features" >
+  <div class="container">
+	
+	<!--ARG-->
+	<div class='card dark'>
+		  <h3>Anticipation Reaction Guides</h3>
+		  <p>Anticipation Reaction Guides (AR Guides) are advanced organizers that are used before, during, and after reading. The teacher creates a set of opinion statements to activate student background knowledge before they read, to identify textual evidence related to the statements while they are reading, and to reconsider their opinions in the light of textual evidence after reading.
+		</p>
+		   <div class="resources">
+			<Button32 title="Anticipation Reaction Guides Literacy Course"  url="https://calireads.org/literacy-modules#ARGuides"/>
+			<Button32 title="Anticipation Reaction Guides Training Webinar" url="https://vimeo.com/461923212" />
+			   
+			  </div>
+     	 </div>
+
+	<!--GTG-->
+	<div class='card dark'>
+		<h3>Get The Gist</h3>
+		<p>Get the Gist is a part of the multi-component intervention Collaborative Strategic Reading (CSR), developed by Klingner and colleagues (1998). The CALI Reads training module focuses on the Get the Gist strategy within CSR. The Get the Gist Strategy teaches students a systematic process for creating a Gist statement for a text (or sections of a text) using the following 3 steps: 1) Name the who or the what; 2) Tell the most important thing about the who or what; and 3) Say it in about 10 words</p>
+
+		<div class='resources'>
+			
+			<Button32 title="Get The Gist Literacy Course" url="https://calireads.org/literacy-modules#GTG"/>
+			<Button32 title="Get The Gist Training Webinar" url="https://vimeo.com/503144719"/>
+		</div>
+
+		</div>
+
+	<!--Morphology-->
+	<div class='card dark'>
+		<h3>Morphology</h3>
+		<p>Morphology is the study of morphemes—the smallest units of meaning in our language. Morphemes can be prefixes, suffixes, or roots, and understanding them is crucial to becoming an independent and proficient reader and writer. Effective morphology instruction equips students with valuable tools for word analysis, decoding, spelling, and vocabulary acquisition.</p>
+			<div class='resources'>
+				
+				<Button32 title='Morphology Literacy Course' url="https://calireads.org/literacy-modules#morphology"/>
+				<Button32 title='Morphology Training Webinar' url="https://vimeo.com/505852275"/>
+				<Button32 title='Morphology Demonstration Videos' url="https://vimeo.com/showcase/10308701"/>
+				
+			</div>
+	</div>
+
+	<!--Reciprocal Teaching -->
+	<div class='card dark'>
+		<h3>Reciprocal Teaching</h3>
+		<p>Reciprocal Teaching (RT) is a cooperative learning routine that incorporates four high leverage reading comprehension strategies: Predicting, Questioning, Clarifying, and Summarizing (Palinscar & Brown, 1984).</p>
+		<div class="resources">
+			<Button32 title="Reciprocal Teaching Literacy Course" url="https://calireads.org/literacy-modules#ReciprocalTeaching"/>
+			<Button32 title="Reciprocal Teaching Training Webinar" url="https://vimeo.com/689764777"/>
+			<Button32 title="Reciprocal Teaching Demonstration Videos" url="https://vimeo.com/showcase/10308718"/>
+
+
+		</div>
+	</div>
+  
+	<!--SGQ-->
+	<div class='card dark'>
+		<h3>Self-Generated Questions</h3>
+		<p>The Self-Generated Questions (SGQs) Strategy is an evidence-based routine that teaches students to monitor their reading comprehension by stopping intermittently to ask different kinds of questions about key information in the text, determine how the information is related, and use text evidence to support their responses.</p>
+		<div class='resources'>
+			<Button32 title='Self-Generated Questions Literacy Course' url="https://calireads.org/literacy-modules#SGQmodules"/>
+			<Button32 title="Self-Generated Questions Training Webinar" url="https://vimeo.com/706611361?share=copy" />
+			<Button32 title="Self-Generated Questions Demonstration Videos" url="https://vimeo.com/showcase/9843742"/>
+
+		</div>
+	</div>
+
+	<!--Vocabulary Maps -->
+	<div class='card dark'>
+		<h3>Vocabulary Maps</h3>
+		<p>The Vocabulary Map is a teacher-completed, graphic organizer used to preteach unfamiliar, conceptually important words prior to reading a text. Teachers can familiarize students with essential words using the Vocabulary Map in a quick five-minute lesson. On the Vocabulary Map, the teacher identifies a cognate for the word, student-friendly definition, visual representation, synonyms, use in context, and turn and talk prompts to engage students in oral language use.</p>
+		<div class='resources'>
+			<Button32 title="Vocabulary Maps Literacy Course" url="https://calireads.org/literacy-modules#vocabModules"/>
+			<Button32 title="Vocabulary Maps Training Webinar" url="https://vimeo.com/706281734?share=copy" />
+		</div>
+	</div>
+	<!--Wordbuilder -->
+	<div class='card dark'>
+		<h3>Wordbuilder</h3>
+		<p>The WordBuilder Intervention app a free application, is a research-based instructional tool to help adolescent struggling readers break down, build, and spell multisyllabic words. The app is designed for teacher-led, direct instruction delivered in small groups or one-on-one with struggling readers.</p>
+		
+		<div class='resources'>
+			<Button32 title="Wordbuilder Literacy Course" url="https://calireads.org/literacy-modules#wordbuilder"/>
+			<Button32 title="WordBuilder Intervention Tool" url="https://calireads.org/wordbuilder/" />
+			<Button32 title="Wordbuilder Training Webinar" url="https://vimeo.com/489906201" />
+
+			<Button32 title="Wordbuilder Demonstration Videos" url="https://vimeo.com/showcase/9843748" />
+		</div>
+	</div>
+
+  </section>
+
+
+  <style>
+    .features .container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+  padding: 0 20px;
+  margin: 30px auto;
+}
+
+@media (max-width: 800px) {
+  .features .container {
+    grid-template-columns: 1fr;
+  }
+
+ 
+}
+
+.card {
+  background: var(--color-primary);
+ 
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+
+.card a {
+  color:var(--color-primary);
+  text-decoration: underline;
+}
+
+.card a:hover{
+  color: var(--color-accent);
+}
+
+.dark{
+    background: var(--color-secondary);
+    color: var(--color-primary);
+}
+
+.resources{
+  display:flex;
+ justify-items: center;
+  justify-content: space-evenly;
+  background-color: #17577B;
+  position: relative;
+  bottom:0px;
+}
+
+  </style>

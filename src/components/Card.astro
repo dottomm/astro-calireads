@@ -3,35 +3,32 @@ export interface Props {
 
 title: string;
 body: string;
+menuname: string;
+menuurl:string;
+toolname:string;
+toolurl:string;
 url: string;
-module: string;
-demoVid: string;
-trainVid: string;
-intervention:string;
-
 dark?: boolean;
 
 }
 
-const { title, body, url, module, demoVid, trainVid, intervention,  dark = false } = Astro.props as Props
+const { toolname, menuname, menuurl, title, body, url, dark = false  } = Astro.props as Props
 
 import Button32 from './Button32.astro';
-
 
 ---
 
 <div class={`card ${dark && 'dark'}`}>
   <h3><a href={url} >{title}</a></h3>
   <p>{body}</p>
-    <!--
+   
       <div class="resources">
-      <Button32 title={title +" Course"} url={module} />
-      <Button32 title={title +" Demonstration Videos"} url={demoVid} />
-      <Button32 title={title +" Training Webinars"} url={trainVid} />
-      <Button32 title={title +" Intervention Tool"} url={intervention} />
-    </div>
-     -->
-</div>
+        <a href={menuurl} >      
+         <Button32 title={"toolname"} /> 
+         
+        </a>    
+       
+      </div>
 <style>
 
 .card {

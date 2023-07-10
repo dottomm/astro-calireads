@@ -1,12 +1,13 @@
----
-
-const featuresData =[
 [
 	{
 		"title": "Anticipation Reaction Guides",
 		"body": "Anticipation Reaction Guides (AR Guides) are advanced organizers that are used before, during, and after reading. The teacher creates a set of opinion statements to activate student background knowledge before they read, to identify textual evidence related to the statements while they are reading, and to reconsider their opinions in the light of textual evidence after reading.",
 		"url": "/anticipation-reaction-guides",
-    
+        "menu": 
+		{
+			"name": "Learning Module",
+            "url": ""
+		},
 
         "tool":{
 			"name": "ARGmWalkthrough",
@@ -70,63 +71,3 @@ const featuresData =[
 		}
 	}
 ]
-]
-
-import Card from './Card.astro';
-import FeaturesData from '../data/FeaturesData.json';
-
-export interface Props {
-
-text:string;
-url: string;
-menuname:string;
-menurul:string;
-toolname:string;
-toolurl:string[];
-
-}
-import Button32 from './Button32.astro';
----
-
-<section class="features" id="features" >
-  
-   
-    <div class="container">
-      
-  {FeaturesData.map(menu => (
-    
-      <Card dark={true} title={menu.title} body={menu.body} url={menu.url}
-    
-        />
-      
-      
-      ))}
-
-      
-
-     
-  
-    </div>
-
-    
-  
-  </section>
-
-
-  <style>
-    .features .container {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 20px;
-  padding: 0 20px;
-  margin: 30px auto;
-}
-
-@media (max-width: 800px) {
-  .features .container {
-    grid-template-columns: 1fr;
-  }
-
- 
-}
-  </style>

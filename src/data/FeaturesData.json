@@ -1,12 +1,13 @@
----
-
-const featuresData =[
 [
 	{
 		"title": "Anticipation Reaction Guides",
 		"body": "Anticipation Reaction Guides (AR Guides) are advanced organizers that are used before, during, and after reading. The teacher creates a set of opinion statements to activate student background knowledge before they read, to identify textual evidence related to the statements while they are reading, and to reconsider their opinions in the light of textual evidence after reading.",
 		"url": "/anticipation-reaction-guides",
-    
+        "menu": 
+		{
+			"menuname": "Learning Module",
+            "menuurl": ""
+		},
 
         "tool":{
 			"name": "ARGmWalkthrough",
@@ -18,8 +19,8 @@ const featuresData =[
 		"body": "Get the Gist is a part of the multi-component intervention Collaborative Strategic Reading (CSR), developed by Klingner and colleagues (1998). The CALI Reads training module focuses on the Get the Gist strategy within CSR. The Get the Gist Strategy teaches students a systematic process for creating a Gist statement for a text (or sections of a text) using the following 3 steps: 1) Name the who or the what; 2) Tell the most important thing about the who or what; and 3) Say it in about 10 words",
 		"url": "/get-the-gist",
         "menu": {
-			"name": "Get The Gist Training Webinar",
-            "url": "https://wordbuilder.app"
+			"menuname": "Get The Gist Training Webinar",
+            "menuurl": "https://wordbuilder.app"
 		}
 	},
 	{
@@ -27,8 +28,8 @@ const featuresData =[
 		"body": "Morphology is the study of morphemes—the smallest units of meaning in our language. Morphemes can be prefixes, suffixes, or roots, and understanding them is crucial to becoming an independent and proficient reader and writer. Effective morphology instruction equips students with valuable tools for word analysis, decoding, spelling, and vocabulary acquisition. ",
 		"url": "/morphology",
         "menu": {
-			"name": "Morphology Tool",
-            "url": ""
+			"menuname": "Morphology Tool",
+            "menuurl": ""
 		}
 	},
 	{
@@ -36,8 +37,8 @@ const featuresData =[
 		"body": "Reciprocal Teaching (RT) is a cooperative learning routine that incorporates four high leverage reading comprehension strategies: Predicting, Questioning, Clarifying, and Summarizing (Palinscar & Brown, 1984). ",
 		"url": "/reciprocal-teaching",
         "menu": {
-			"name": "Reciprocal Teaching Training Webinar",
-            "url": ""
+			"menuname": "Reciprocal Teaching Training Webinar",
+            "menuurl": ""
 		}
 	},
 	{
@@ -45,8 +46,8 @@ const featuresData =[
 		"body": "The Self-Generated Questions (SGQs) Strategy is an evidence-based routine that teaches students to monitor their reading comprehension by stopping intermittently to ask different kinds of questions about key information in the text, determine how the information is related, and use text evidence to support their responses.",
 		"url": "/self-generated-questions",
         "menu": {
-			"name": "Self-Generated Questions Training Webinar",
-            "url": ""
+			"menuname": "Self-Generated Questions Training Webinar",
+            "menuurl": ""
 		}
 	},
 	{
@@ -54,8 +55,8 @@ const featuresData =[
 		"body": "The Vocabulary Map is a teacher-completed, graphic organizer used to preteach unfamiliar, conceptually important words prior to reading a text. Teachers can familiarize students with essential words using the Vocabulary Map in a quick five-minute lesson. On the Vocabulary Map, the teacher identifies a cognate for the word, student-friendly definition, visual representation, synonyms, use in context, and turn and talk prompts to engage students in oral language use.",
 		"url": "/vocabulary-maps",
         "menu": {
-			"name": "Vocabulary Maps Demonstration Video",
-            "url": ""
+			"menuname": "Vocabulary Maps Demonstration Video",
+            "menuurl": ""
            
 		}
 	},
@@ -64,69 +65,9 @@ const featuresData =[
 		"body": "The WordBuilder Intervention app a free application, is a research-based instructional tool to help adolescent struggling readers break down, build, and spell multisyllabic words. The app is designed for teacher-led, direct instruction delivered in small groups or one-on-one with struggling readers.",
 		"url": "/wordbuilder-info",
 		" menu": {
-			"name ": "Wordbuilder App",
-            "url ": "https://calireads.org/wordbuilder/"
+			"menuname ": "Wordbuilder App",
+            "menuurl ": "https://calireads.org/wordbuilder/"
            
 		}
 	}
 ]
-]
-
-import Card from './Card.astro';
-import FeaturesData from '../data/FeaturesData.json';
-
-export interface Props {
-
-text:string;
-url: string;
-menuname:string;
-menurul:string;
-toolname:string;
-toolurl:string[];
-
-}
-import Button32 from './Button32.astro';
----
-
-<section class="features" id="features" >
-  
-   
-    <div class="container">
-      
-  {FeaturesData.map(menu => (
-    
-      <Card dark={true} title={menu.title} body={menu.body} url={menu.url}
-    
-        />
-      
-      
-      ))}
-
-      
-
-     
-  
-    </div>
-
-    
-  
-  </section>
-
-
-  <style>
-    .features .container {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 20px;
-  padding: 0 20px;
-  margin: 30px auto;
-}
-
-@media (max-width: 800px) {
-  .features .container {
-    grid-template-columns: 1fr;
-  }
-
- 
-}
-  </style>

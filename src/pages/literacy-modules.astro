@@ -16,37 +16,39 @@ import ModuleNav from '../components/ModuleNav.astro';
 
     <section class="page-content" id="page-content">
         <div class='intro-block'>
-            <div class='intro-text'>
-                <div class='banner-img'>
-                   <h1> <img src={Elearning} alt="E-Learning" width="50%"  /></h1>
-                </div>
-                 <div class='sub-intro'>
-                <p>The availability of seven free Adolescent Literacy E-Learning courses is a wonderful opportunity for professional learning. These courses focus on research-based literacy practices proven to be effective with adolescent learners across content area instruction (ELA, social studies, science, math, etc.).  </p>
-                
-                        <p >Each course takes approximately 2-3 hours to complete, making it a manageable commitment for educators, administrators, and individuals interested in enhancing their knowledge and skills in supporting adolescent literacy. The flexibility to launch the full e-Learning course or complete it section by section allows educators to tailor their learning experience to their personal schedule and preferences. </p>
-                        
-                        <p>Taking advantage of these free e-Learning Courses is an excellent way to invest in professional development that will enhance instructional practices, create engaging learning environments, and make a profound impact on student growth and achievement. Get started today on your professional learning journey! </p>
-                </div>
+            <div class='banner-img'>
+                <img src={Elearning} alt="E-Learning"  width=100% class="elearning" />
             </div>
+            <div class='sub-intro'>
+                <p>The availability of seven free Adolescent Literacy E-Learning courses is a wonderful opportunity for professional learning. These courses focus on research-based literacy practices proven to be effective with adolescent learners across content area instruction (ELA, social studies, science, math, etc.).  </p>
+                <p >Each course takes approximately 2-3 hours to complete, making it a manageable commitment for educators, administrators, and individuals interested in enhancing their knowledge and skills in supporting adolescent literacy. The flexibility to launch the full e-Learning course or complete it section by section allows educators to tailor their learning experience to their personal schedule and preferences. </p>
+                <p>Taking advantage of these free e-Learning Courses is an excellent way to invest in professional development that will enhance instructional practices, create engaging learning environments, and make a profound impact on student growth and achievement. Get started today on your professional learning journey! </p>
+            </div>
+    
         </div>
    
-        <Modules title='Literacy Courses'  url={} body={} />
+        <Modules title='Literacy Courses'  />
 
 </section>
 </ModuleLayout>
 
 <style>
+   
 
     .intro-block{
         display:flex;
+        flex-direction: column;
+        justify-content: center;
         margin-top: -2em;
-        justify-content: left;
+       
     }
     .intro{
+        display:flex;
+        align-content: space-around;
         font-size: larger;
         width: 100%;
         text-align:left;
-        font-size: 4ch;
+        
     }
 
     .intro-text h2{
@@ -54,10 +56,25 @@ import ModuleNav from '../components/ModuleNav.astro';
     }
 
     .sub-intro{
-        text-align:left;
-        max-width: 80%;
-        font-size: 2ch;
+      font-size: 1.3em;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    
     }
+.banner-img{
+    align-content: center;
+    margin-top:-25px;
+   
+
+}
+.elearning{
+ height:300px;
+  display:flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
 
     [astro-icon='twemoji:books']:before{
         content:"HERE WE GO";
