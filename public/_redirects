@@ -1,5 +1,11 @@
 /literacy-training/*  /literacy-modules
 
+/anticipation-reaction-guides/ /literacy-modules/#ARGuides
 /about/ /index.html
 /participants-activities/   /index.html
 /sites/ /index.html
+/contact/   /index.html
+/log-in/    /index.html
+/digicoach/ /index.html
+/wp-content/* /index.html
+/uncategorized/* /index.html
